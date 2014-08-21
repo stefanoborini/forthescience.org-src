@@ -197,13 +197,13 @@ else and completely break the backtrace even of a non-stripped binary, provided
 that we restore the frame under the current one just before returning. The
 process will be:
 
-   # Inside every routine, we will drop at the assembly level and write a
-     prologue section where we alter the underlying frame's return address.
+   #. Inside every routine, we will drop at the assembly level and write a
+      prologue section where we alter the underlying frame's return address.
 
-	# We do our thing inside the routine
+	#. We do our thing inside the routine
 
-   # Again at the assembly level, we write an epilogue section where we
-     restore the return address, just before issuing the return that needs it.
+   #. Again at the assembly level, we write an epilogue section where we
+      restore the return address, just before issuing the return that needs it.
 
 With this strategy in place, if you break anywhere inside the function all the
 frames (except the one your code is currently in) will be "scrambled" and
