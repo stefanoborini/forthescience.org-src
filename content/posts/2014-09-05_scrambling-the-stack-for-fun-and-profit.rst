@@ -199,9 +199,7 @@ process will be:
 
    #. Inside every routine, we will drop at the assembly level and write a
       prologue section where we alter the underlying frame's return address.
-
-	#. We do our thing inside the routine
-
+   #. We do our thing inside the routine
    #. Again at the assembly level, we write an epilogue section where we
       restore the return address, just before issuing the return that needs it.
 
