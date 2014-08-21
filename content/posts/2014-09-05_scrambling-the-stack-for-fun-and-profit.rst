@@ -391,9 +391,7 @@ Now you can get creative. For example, you can
    
    * Scramble your frames according to a random number that you seed
      differently at every new run.
-
-	* Scramble the whole frame content, not only the return address
-
+   * Scramble the whole frame content, not only the return address
    * Spread out preamble and epilogue throughout the routine code, so that it's
      harder to find out which opcode is devoted to actual execution, and which
      one is unscrambling the frame, maybe through tortuous operations full of
