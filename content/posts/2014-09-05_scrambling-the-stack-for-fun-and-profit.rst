@@ -8,9 +8,8 @@ Like any good respected tinkerer, I sometimes like to play with the madness and
 intricacies of the hardware and software I use. Recently I was tracing
 problems in a software I won't name but whose objective is to prevent tampering
 attempts, and while dumping stacks and disassembling routines, I came around
-this very interesting backtrace
+this very interesting backtrace ::
 
-::
    #0  0x0000003f95e0d654 in __lll_lock_wait () from /lib64/libpthread.so.0
    #1  0x0000003f95e08f65 in _L_lock_1127 () from /lib64/libpthread.so.0
    #2  0x0000003f95e08e63 in pthread_mutex_lock () from /lib64/libpthread.so.0
@@ -62,9 +61,8 @@ a proof of concept, just for fun
    }
 
 then I compiled it with a simple g++ file.cpp, set a breakpoint on routine4,
-ran it, and asked for a backtrace
+ran it, and asked for a backtrace ::
 
-::
    #0  0x0000000100000e18 in routine4 ()
    #1  0x0000000100000e2f in routine3 ()
    #2  0x0000000100000e3a in routine2 ()
@@ -73,9 +71,8 @@ ran it, and asked for a backtrace
 
 Pretty nice backtrace. We see the full information and all routine names. If we
 disassemble routine4, we also see the printf, which is actually reworked into a
-puts on OSX 10.6.8 with gcc.
+puts on OSX 10.6.8 with gcc.::
 
-::
    0x0000000100000e14 <_z8routine4v +0>:	push   %rbp
    0x0000000100000e15 <_z8routine4v +1>:	mov    %rsp,%rbp
    0x0000000100000e18 <_z8routine4v +4>:	lea    0x45(%rip),%rdi        # 0x100000e64
@@ -83,9 +80,9 @@ puts on OSX 10.6.8 with gcc.
    0x0000000100000e24 <_z8routine4v +16>:	leaveq 
    0x0000000100000e25 <_z8routine4v +17>:	retq
 
-If I instead strip the binary with strip a.out, I can't set a breakpoint on routine4 anymore, and rightly so:
+If I instead strip the binary with strip a.out, I can't set a breakpoint on
+routine4 anymore, and rightly so::
 
-::
    (gdb) break routine4
    Function "routine4" not defined.
    Make breakpoint pending on future shared library load? (y or [n]) n
@@ -107,9 +104,8 @@ at which VM pages they are mapped to, and the entry point
       0x0000000100000dd8 - 0x0000000100000e57 is LC_SEGMENT.__TEXT.__text in /Users/sbo/tmp/a.out
 
 In any case, with the breakpoint at puts I can get to the printf and issue a
-backtrace to get to our infamous condition
+backtrace to get to our infamous condition ::
 
-::
    #0  0x00007fff86eb0ef0 in puts ()
    #1  0x0000000100000e24 in ?? ()
    #2  0x0000000100000e2f in ?? ()
@@ -119,9 +115,8 @@ backtrace to get to our infamous condition
    #6  0x0000000100000e0c in ?? ()
 
 Yet, as you can see, the stack makes sense. I cannot disassemble, but at least
-I can dump the contents and they make sense
+I can dump the contents and they make sense ::
 
-::
    (gdb) disas 0x0000000100000e24
    No function contains specified address.
    (gdb) x/30i  0x0000000100000e24
@@ -158,24 +153,21 @@ Scrambling the return address
 Here is the idea: Instead of `smashing the stack
 <http://insecure.org/stf/smashstack.html>`_, I will try to scramble it.
 What does it mean? Well, let's see how the stack is when we are just about to
-be calling puts. We select the previous frame 
+be calling puts. We select the previous frame ::
 
-::
    (gdb) frame 1
    #1  0x0000000100000e24 in ?? ()
 
-Get the stack pointer at the current frame
+Get the stack pointer at the current frame ::
 
-::
    (gdb) info registers
    ...snip...
    rbp            0x7fff5fbff680	0x7fff5fbff680
    rsp            0x7fff5fbff680	0x7fff5fbff680
    ...snip...
 
-Then we take a look at what is in there
+Then we take a look at what is in there ::
 
-::
    (gdb) x/10a 0x7fff5fbff680
    0x7fff5fbff680:	0x7fff5fbff690	0x100000e2f
    0x7fff5fbff690:	0x7fff5fbff6a0	0x100000e3a
@@ -240,9 +232,8 @@ write this value back in the stack at %rsp+8.  In the epilogue, I simply
 perform the opposite operation, subtracting 0xdeeead and restoring the correct
 return address in the stack. If I compile and run, the program works correctly.
 
-The gdb session is really nice:
+The gdb session is really nice::
 
-::
    Breakpoint 1, 0x0000000100000df4 in routine4 ()
    (gdb) bt
    #0  0x0000000100000df4 in routine4 ()
@@ -251,9 +242,8 @@ The gdb session is really nice:
    #3  0x0000000100000e45 in routine1 ()
    #4  0x0000000100000e50 in main ()
 
-Note how the stack is correct, as we haven't executed the prologue yet.
+Note how the stack is correct, as we haven't executed the prologue yet. ::
 
-::
    (gdb) disas
 
    Dump of assembler code for function _Z8routine4v:
@@ -271,9 +261,8 @@ Note how the stack is correct, as we haven't executed the prologue yet.
    0x0000000100000e25 <_z8routine4v +53>:	retq   
    End of assembler dump.
 
-The current situation looks like this:
+The current situation looks like this::
 
-::
    (gdb) info register
    rbx            0x0	0
    rsp            0x7fff5fbff680	0x7fff5fbff680
@@ -284,23 +273,20 @@ The current situation looks like this:
    0x7fff5fbff6b0:	0x7fff5fbff6c0	0x100000e50
 
 Stepping instruction after instruction, we can follow the events: first the rbx
-register is filled with the return address from the stack
+register is filled with the return address from the stack::
 
-::
    -> mov    0x8(%rsp),%rbx
    (gdb) info register rbx 
    rbx 0x100000e2f 4294970927
 
-Then, we add 0xdeeead
+Then, we add 0xdeeead ::
 
-::
    -> lea    0xdeeead(,%rbx,1),%rbx
    (gdb) info register rbx
    rbx            0x100defcdc	4309581020
 
-and finally, we store it back into the stack
+and finally, we store it back into the stack ::
 
-::
    -> mov    %rbx,0x8(%rsp)           # prologue
    (gdb) x/10a 0x7fff5fbff680
    0x7fff5fbff680:	0x7fff5fbff690	0x100defcdc
@@ -308,9 +294,8 @@ and finally, we store it back into the stack
    0x7fff5fbff6a0:	0x7fff5fbff6b0	0x100000e45 <_z8routine1v +9>
    0x7fff5fbff6b0:	0x7fff5fbff6c0	0x100000e50
 
-Et voila'. The backtrace is now pointing to neverland
+Et voila'. The backtrace is now pointing to neverland ::
 
-::
    (gdb) bt
    #0  0x0000000100000e06 in routine4 ()
    #1  0x0000000100defcdc in ?? ()
@@ -320,9 +305,8 @@ Et voila'. The backtrace is now pointing to neverland
 
 If we were to return now, a segfault would occur: that return address is
 completely invalid. It's only by performing the reverse operation that we can
-land safely back into routine3
+land safely back into routine3 ::
 
-::
    -> mov    0x8(%rsp),%rbx
    rbx            0x100defcdc
    -> lea    -0xdeeead(,%rbx,1),%rbx  
@@ -330,9 +314,8 @@ land safely back into routine3
    -> mov    %rbx,0x8(%rsp)         
    Stack 0x7fff5fbff680:	0x7fff5fbff690	0x100000e2f <_z8routine3v +9>
 
-Now the backtrace is sane again and we are ready to return
+Now the backtrace is sane again and we are ready to return ::
 
-::
    (gdb) bt
    #0  0x0000000100000e24 in routine4 ()
    #1  0x0000000100000e2f in routine3 ()
@@ -380,16 +363,14 @@ our complete call hierarchy. Here is the full code:
        unscramble();
    }
 
-If you compile it, it runs
+If you compile it, it runs ::
 
-::
    sbo@sbos-macbook:~/tmp$ g++ test.cpp 
    sbo@sbos-macbook:~/tmp$ ./a.out 
    hello
 
-and if you debug it, break at puts, and backtrace, here is the funny result:
+and if you debug it, break at puts, and backtrace, here is the funny result::
 
-::
    (gdb) bt
    #0  0x00007fff86eb0ef0 in puts ()
    #1  0x0000000100000d82 in routine4 ()
