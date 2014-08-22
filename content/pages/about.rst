@@ -4,7 +4,7 @@ About Me
 :author: Stefano
 :slug: about
 
-.. image:: /images/2007/11/mypicture-small.jpg
+.. image:: ../images/2007/11/mypicture-small.jpg
    :alt: my picture
    :align: left
 
