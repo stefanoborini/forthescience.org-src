@@ -42,6 +42,6 @@ PLUGINS = ["googleplus_comments"]
 DEFAULT_PAGINATION = 10
 DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_TAGS_ON_SIDEBAR = False
-THEME = "themes/pelican-bootstrap3/"
+THEME = "themes/forthescience/"
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True

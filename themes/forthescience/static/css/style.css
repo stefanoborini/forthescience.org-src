@@ -2,6 +2,10 @@ body {
     padding-top: 70px;
 }
 
+p {
+    text-align: justify;
+}
+
 article>h2 {
     color: rgb(10, 167, 0);
 }
@@ -12,7 +16,7 @@ article>h2 {
 }
 
 .navbar {
-    background-color: linear-gradient(white, white, rgb(200, 255, 200))
+    background: linear-gradient(white, white, rgb(200, 255, 200));
     border-color: #49CE23;
 }
 

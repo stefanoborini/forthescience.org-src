@@ -1,11 +1,12 @@
-About me
+About Me
 ########
 :date: 2007-08-10 08:23
 :author: Stefano
 :slug: about
-:attachments: blog/wp-content/uploads/2007/11/mypicture-small.jpg
 
-|My Picture|
+.. image:: /images/2007/11/mypicture-small.jpg
+   :alt: my picture
+   :align: left
 
 My name is Stefano Borini. I have a Ph.D. in quantum
 chemistry from Ferrara University, Ferrara, Italy, and Paul Sabatier
@@ -83,5 +84,4 @@ How to contact me:
 -  By email: my name dot my surname at gmail dot com
 -  On Twitter: `@stefanoborini <http://twitter.com/stefanoborini>`_
 
-.. |My Picture| image:: http://forthescience.org/blog/wp-content/uploads/2007/11/mypicture-small.jpg
 .. |My status| image:: http://mystatus.skype.com/smallclassic/stefano%2Eborini
