@@ -12,7 +12,7 @@ article>h2 {
 }
 
 .navbar {
-    background-color: #E9FFEA;
+    background-color: linear-gradient(white, white, rgb(200, 255, 200))
     border-color: #49CE23;
 }
 
