@@ -2,7 +2,7 @@ Book review "Structured parallel programming" - M. McCool, A. Robison, J. Reinde
 ##################################################################################
 :author: Stefano
 :category: Books, Parallel Programming
-:tags: 
+:tags: Books
 
 I just finished  `Structured parallel programming
 <http://www.amazon.co.uk/Structured-Parallel-Programming-Efficient-Computation/dp/0124159931>`_,

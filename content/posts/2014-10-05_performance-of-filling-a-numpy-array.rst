@@ -2,7 +2,7 @@ Performance of filling a numpy array
 ####################################
 :author: Stefano
 :category: Python
-:tags: numpy, Performance
+:tags: numpy, performance
 
 I just noticed this interesting piece of trivia. Apparently it's much faster to
 create a zeros array and filling the individual values, than creating an array

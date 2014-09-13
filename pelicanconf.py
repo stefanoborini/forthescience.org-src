@@ -36,7 +36,7 @@ LINKS = (('GitHub', 'http://github.com/stefanoborini/'),
 
 # Social widget
 SOCIAL = ()
-PLUGIN_PATHS = ['pelican-plugins']
+PLUGIN_PATHS = ['plugins']
 PLUGINS = ["googleplus_comments"]
 
 DEFAULT_PAGINATION = 10
