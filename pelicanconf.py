@@ -16,7 +16,7 @@ PAGE_SAVE_AS = '{slug}/index.html'
 
 ARTICLE_PATHS = ['posts']
 
-STATIC_PATHS = ['images', 'extra/CNAME']
+STATIC_PATHS = ['wp-content/uploads', 'extra/CNAME']
 WITH_FUTURE_DATES = False
 GITHUB_URL="http://github.com/stefanoborini/"
 GOOGLE_ANALYTICS="UA-13239309-1"
