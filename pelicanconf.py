@@ -16,11 +16,11 @@ PAGE_SAVE_AS = '{slug}/index.html'
 
 ARTICLE_PATHS = ['posts']
 
-STATIC_PATHS = ['wp-content/uploads', 'extra/CNAME']
+STATIC_PATHS = ['wp-content/uploads']
 WITH_FUTURE_DATES = False
 GITHUB_URL="http://github.com/stefanoborini/"
 GOOGLE_ANALYTICS="UA-13239309-1"
-EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'}}
+EXTRA_PATH_METADATA = {}
 TIMEZONE = 'Europe/Rome'
 FILENAME_METADATA='(?P<date>\d{4}-\d{2}-\d{2})_(?P<slug>.*)'
 DEFAULT_LANG = u'en'

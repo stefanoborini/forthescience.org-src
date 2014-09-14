@@ -4,7 +4,8 @@ PELICANOPTS=
 
 BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/content
-OUTPUTDIR=$(BASEDIR)/output/blog
+OUTPUTDIR=$(BASEDIR)/output
+BLOGDIR=$(BASEDIR)/output/blog
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
@@ -33,13 +34,13 @@ ifeq ($(DEBUG), 1)
 endif
 
 html:
-	"$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS)
+	"$(PELICAN)" "$(INPUTDIR)" -o "$(BLOGDIR)" -s "$(CONFFILE)" $(PELICANOPTS)
+	cp extra/CNAME "$(OUTPUTDIR)"
+	cp extra/index.html "$(OUTPUTDIR)"
+	cp extra/gitignore "$(OUTPUTDIR)"/.gitignore
 
 clean:
-	[ ! -d "$(OUTPUTDIR)" ] || rm -rf "$(OUTPUTDIR)"
-
-regenerate:
-	"$(PELICAN)" -r "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS)
+	cd "$(OUTPUTDIR)" && rm -rf *
 
 serve:
 ifdef PORT
@@ -63,24 +64,6 @@ stopserver:
 publish:
 	"$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(PUBLISHCONF)" $(PELICANOPTS)
 
-ssh_upload: publish
-	scp -P $(SSH_PORT) -r "$(OUTPUTDIR)"/* $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
-
-rsync_upload: publish
-	rsync -e "ssh -p $(SSH_PORT)" -P -rvzc --delete "$(OUTPUTDIR)/" $(SSH_USER)@$(SSH_HOST):"$(SSH_TARGET_DIR)" --cvs-exclude
-
-dropbox_upload: publish
-	cp -r "$(OUTPUTDIR)"/* "$(DROPBOX_DIR)"
-
-ftp_upload: publish
-	lftp ftp://$(FTP_USER)@$(FTP_HOST) -e "mirror -R \"$(OUTPUTDIR)\" \"$(FTP_TARGET_DIR)\" ; quit"
-
-s3_upload: publish
-        s3cmd sync "$(OUTPUTDIR)/" s3://$(S3_BUCKET) --acl-public --delete-removed --guess-mime-type
-
-cf_upload: publish
-	cd "$(OUTPUTDIR)" && swift -v -A https://auth.api.rackspacecloud.com/v1.0 -U $(CLOUDFILES_USERNAME) -K $(CLOUDFILES_API_KEY) upload -c $(CLOUDFILES_CONTAINER) .
-
 github: publish
 	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) "$(OUTPUTDIR)"
 	git push origin $(GITHUB_PAGES_BRANCH)
@@ -91,8 +74,6 @@ help:
 	@echo 'Usage:                                                                 '
 	@echo '   make html                        (re)generate the web site          '
 	@echo '   make clean                       remove the generated files         '
-	@echo '   make regenerate                  regenerate files upon modification '
-	@echo '   make publish                     generate using production settings '
 	@echo '   make serve [PORT=8000]           serve site at http://localhost:8000'
 	@echo '   make devserver [PORT=8000]       start/restart develop_server.sh    '
 	@echo '   make stopserver                  stop local server                  '
