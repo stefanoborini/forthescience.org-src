@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = u'Stefano Borini'
 SITENAME = u'ForTheScience.org'
 SITESUBTITLE= u"A Blog about Science and Programming"
-SITEURL = 'http://forthescience.org'
+SITEURL = 'http://forthescience.org/blog'
 ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 
@@ -26,7 +26,8 @@ FILENAME_METADATA='(?P<date>\d{4}-\d{2}-\d{2})_(?P<slug>.*)'
 DEFAULT_LANG = u'en'
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
+FEED_ATOM = None
+FEED_MAX_ITEMS = 15
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 

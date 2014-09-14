@@ -39,6 +39,9 @@ html:
 	cp extra/index.html "$(OUTPUTDIR)"
 	cp extra/gitignore "$(OUTPUTDIR)"/.gitignore
 
+upload:
+	cd "$(OUTPUTDIR)" && git add * && git commit -a -m "sync" && git push
+
 clean:
 	cd "$(OUTPUTDIR)" && rm -rf *
 
