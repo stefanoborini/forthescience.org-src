@@ -1,11 +1,8 @@
 Building my own NAS/Media center – Part 9 – BIOS update and final decorations
 #############################################################################
-:date: 2014-08-05 20:04
 :author: Stefano
 :category: Hardware
 :tags: center, media, nas
-:slug: building-my-own-nasmedia-center-part-9-bios-update-and-final-decorations
-:attachments: blog/wp-content/uploads/2014/04/fan_grid.jpg, blog/wp-content/uploads/2014/04/mechanical_sweing_needle.jpg, blog/wp-content/uploads/2014/04/three_wolf_moon_case.jpg, blog/wp-content/uploads/2014/08/final.jpg
 
 The final assembly is now performing its task amazingly well, except for
 one annoying issue: the fans are too noisy. I decided to explore the
@@ -45,12 +42,12 @@ picture I honestly like, with the fan grid being the moon.To do so, I
 printed a thresholded picture of the wolves on a piece of paper and
 attached it to the case.
 
-`|fan\_grid| <http://forthescience.org/blog/wp-content/uploads/2014/04/fan_grid.jpg>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2014/04/fan_grid.jpg
 
 Then, I started carving the outline with a sewing needle inserted into a
 mechanical pencil.
 
-`|mechanical\_sweing\_needle| <http://forthescience.org/blog/wp-content/uploads/2014/04/mechanical_sweing_needle.jpg>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2014/04/mechanical_sweing_needle.jpg
 
 Unfortunately I would have preferred to transfer the drawing with carbon
 paper, but I wasn't able to find it. After transferring the outline, I
@@ -61,17 +58,13 @@ I then scratched the moon and added a few stars with the Dremel. I can't
 say I am an artist, but I had a good time doing it, and the result is
 better than I expected.
 
-`|three\_wolf\_moon\_case| <http://forthescience.org/blog/wp-content/uploads/2014/04/three_wolf_moon_case.jpg>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2014/04/three_wolf_moon_case.jpg
 
 The full assembly
 
-`|Final| <http://forthescience.org/blog/wp-content/uploads/2014/08/final.jpg>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2014/08/final.jpg
 
 This post closes the series, although I will do another post immediately
 after this one as an aggregating index. I am currently working on other
 two long-term projects, this time software related.
 
-.. |fan\_grid| image:: http://forthescience.org/blog/wp-content/uploads/2014/04/fan_grid.jpg
-.. |mechanical\_sweing\_needle| image:: http://forthescience.org/blog/wp-content/uploads/2014/04/mechanical_sweing_needle.jpg
-.. |three\_wolf\_moon\_case| image:: http://forthescience.org/blog/wp-content/uploads/2014/04/three_wolf_moon_case.jpg
-.. |Final| image:: http://forthescience.org/blog/wp-content/uploads/2014/08/final.jpg
