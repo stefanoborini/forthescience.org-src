@@ -4,14 +4,12 @@ Image self consistency from xkcd
 :author: Stefano
 :category: Mathematics, Websites
 :slug: image-self-consistency-from-xkcd
-:attachments: blog/wp-content/uploads/2010/01/piechart_100w_400b.png, blog/wp-content/uploads/2010/01/iter_0.png, blog/wp-content/uploads/2010/01/movie.gif, blog/wp-content/uploads/2010/01/piechart_convergence.gif, blog/wp-content/uploads/2010/01/piechart_convergence_2.gif, blog/wp-content/uploads/2010/01/piechart_convergence_2_cycle.gif, blog/wp-content/uploads/2010/01/piechart_convergence_cycle.gif
 
 I love `xkcd <http://xkcd.com>`_. A comic combining fun and math by
 definition has to be good and geeky and the author, Randall Munroe, is a
 real genius on this. The latest comic is pretty interesting
 
-[caption id="" align="alignnone" width="592" caption="xkcd, by Randall
-Munroe"]`|See xkcd for alt text| <http://xkcd.com/688/>`_[/caption]
+.. image:: http://imgs.xkcd.com/comics/self_description.png
 
 The image is self-descriptive, meaning that each graph represents
 information about the image itself. For example, the first panel
@@ -36,9 +34,7 @@ we found a solution (there could be more than one).
 
 Let's see it in action in a simplified form. I wrote two small python
 programs. They use matplotlib and the Python Image Library. The first
-(called piechart.py) creates a pie chart from a given data input
-
-::
+(called piechart.py) creates a pie chart from a given data input::
 
     import sys
     from matplotlib import pyplot
@@ -51,15 +47,12 @@ programs. They use matplotlib and the Python Image Library. The first
 
 If we call this program specifying two values (the absolute values are
 not important, as the pie chart shows relative amount), it draws the pie
-chart accordingly:
-
-::
+chart accordingly::
 
     python piechart.py 100 400 piechart_100w_400b.pdf
     convert -geometry 210x158 piechart_100w_400b.pdf piechart_100w_400b.png
 
-[caption id="attachment\_299" align="aligncenter" width="210"
-caption="Starting guess"]|Starting guess|[/caption]
+.. image:: http://forthescience.org/blog/wp-content/uploads/2010/01/iter_0.png
 
 This creates a pie chart where white is 1/5 of the pie chart area and
 black is 4/5. Please note that due to a setup problem of my matplotlib I
@@ -155,8 +148,7 @@ point where it does not change anymore: it achieved self-consistency,
 and it is representing itself. This is a movie of the various steps
 until convergence
 
-[caption id="attachment\_309" align="aligncenter" width="210"
-caption="Piechart convergence"]|Piechart convergence|[/caption]
+.. image:: http://forthescience.org/blog/wp-content/uploads/2010/01/piechart_convergence_cycle.gif
 
 What if we started from the other direction, namely, with a guess
 containing zero as the number of black pixels? The result would have
@@ -177,8 +169,7 @@ been the same
 Again, even with a different starting guess, we obtain the same result,
 here depicted as a movie
 
-[caption id="attachment\_308" align="aligncenter" width="210"
-caption="Piechar convergence 2"]|Piechar convergence 2|[/caption]
+.. image:: http://forthescience.org/blog/wp-content/uploads/2010/01/piechart_convergence_2_cycle.gif
 
 I hope this gave a brief explanation on how Randall achieved the
 self-consistent image. His case was more complex, having three plots.
@@ -186,7 +177,3 @@ Also, the comic is scribbled, so either he drew it by hand,
 approximating the computed result, or he performed some scribble-like
 transformation preserving the pixel count. I assume it is the former.
 
-.. |See xkcd for alt text| image:: http://imgs.xkcd.com/comics/self_description.png
-.. |Starting guess| image:: http://forthescience.org/blog/wp-content/uploads/2010/01/iter_0.png
-.. |Piechart convergence| image:: http://forthescience.org/blog/wp-content/uploads/2010/01/piechart_convergence_cycle.gif
-.. |Piechar convergence 2| image:: http://forthescience.org/blog/wp-content/uploads/2010/01/piechart_convergence_2_cycle.gif
