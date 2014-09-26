@@ -4,12 +4,12 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Stefano Borini'
 SITENAME = u'ForTheScience.org'
-SITESUBTITLE= u"A Blog about Science and Programming"
-SITEURL = 'http://forthescience.org/blog'
+SITESUBTITLE= u"Whatever..."
+SITEURL = 'http://forthescience.org/whatever'
 ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 
-PATH = 'content'
+PATH = 'content/whatever'
 PAGE_PATHS = ['pages']
 PAGE_URL = '{slug}'
 PAGE_SAVE_AS = '{slug}/index.html'
@@ -37,12 +37,12 @@ LINKS = (('GitHub', 'http://github.com/stefanoborini/'),
 
 # Social widget
 SOCIAL = ()
-PLUGIN_PATHS = ['plugins']
+PLUGIN_PATHS = ['../plugins']
 PLUGINS = ["googleplus_comments"]
 
 DEFAULT_PAGINATION = 10
 DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_TAGS_ON_SIDEBAR = False
-THEME = "themes/forthescience/"
+THEME = "themes/whatever/"
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True

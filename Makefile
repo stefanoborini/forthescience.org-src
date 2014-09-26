@@ -3,28 +3,8 @@ PELICAN?=pelican
 PELICANOPTS=
 
 BASEDIR=$(CURDIR)
-INPUTDIR=$(BASEDIR)/content
 OUTPUTDIR=$(BASEDIR)/output
-BLOGDIR=$(BASEDIR)/output/blog
-CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
-
-FTP_HOST=localhost
-FTP_USER=anonymous
-FTP_TARGET_DIR=/
-
-SSH_HOST=localhost
-SSH_PORT=22
-SSH_USER=root
-SSH_TARGET_DIR=/var/www
-
-S3_BUCKET=my_s3_bucket
-
-CLOUDFILES_USERNAME=my_rackspace_username
-CLOUDFILES_API_KEY=my_rackspace_api_key
-CLOUDFILES_CONTAINER=my_cloudfiles_container
-
-DROPBOX_DIR=~/Dropbox/Public/
 
 GITHUB_PAGES_BRANCH=master
 
@@ -33,13 +13,20 @@ ifeq ($(DEBUG), 1)
 	PELICANOPTS += -D
 endif
 
-html:
-	"$(PELICAN)" "$(INPUTDIR)" -o "$(BLOGDIR)" -s "$(CONFFILE)" $(PELICANOPTS)
+all: clean base blog whatever
+
+blog:
+	"$(PELICAN)" "$(BASEDIR)/content/blog" -o "$(BASEDIR)/output/blog" -s "$(BASEDIR)/config/blog.py" $(PELICANOPTS)
+
+whatever:
+	"$(PELICAN)" "$(BASEDIR)/content/whatever" -o "$(BASEDIR)/output/whatever" -s "$(BASEDIR)/config/whatever.py" $(PELICANOPTS)
+
+base:
 	cp extra/CNAME "$(OUTPUTDIR)"
 	cp extra/index.html "$(OUTPUTDIR)"
 	cp extra/gitignore "$(OUTPUTDIR)"/.gitignore
 
-upload:
+upload: all
 	cd "$(OUTPUTDIR)" && git add * && git commit -a -m "sync" && git push
 
 clean:
