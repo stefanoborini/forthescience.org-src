@@ -7,17 +7,17 @@ p {
 }
 
 article>h2 {
-    color: rgb(10, 167, 0);
+    color: rgb(0, 10, 167);
 }
 
 .navbar-brand {
-    color: rgb(10, 167, 0) !important;
+    color: rgb(0, 10, 167) !important;
     font-size: 32px;
 }
 
 .navbar {
-    background: linear-gradient(white, white, rgb(200, 255, 200));
-    border-color: #49CE23;
+    background: linear-gradient(white, white, rgb(200, 200, 255));
+    border-color: #4923CE;
 }
 
 #sidebar .list-group, #sidebar .list-group-item {

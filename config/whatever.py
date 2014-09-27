@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Stefano Borini'
-SITENAME = u'ForTheScience.org'
+SITENAME = u'Whatever...'
 SITESUBTITLE= u"Whatever..."
 SITEURL = 'http://forthescience.org/whatever'
 ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}/'
@@ -45,4 +45,4 @@ DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_TAGS_ON_SIDEBAR = False
 THEME = "themes/whatever/"
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+RELATIVE_URLS = False

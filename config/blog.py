@@ -38,11 +38,12 @@ LINKS = (('GitHub', 'http://github.com/stefanoborini/'),
 # Social widget
 SOCIAL = ()
 PLUGIN_PATHS = ['../plugins']
-PLUGINS = ["googleplus_comments"]
+PLUGINS = [] #["googleplus_comments"]
 
 DEFAULT_PAGINATION = 10
 DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_TAGS_ON_SIDEBAR = False
 THEME = "themes/blog/"
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+RELATIVE_URLS = False
+DISQUS_SITENAME = 'forthescience'
