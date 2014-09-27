@@ -32,7 +32,12 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 # Blogroll
-LINKS = (('GitHub', 'http://github.com/stefanoborini/'),
+LINKS = (
+         ('GitHub Account', 'http://github.com/stefanoborini/'),
+         ('LinkedIn Account', 'http://linkedin.com/in/stefanoborini'),
+         ('Reddit Links', 'http://reddit.com/r/esbio'),
+         ('My Whatever Blog', 'http://forthescience.org/whatever'),
+         ('My Gaia Blog', 'http://forthescience.org/gaia'),
          )
 
 # Social widget
