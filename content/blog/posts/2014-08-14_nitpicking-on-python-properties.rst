@@ -1,22 +1,20 @@
 Nitpicking on python properties
 ###############################
-:date: 2014-08-14 22:48
 :author: Stefano
 :category: Python
-:slug: nitpicking-on-python-properties
 
 I like python properties, I really do. Properties allow you to convert
 explicit setters and getters into lean code while keeping control of
 your operation. Instead of this
 
-::
+.. code-block:: python
 
     state.setMode(EditorMode.INSERT)
     current_mode = state.mode()
 
 with properties you can write a much more pleasant
 
-::
+.. code-block:: python
 
     state.mode = EditorMode.INSERT
     current_mode = state.mode
@@ -24,7 +22,7 @@ with properties you can write a much more pleasant
 In both cases, if it weren't for the magic of properties, you would get
 direct access to a member, but if you create your class like this
 
-::
+.. code-block:: python
 
     class State(object):
         def __init__(self):
@@ -95,7 +93,7 @@ Once again, it's a minor problem: you can use a special property
 accepting a tuple. For example, if you have values v1 and v2, on class
 Foo, you could have something like
 
-::
+.. code-block:: python
 
     class Foo(object): 
         def __init__(self): 
@@ -132,7 +130,7 @@ Foo, you could have something like
 There's some kind of magic behind properties that you can't perceive to
 be there when you read client code. For example, code like this
 
-::
+.. code-block:: python
 
     myobj.my_foo = 5
 
@@ -141,7 +139,7 @@ is not the case if my\_foo is a property. Maybe naming convention could
 disambiguate? I am not a fan of the strict PEP-8 requirements on naming
 of methods, so one could potentially decide for
 
-::
+.. code-block:: python
 
     myobj.myMethod()
     myobj.myProperty = 5
