@@ -10,6 +10,7 @@ definition has to be good and geeky and the author, Randall Munroe, is a
 real genius on this. The latest comic is pretty interesting
 
 .. image:: http://imgs.xkcd.com/comics/self_description.png
+   :alt: xkcd
 
 The image is self-descriptive, meaning that each graph represents
 information about the image itself. For example, the first panel
@@ -34,7 +35,9 @@ we found a solution (there could be more than one).
 
 Let's see it in action in a simplified form. I wrote two small python
 programs. They use matplotlib and the Python Image Library. The first
-(called piechart.py) creates a pie chart from a given data input::
+(called piechart.py) creates a pie chart from a given data input
+
+.. code-block:: python
 
     import sys
     from matplotlib import pyplot
@@ -47,12 +50,15 @@ programs. They use matplotlib and the Python Image Library. The first
 
 If we call this program specifying two values (the absolute values are
 not important, as the pie chart shows relative amount), it draws the pie
-chart accordingly::
+chart accordingly
+
+.. code-block:: bash
 
     python piechart.py 100 400 piechart_100w_400b.pdf
     convert -geometry 210x158 piechart_100w_400b.pdf piechart_100w_400b.png
 
 .. image:: http://forthescience.org/blog/wp-content/uploads/2010/01/iter_0.png
+   :alt: piechart convergence iteration 0
 
 This creates a pie chart where white is 1/5 of the pie chart area and
 black is 4/5. Please note that due to a setup problem of my matplotlib I
@@ -65,7 +71,7 @@ quick convergence.
 The second program is called imagedata.py and extracts size and number
 of white and black pixels from an image.
 
-::
+.. code-block:: python
 
     import sys
 
@@ -85,7 +91,7 @@ of white and black pixels from an image.
 If we run this program on the png image, it will tell us how many pixels
 are white, and how many are black.
 
-::
+.. code-block:: console
 
     $ python imagedata.py piechart_100w_400b.png
     210 158 23988 9192
@@ -98,7 +104,7 @@ our initial values of 20 % white and 80 % black.
 Now we create a new image, in agreement with the iterative procedure,
 passing the most recently obtained values
 
-::
+.. code-block:: bash
 
     python piechart.py 23988 9192 piechart_23988w_9192b.pdf
     convert -geometry 210x158 piechart_23988w_9192b.pdf piechart_23988w_9192b.png
@@ -106,7 +112,7 @@ passing the most recently obtained values
 and repeat the process. This becomes tedious very soon, so I wrote a
 driver (driver.sh) to perform the process for me
 
-::
+.. code-block:: bash
 
     # generates the starting guess
     python piechart.py 100 400 iter_0.pdf
@@ -124,9 +130,9 @@ driver (driver.sh) to perform the process for me
      step=$(($step+1))
     done
 
-If we run it, we immediately see a very interesting result:
+If we run it, we immediately see a very interesting result
 
-::
+.. code-block:: text
 
     step w   h  white black
     1 - 210 158 23988 9192
@@ -149,12 +155,13 @@ and it is representing itself. This is a movie of the various steps
 until convergence
 
 .. image:: http://forthescience.org/blog/wp-content/uploads/2010/01/piechart_convergence_cycle.gif
+   :alt: piechart convergence
 
 What if we started from the other direction, namely, with a guess
 containing zero as the number of black pixels? The result would have
-been the same
+been the same 
 
-::
+.. code-block:: text
 
     1 - 210 158 31750 1430
     2 - 210 158 31320 1860
@@ -170,6 +177,7 @@ Again, even with a different starting guess, we obtain the same result,
 here depicted as a movie
 
 .. image:: http://forthescience.org/blog/wp-content/uploads/2010/01/piechart_convergence_2_cycle.gif
+   :alt: piechart convergence
 
 I hope this gave a brief explanation on how Randall achieved the
 self-consistent image. His case was more complex, having three plots.

@@ -40,7 +40,7 @@ stripped? Then why the weird address at frame #6? I still don't know, but the
 idea of scrambling the stack was appealing. So I wrote this trivial program as
 a proof of concept, just for fun
 
-.. code-block:: C
+.. code-block:: c
 
    #include <stdio.h>
 
@@ -91,9 +91,7 @@ routine4 anymore, and rightly so::
 
 Thanks to strip, all symbols are gone and the debugger can only refer to
 addresses. I can only guess (but not a hard one) where the code is, by checking
-at which VM pages they are mapped to, and the entry point
-
-.. code::
+at which VM pages they are mapped to, and the entry point::
 
    (gdb) info file
    Symbols from "/Users/sbo/tmp/a.out".
@@ -210,7 +208,7 @@ program will behave correctly because when those addresses will be needed at
 return, the right address has been restored just a few instructions earlier.
 Let's see:
 
-.. code-block:: C
+.. code-block:: c
    
    int routine4() {
        asm("mov 8(%rsp), %rbx"); 
@@ -324,7 +322,7 @@ Now the backtrace is sane again and we are ready to return ::
 Now that we can reliably alter the stack frame, we can apply the same trick to
 our complete call hierarchy. Here is the full code:
 
-.. code-block:: C
+.. code-block:: c
 
    #include <stdio.h>
 

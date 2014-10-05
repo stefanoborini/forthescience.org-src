@@ -1,0 +1,1 @@
+../../blog/pages/three_blogs.rst
