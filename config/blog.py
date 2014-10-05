@@ -9,5 +9,5 @@ from common import *
 SITENAME = u'ForTheScience.org'
 SITESUBTITLE= u"A blog about Scientific Programming"
 SITEURL = 'http://forthescience.org/blog'
-PATH = 'content'
+PATH = 'content/blog'
 THEME = "themes/blog/"
