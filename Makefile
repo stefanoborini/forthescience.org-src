@@ -17,6 +17,7 @@ all: clean base blog whatever gaia
 
 blog:
 	"$(PELICAN)" "$(BASEDIR)/content/blog" -o "$(BASEDIR)/output/blog" -s "$(BASEDIR)/config/blog.py" $(PELICANOPTS)
+	cp -r extra/redirect/* "$(OUTPUTDIR)"/blog
 
 whatever:
 	"$(PELICAN)" "$(BASEDIR)/content/whatever" -o "$(BASEDIR)/output/whatever" -s "$(BASEDIR)/config/whatever.py" $(PELICANOPTS)
