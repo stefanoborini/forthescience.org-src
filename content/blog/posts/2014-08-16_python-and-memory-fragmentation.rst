@@ -61,7 +61,7 @@ additional unmovable barriers throughout the VM and reducing real estate
 for contiguous blocks. See for example what happens with 10 threads on
 Linux
 
-::
+.. code-block:: text
 
     (gdb) thread apply all print $esp
 
@@ -91,10 +91,10 @@ the second reserved for the kernel. If you must stay on 32 bits, your
 best bet is to give an additional gigabyte of VM with the following
 recipe (only valid for Windows-7)
 
-#. run bcdedit /set IncreaseUserVa 3072 as administrator, then reboot
+#. run ``bcdedit /set IncreaseUserVa 3072`` as administrator, then reboot
    the machine.
-#. mark your executable with EditBin.exe you\_program.exe
-   /LARGEADDRESSAWARE
+#. mark your executable with ``EditBin.exe yourprogram.exe
+   /LARGEADDRESSAWARE``
 
 With this command, the VM subdivision is set to 3GB+1GB, granting one
 additional gigabyte to your process. This improves the situation, but

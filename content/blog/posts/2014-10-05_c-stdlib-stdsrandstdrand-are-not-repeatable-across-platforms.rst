@@ -22,13 +22,17 @@ I recently observed that ``std::srand/std::rand`` are not required to yield the 
          std::cout << "Random value on [0 " << RAND_MAX << "]: " << random_variable << '\n';
     }
 
-Gives different results on Linux and Mac. On Linux ubuntu 12.04, it gives::
+Gives different results on Linux and Mac. On Linux ubuntu 12.04, it gives
+
+.. code-block:: text
 
     Random value on [0 2147483647]: 1756860556
     Random value on [0 2147483647]: 1141727289
     Random value on [0 2147483647]: 551934435
 
-On Mac OSX 10.8 gives instead::
+On Mac OSX 10.8 gives instead
+
+.. code-block:: text
 
     Random value on [0 2147483647]: 5596731
     Random value on [0 2147483647]: 1722461096

@@ -16,7 +16,9 @@ A quick search produced `this blog
 with great details on how to achieve my needs. I copy the details here for
 future reference. 
 
-Here I add a 1 second delay and a 0.4 packet loss in both directions::
+Here I add a 1 second delay and a 0.4 packet loss in both directions
+
+.. code-block:: console
 
     bash-3.2# ipfw add pipe 1 ip from any to 10.0.0.1
     00100 pipe 1 ip from any to 10.0.0.1

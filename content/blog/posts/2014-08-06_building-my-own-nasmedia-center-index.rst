@@ -9,7 +9,9 @@ Building my own NAS/Media center – Index
 This post is the final index for the nine posts detailing the
 construction of my NAS/media center.
 
-`|Final| <http://forthescience.org/blog/wp-content/uploads/2014/08/final.jpg>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2014/08/final.jpg
+   :alt: final
+   :width: 400px
 
 #. `Introduction <http://forthescience.org/blog/2013/12/05/building-my-own-nasmedia-center-part-1-introduction/>`_
 #. `Hardware <http://forthescience.org/blog/2014/01/05/building-my-own-nasmedia-center-part-2-hardware/>`_
@@ -27,4 +29,3 @@ construction of my NAS/media center.
 #. `BIOS update and final
    decorations <http://forthescience.org/blog/2014/08/05/building-my-own-nasmedia-center-part-9-bios-update-and-final-decorations/>`_
 
-.. |Final| image:: http://forthescience.org/blog/wp-content/uploads/2014/08/final.jpg
