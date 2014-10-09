@@ -45,6 +45,7 @@ attached it to the case.
 .. image:: http://forthescience.org/blog/wp-content/uploads/2014/04/fan_grid.jpg
    :alt: fan grid
    :width: 400px
+   :align: center
 
 Then, I started carving the outline with a sewing needle inserted into a
 mechanical pencil.
@@ -52,6 +53,7 @@ mechanical pencil.
 .. image:: http://forthescience.org/blog/wp-content/uploads/2014/04/mechanical_sweing_needle.jpg
    :alt: needle
    :width: 400px
+   :align: center
 
 Unfortunately I would have preferred to transfer the drawing with carbon
 paper, but I wasn't able to find it. After transferring the outline, I
@@ -65,12 +67,14 @@ better than I expected.
 .. image:: http://forthescience.org/blog/wp-content/uploads/2014/04/three_wolf_moon_case.jpg
    :alt: three wolf
    :width: 400px
+   :align: center
 
 The full assembly
 
 .. image:: http://forthescience.org/blog/wp-content/uploads/2014/08/final.jpg
    :alt: final
    :width: 400px
+   :align: center
 
 This post closes the series, although I will do another post immediately
 after this one as an aggregating index. I am currently working on other

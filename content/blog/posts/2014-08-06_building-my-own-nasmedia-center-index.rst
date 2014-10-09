@@ -12,6 +12,7 @@ construction of my NAS/media center.
 .. image:: http://forthescience.org/blog/wp-content/uploads/2014/08/final.jpg
    :alt: final
    :width: 400px
+   :align: center
 
 #. `Introduction <http://forthescience.org/blog/2013/12/05/building-my-own-nasmedia-center-part-1-introduction/>`_
 #. `Hardware <http://forthescience.org/blog/2014/01/05/building-my-own-nasmedia-center-part-2-hardware/>`_
