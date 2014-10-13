@@ -65,7 +65,7 @@ auto discovery was to `change the avahi
 configuration <http://tob.io/post/8383529336/fix-avahi-samba-with-os-x-lion>`_
 to add the following smb.service
 
-::
+.. code-block:: xml
 
     <?xml version=”1.0” standalone=’no’?><!—*-nxml-*—>
     <!DOCTYPE service-group SYSTEM “avahi-service.dtd”>
@@ -117,7 +117,7 @@ To enable AFP and serve files, I followed the tutorial step by step:
 installed netatalk (version 2.2.1 gets installed, so it should use
 encryption), configured the netatalk file /etc/default/netatalk with
 
-::
+.. code-block:: text
 
     ATALKD_RUN=no
     PAPD_RUN=no
@@ -129,7 +129,7 @@ encryption), configured the netatalk file /etc/default/netatalk with
 Then added the home and share volume to
 /etc/netatalk/AppleVolumes.default
 
-::
+.. code-block:: text
 
     :DEFAULT: options:upriv,usedots
     ~/ "$u home" cnidscheme:cdb
@@ -138,7 +138,7 @@ Then added the home and share volume to
 And finally putting the following line in /etc/netatalk/afpd.conf (and
 it should be the only line in the file)
 
-::
+.. code-block:: text
 
     - -tcp -noddp -uamlist uams_randnum.so,uams_dhx2.so -nosavepassword -advertise_ssh
 
@@ -153,7 +153,7 @@ configure avahi to advertise the service. As in the case of SMB, it's a
 matter of creating a proper XML file. I created
 /etc/avahi/services/afp.service
 
-::
+.. code-block:: xml
 
     <?xml version="1.0" standalone='no'?><!--*-nxml-*-->
     <!DOCTYPE service-group SYSTEM "avahi-service.dtd">
@@ -179,7 +179,7 @@ removed all the .AppleDB and .AppleDouble directories in my exported
 dirs, then changed the cnidscheme to dbd.
 
 AFP now works like a charm, except for a couple of things: first,
-it`comes with a range of
+it `comes with a range of
 caveats <http://netatalk.sourceforge.net/2.0/htmldocs/configuration.html#CNID-backends>`_,
 the most striking one is the problem handling symbolic links. I don't
 know how hard this can hit me, but I don't think it's a problem at the
@@ -245,7 +245,7 @@ tinkering. `This post describes how to do
 it <http://askubuntu.com/questions/47918/how-can-i-enable-wake-on-lan-permanently>`_.
 I installed ethtool and peeked the current setup with ethtool eth0
 
-::
+.. code-block:: text
 
     Supports Wake-on: pumbg
     Wake-on: g

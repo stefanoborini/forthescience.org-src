@@ -1,11 +1,8 @@
 Building my own NAS/Media center - Part 7 - Minecraft and PS3 SixAxis
 #####################################################################
-:date: 2014-06-05 15:10
 :author: Stefano
 :category: Hardware, Ubuntu
 :tags: center, media
-:slug: building-my-own-nasmedia-center-part-7-minecraft-and-ps3-sixaxis
-:attachments: blog/wp-content/uploads/2013/05/Screenshot-from-2013-05-24-202226.png, blog/wp-content/uploads/2013/05/Screenshot-from-2013-05-24-202515.png, blog/wp-content/uploads/2013/05/Screenshot-from-2013-05-24-202558.png
 
 How can I possibly live without minecraft? Downloading the Sun JRE is
 easy. From the Oracle website, I got the JRE-7u21, downloaded a .tar.gz
@@ -17,17 +14,20 @@ downloaded the software, a straightforward operation but when I finally
 started the game, all I got was a black screen with the following error
 message
 
-::
+.. code-block:: text
 
     Exception in thread "Thread-3" java.lang.UnsatisfiedLinkError:
     /home/sbo/.minecraft/bin/natives/liblwjgl.so: 
     /home/sbo/.minecraft/bin/natives/liblwjgl.so: wrong ELF class: ELFCLASS32 
     (Possible cause: architecture word width mismatch)
 
-Apparently, this is due to incorrect LD\_LIBRARY\_PATH setup and
-outdated libraries. I fixed with adding the following line to ~/.bashrc
-export
-LD\_LIBRARY\_PATH=$LD\_LIBRARY\_PATH:"/opt/oracle/java-7-oracle/lib/amd64/"
+Apparently, this is due to incorrect ``LD_LIBRARY_PATH`` setup and
+outdated libraries. I fixed with adding the following line to ``~/.bashrc``
+
+.. code-block:: text
+
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:"/opt/oracle/java-7-oracle/lib/amd64/"
+
 and `updating the LWJGL library as indicated
 here <http://www.minecraftwiki.net/wiki/Tutorials/Update_LWJGL>`_.
 
@@ -51,7 +51,7 @@ proprietary. That said, I did some research and got somewhere, although
 it's far from easy. Technically, the kernel recognizes the controller as
 soon as plugged in. dmesg says
 
-::
+.. code-block:: text
 
     [182796.359735] usb 2-1.1: new full-speed USB device number 16 using ehci_hcd
     [182796.469769] usb 2-1.1: New USB device found, idVendor=054c, idProduct=0268
@@ -82,8 +82,10 @@ the values to send to the applications (in an interval apparently
 between -32767 and 32768). After the step was completed, I could see the
 actual values fluctuate in jstest-gtk as I moved the controller around.
 
-`|Screenshot from 2013-05-24
-20:22:26| <http://forthescience.org/blog/wp-content/uploads/2013/05/Screenshot-from-2013-05-24-202226.png>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2013/05/Screenshot-from-2013-05-24-202226.png
+   :alt: image
+   :width: 400px
+   :align: center
 
 Now that I have a correct driver setup, I need to configure the mapping
 between the joypad events and the sending of actual game-useful events
@@ -103,8 +105,10 @@ for each axis, configured the events. For axis 1 (the left-right
 movement of the left analog stick) I wanted to have the player movement,
 so I set in the popup dialog as follows
 
-`|Screenshot from 2013-05-24
-20:25:15| <http://forthescience.org/blog/wp-content/uploads/2013/05/Screenshot-from-2013-05-24-202515.png>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2013/05/Screenshot-from-2013-05-24-202515.png
+   :alt: image
+   :width: 400px
+   :align: center
 
 Note the blue and red markers in the dialog. When you move the analog
 stick, a grey area increases. Hitting the blue marker makes it enter in
@@ -118,8 +122,10 @@ this case, I want to send mouse events. The blue marker is considered
 the zero. the red marker is considered the highest value for mouse
 action. I put my markers as follows
 
-`|Screenshot from 2013-05-24
-20:25:58| <http://forthescience.org/blog/wp-content/uploads/2013/05/Screenshot-from-2013-05-24-202558.png>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2013/05/Screenshot-from-2013-05-24-202558.png
+   :alt: image
+   :width: 400px
+   :align: center
 
 so that I don't get accidental movement by just brushing the stick (blue
 marker), and I get full speed a bit before hitting the maximum excursion
@@ -144,8 +150,7 @@ After a bit of trials, I came up with this redundant association. It's
 still experimental, but I really enjoy being able to set the digging
 action sticky by pressing square.
 
-::
-
+.. code-block:: text
      
     Joystick 1 {
      Axis 1: dZone 16768, +key 40, -key 38
@@ -176,6 +181,3 @@ my best efforts, I failed to pair the controller and the computer. I
 give up on this because it's not as important, and I can play with the
 cable just fine.
 
-.. |Screenshot from 2013-05-24 20:22:26| image:: http://forthescience.org/blog/wp-content/uploads/2013/05/Screenshot-from-2013-05-24-202226-155x300.png
-.. |Screenshot from 2013-05-24 20:25:15| image:: http://forthescience.org/blog/wp-content/uploads/2013/05/Screenshot-from-2013-05-24-202515-300x287.png
-.. |Screenshot from 2013-05-24 20:25:58| image:: http://forthescience.org/blog/wp-content/uploads/2013/05/Screenshot-from-2013-05-24-202558-300x241.png

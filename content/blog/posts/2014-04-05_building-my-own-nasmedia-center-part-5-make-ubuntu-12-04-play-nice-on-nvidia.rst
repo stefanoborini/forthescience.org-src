@@ -19,7 +19,7 @@ setup:
 #. Login. Open a terminal. Ignore any popup, and close any software
    manager emerging. Do
 
-   ::
+   .. code-block:: text
 
        sudo apt-get update
        sudo apt-get upgrade
@@ -31,13 +31,13 @@ setup:
    the "version current" of the NVIDIA driver.
 #. Do not reboot. Instead, open a terminal, do
 
-   ::
+   .. code-block:: text
 
        cat /etc/X11/xorg.conf
 
    If it contains something like
 
-   ::
+   .. code-block:: text
 
        Section "Device"
               Identifier "Default Device"
@@ -46,14 +46,14 @@ setup:
 
    this is wrong, and you have to issue the following command
 
-   ::
+   .. code-block:: text
 
        sudo nvidia-xconfig
 
    Disregard any VALIDATION ERROR messages. Check if the new xorg.conf
    file contains (among a lot of other things) something like this
 
-   ::
+   .. code-block:: text
 
        Section "Device"
               Identifier "Device0"
@@ -65,26 +65,22 @@ setup:
 #. Now you are using the Nvidia drivers. Test them with the following
    from a terminal
 
-   ::
+   .. code-block:: text
 
        sudo apt-get install mesa-utils
        glxgears
-
-   .. raw:: html
-
-      <p>
 
    You should get a nice spinning gearset. Close the glxgears window
 
 #. Edit the /etc/rc.local as root with the following command
 
-   ::
+   .. code-block:: text
 
        sudo vi /etc/rc.local
 
    and add the following line before the "exit 0"
 
-   ::
+   .. code-block:: text
 
        /usr/bin/nvidia-smi -pm 1
 

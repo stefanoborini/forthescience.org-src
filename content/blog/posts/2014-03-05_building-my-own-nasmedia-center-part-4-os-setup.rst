@@ -1,11 +1,8 @@
 Building my own NAS/Media center - Part 4 - OS setup
 ####################################################
-:date: 2014-03-05 18:19
 :author: Stefano
 :category: Hardware, Ubuntu
 :tags: center, media, nas
-:slug: building-my-own-nasmedia-center-part-4-os-setup
-:attachments: blog/wp-content/uploads/2013/06/IMG_3108.jpg, blog/wp-content/uploads/2013/06/IMG_3128.jpg
 
 As soon as I plugged the NAS to the electric socket, something was
 fishy. Apparently it starts up without any signal from the power button.
@@ -43,7 +40,10 @@ any appreciable difference in the fan speed. The CPU fan is working at
 in the BIOS, the CPU never enters low-power mode, so it's normal for the
 temperature to increase.
 
-`|IMG\_3108| <http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3108.jpg>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3108.jpg
+   :alt: image
+   :width: 400px
+   :align: center
 
 Nevertheless, I might have to monitor the situation. According to the
 Intel website, the `maximum temperature (Tcase) for the Core i3 is 69.1
@@ -175,7 +175,10 @@ out of the X session, instead of going back to lightdm, I got a `strange
 garbled text-only display
 instead <http://askubuntu.com/questions/285070/logging-out-leaves-the-display-in-a-garbled-state-unable-to-restart-x-or-switc>`_.
 
-`|IMG\_3128| <http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3128.jpg>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3128.jpg
+   :alt: image
+   :width: 400px
+   :align: center
 
 I followed the advice from user jazztickets, and tried various proposed
 solutions in the ubuntu forums, such as `adding an entry for udev to
@@ -195,7 +198,7 @@ something that was not possible before. Magic, or chance, I'll never
 know. In any case, I noted that I could not restart X manually due to
 the following error
 
-::
+.. code-block:: text
 
     NVIDIA: could not open the device file /dev/nvidia (Input/output error)
 
@@ -216,7 +219,7 @@ Formatting and encrypting the big hard drive
 The 3 terabyte big hard drive is correctly seen at boot and the entry is
 present in dmesg
 
-::
+.. code-block:: text
 
     [ 2.402539] scsi 1:0:0:0: Direct-Access ATA WDC WD30EZRX-00M 80.0 PQ: 0 ANSI: 5
     [ 2.402606] sd 1:0:0:0: Attached scsi generic sg1 type 0
@@ -227,7 +230,7 @@ apparently does not support disks so big. `I found this post extremely
 useful <http://amaras-tech.co.uk/article/158/Ubuntu,_formatting_a_3TB_drive>`_
 and I will give here just the essence of the operation
 
-::
+.. code-block:: text
 
     (parted) mklabel gpt
     Warning: The existing disk label on /dev/sdb will be destroyed and all data on
@@ -263,7 +266,7 @@ installation graphically. After the installation is completed, I had a
 "truecrypt" application in my application menu. Then I created the
 encrypted partition with
 
-::
+.. code-block:: text
 
     truecrypt -t -c /dev/sdb1
 
@@ -276,7 +279,7 @@ error. Being the disk new, I started being worried of a potential faulty
 drive. I checked the kernel logs with dmesg and got plenty of messages
 of this kind
 
-::
+.. code-block:: text
 
     [168480.771645] sd 1:0:0:0: [sdb] Unhandled error code
     [168480.771647] sd 1:0:0:0: [sdb]  
@@ -317,7 +320,7 @@ I won't really care. What I did was to set the driver on the SATA II
 channel (instead of the SATA III), change the cable, and simply do a
 quick truecrypt creation with
 
-::
+.. code-block:: text
 
     truecrypt -t -c --quick /dev/sdb1
 
@@ -325,21 +328,21 @@ This prevents encryption of the free space. I am not that paranoid. The
 result is that the filesystem is created and formatted instantly, and I
 can successfully mount it with
 
-::
+.. code-block:: text
 
     truecrypt /dev/sdb1 /media/test
 
 I decided to trim down the reserved space for root to 1%, since this is
 not a boot disk
 
-::
+.. code-block:: text
 
     sudo tune2fs -m 1 /dev/mapper/truecrypt1
 
 And finally, I have an encrypted filesystem on a really, really big
 disk.
 
-::
+.. code-block:: text
 
     Filesystem              Size  Used Avail Use% Mounted on
     /dev/mapper/truecrypt1  2.7T  201M  2.7T   1% /media/test
@@ -349,7 +352,7 @@ and "cfq" later. I had a lot of problems rsyncing a large external hard
 drive to the NAS. The whole computer froze, sshd dropped connections,
 and the processor temperature started raising. I simply did
 
-::
+.. code-block:: text
 
     echo "noop" >/sys/block/sdb/queue/scheduler
 
@@ -362,5 +365,3 @@ completely with random generated data. No problems at all, so I start to
 cast some personal doubts over the "deadline" scheduler, at least with
 my current setup.
 
-.. |IMG\_3108| image:: http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3108.jpg
-.. |IMG\_3128| image:: http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3128.jpg
