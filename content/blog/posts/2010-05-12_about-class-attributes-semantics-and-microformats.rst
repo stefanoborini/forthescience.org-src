@@ -17,7 +17,7 @@ the visual aspect changes.
 To bind the entities you describe in HTML with how they will appear, you
 use a standardized attribute, the **class**. An example is:
 
-::
+.. code-block:: html
 
     <div class="info">This is a message</div>
 
@@ -25,7 +25,7 @@ In this example, the **info** label is the class assigned to the content
 of the <div> HTML tag. Now you can change its appearance with a CSS
 directive like
 
-::
+.. code-block:: css
 
     .info {
        color: blue;
@@ -45,7 +45,7 @@ point of microformats is to grant semantics through ad-hoc class names
 that are not only used as a representational reference into the css, but
 also are assigned to a well-defined meaning. Example:
 
-::
+.. code-block:: html
 
      <div>
        <div>Joe Doe</div>
@@ -56,7 +56,7 @@ also are assigned to a well-defined meaning. Example:
 
 can be endowed with semantic meaning if you use the hCard microformat
 
-::
+.. code-block:: html
 
      <div class="vcard">
        <div class="fn">Joe Doe</div>

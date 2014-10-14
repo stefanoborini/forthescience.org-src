@@ -1,10 +1,7 @@
 A raytracer in python - part 2: rendering multiple objects
 ##########################################################
-:date: 2011-11-05 21:18
 :author: Stefano
 :category: Python, Raytracing
-:slug: a-raytracer-in-python-part-2-rendering-multiple-objects
-:attachments: blog/wp-content/uploads/2011/05/render1.png
 
 A quick addition needed to the raytracer is providing freedom to add
 more objects to the rendering scene. In Part 1, the design was such that
@@ -18,7 +15,7 @@ raytracer. This small program creates and renders a scene containing
 four spheres, a white one in the origin, the others along the axes, each
 with different colors.
 
-::
+.. code-block:: python
 
     import raytrace
     from raytrace import objects
@@ -48,7 +45,10 @@ with different colors.
 
 The resulting image is the following
 
-`|image0| <http://forthescience.org/blog/wp-content/uploads/2011/05/render1.png>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2011/05/render1.png
+   :alt: image
+   :width: 400px
+   :align: center
 
 Clearly, the white sphere is not visible, as it's hidden by the blue
 sphere. This test allowed me to discover a problem with orientation: the
@@ -108,7 +108,7 @@ commands the pixel color, since it's in front.
 
 I achieve this with the following code
 
-::
+.. code-block:: python
 
     def hit_bare_bones_object(self,ray):
        def f(o):
@@ -152,4 +152,3 @@ of this post is available
 here <https://github.com/stefanoborini/python-raytrace/tree/74521b39d6ebba01b7446b7353c9a7868407513b>`_.
 The code is under BSD license.
 
-.. |image0| image:: http://forthescience.org/blog/wp-content/uploads/2011/05/render1.png

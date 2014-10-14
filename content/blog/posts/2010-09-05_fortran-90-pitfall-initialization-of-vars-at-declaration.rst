@@ -8,7 +8,7 @@ Fortran 90 pitfall: initialization of vars at declaration
 I am dusting my Fortran 90 skills. One big gotcha that always leaves me
 baffled is the following. Suppose you write the following program
 
-::
+.. code-block:: fortran
 
     program test
       implicit none
@@ -29,7 +29,7 @@ baffled is the following. Suppose you write the following program
 
 If you expect the output to be
 
-::
+.. code-block:: text
 
     0
     5
@@ -40,7 +40,7 @@ you are right. This is indeed the output you get.
 
 Now consider the following slight different testsub routine
 
-::
+.. code-block:: fortran
 
     subroutine testsub()
       implicit none
@@ -56,7 +56,7 @@ declaration line. You wouldn't expect a big difference right ? Sorry to bring
 the news, but that's a completely different story. The output you will obtain
 is
 
-::
+.. code-block:: text
 
     0
     5
@@ -68,13 +68,13 @@ standard: local vars with initialization at declaration are
 automatically SAVE, so they preserve their content between subsequent calls (in
 C terms, they are local static). In other words, this statement
 
-::
+.. code-block:: fortran
 
     integer :: var = 0
 
 is totally equivalent to
 
-::
+.. code-block:: fortran
 
     integer, save :: var = 0
 

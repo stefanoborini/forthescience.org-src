@@ -6,7 +6,7 @@ base32 encoding in javascript
 I had to perform base32 encoding in javascript, and I found nothing
 ready for the task, so I started cramming out code, and here it is
 
-.. code:: javascript
+.. code-block:: javascript
 
     var baseenc = baseenc || {};
 
@@ -24,18 +24,18 @@ ready for the task, so I started cramming out code, and here it is
         }
 
         for (i = 0; i < quanta; i++) {
-           parts.push(alphabet.charAt(s.charCodeAt(i\*5) >> 3));
-           parts.push(alphabet.charAt( ((s.charCodeAt(i\*5) & 0x07) << 2)
-               | (s.charCodeAt(i\*5+1) >> 6)));
-           parts.push(alphabet.charAt( ((s.charCodeAt(i\*5+1) & 0x3F) >> 1) ));
-           parts.push(alphabet.charAt( ((s.charCodeAt(i\*5+1) & 0x01) << 4)
-               | (s.charCodeAt(i\*5+2) >> 4)));
-           parts.push(alphabet.charAt( ((s.charCodeAt(i\*5+2) & 0x0F) << 1)
-               | (s.charCodeAt(i\*5+3) >> 7)));
-           parts.push(alphabet.charAt( ((s.charCodeAt(i\*5+3) & 0x7F) >> 2)));
-           parts.push(alphabet.charAt( ((s.charCodeAt(i\*5+3) & 0x03) << 3)
-               | (s.charCodeAt(i\*5+4) >> 5)));
-           parts.push(alphabet.charAt( ((s.charCodeAt(i\*5+4) & 0x1F) )));
+           parts.push(alphabet.charAt(s.charCodeAt(i*5) >> 3));
+           parts.push(alphabet.charAt( ((s.charCodeAt(i*5) & 0x07) << 2)
+               | (s.charCodeAt(i*5+1) >> 6)));
+           parts.push(alphabet.charAt( ((s.charCodeAt(i*5+1) & 0x3F) >> 1) ));
+           parts.push(alphabet.charAt( ((s.charCodeAt(i*5+1) & 0x01) << 4)
+               | (s.charCodeAt(i*5+2) >> 4)));
+           parts.push(alphabet.charAt( ((s.charCodeAt(i*5+2) & 0x0F) << 1)
+               | (s.charCodeAt(i*5+3) >> 7)));
+           parts.push(alphabet.charAt( ((s.charCodeAt(i*5+3) & 0x7F) >> 2)));
+           parts.push(alphabet.charAt( ((s.charCodeAt(i*5+3) & 0x03) << 3)
+               | (s.charCodeAt(i*5+4) >> 5)));
+           parts.push(alphabet.charAt( ((s.charCodeAt(i*5+4) & 0x1F) )));
         }
 
         var replace = 0;

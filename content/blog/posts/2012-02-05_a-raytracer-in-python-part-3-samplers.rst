@@ -1,16 +1,16 @@
 A raytracer in python – part 3: samplers
 ########################################
-:date: 2012-02-05 02:02
 :author: Stefano
 :category: Python, Raytracing
-:slug: a-raytracer-in-python-%e2%80%93-part-3-samplers
-:attachments: blog/wp-content/uploads/2011/06/no-antialiasing.png, blog/wp-content/uploads/2011/06/antialiasing_explained.png, blog/wp-content/uploads/2011/06/antialiasing.png, blog/wp-content/uploads/2011/06/regular.png, blog/wp-content/uploads/2011/06/random-sampling.png, blog/wp-content/uploads/2011/06/jittered.png
 
 In the previous post, we explored a very basic way of plotting images:
 shooting a ray from the center of every pixel, and plot the color of the
 object we hit. The result is a rather flat, very jagged image
 
-`|image0| <http://forthescience.org/blog/wp-content/uploads/2011/06/no-antialiasing.png>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2011/06/no-antialiasing.png
+   :alt: image
+   :width: 400px
+   :align: center
 
 Border jagging arises from the fact that we are sampling with a discrete
 grid (our ViewPlane) an object that is smooth due to its functional
@@ -29,7 +29,11 @@ of rays that impact vs. the total number of rays sent from that pixel.
 This technique is known as
 `anti-aliasing <http://en.wikipedia.org/wiki/Anti-aliasing>`_.
 
-`|image1| <http://forthescience.org/blog/wp-content/uploads/2011/06/antialiasing_explained.png>`_ 
+.. image:: http://forthescience.org/blog/wp-content/uploads/2011/06/antialiasing_explained.png
+   :alt: image
+   :width: 400px
+   :align: center
+
 The figure details visually what said above: the real description of the sphere
 is smooth (left hand figure). Shooting one ray per pixel, and coloring the
 pixel according to hit/no-hit, produces either a fully colored pixel, or a
@@ -39,7 +43,10 @@ of rays, and per each pixel we perform weighting of the color.
 As a result, the jaggies in the sphere are replaced with a smoother,
 more pleasant transition
 
-`|image2| <http://forthescience.org/blog/wp-content/uploads/2011/06/antialiasing.png>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2011/06/antialiasing.png
+   :alt: image
+   :width: 400px
+   :align: center
 
 Choice of Samplers
 ------------------
@@ -56,7 +63,10 @@ artifacts for more complex situations. Plotting the position of the rays
 in the pixel will produce the following layout (for a 8x8 supersample
 grid)
 
-`|image3| <http://forthescience.org/blog/wp-content/uploads/2011/06/regular.png>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2011/06/regular.png
+   :alt: image
+   :width: 400px
+   :align: center
 
 As we see, the layout is regular on the grid of subcells (painted yellow
 and white for better visualization) that define the pixel. On the
@@ -73,7 +83,10 @@ random clumping, in particular for a small number of samples. This will
 unbalance the weighting leading to an incorrect evaluation. Plotting one
 distribution one may obtain
 
-`|image4| <http://forthescience.org/blog/wp-content/uploads/2011/06/random-sampling.png>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2011/06/random-sampling.png
+   :alt: image
+   :width: 400px
+   :align: center
 
 Note the uneven distribution of the points, leaving large parts not
 sampled and other parts oversampled. In addition, the vertical and
@@ -88,7 +101,10 @@ idea is to select the center of each subcell and apply randomization, so
 that each subcell produces only one ray, but without the artifact
 inducing regularity proper of the Regular sampler.
 
-`|image5| <http://forthescience.org/blog/wp-content/uploads/2011/06/jittered.png>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2011/06/jittered.png
+   :alt: image
+   :width: 400px
+   :align: center
 
 Computational cost impact
 -------------------------
@@ -134,14 +150,14 @@ The current implementation of python-raytrace `can be found at
 github <https://github.com/stefanoborini/python-raytrace/commit/00de858590b76929d216bfe0d53605ddcbde8548>`_.
 In this release, I added the samplers. Samplers are derived classes of
 the BaseSampler class, and are hosted in the samplers module. Derived
-Samplers must reimplement \_generate\_samples. Points are stored because
+Samplers must reimplement ``_generate_samples``. Points are stored because
 we want to be able to select sets at random as well as replay the same
-points. Samplers also reimplements the \_\_iter\_\_() method as a
+points. Samplers also reimplements the ``__iter__()`` method as a
 generator of (x,y) tuples, with x and y being in the interval [0.0,
 1.0). Once initialized, the Sampler can therefore be iterated over with
 a simple
 
-::
+.. code-block:: python
 
     for subpixel in sampler:
         # use subpixel
@@ -150,9 +166,3 @@ The World class can now be configured with different Samplers for the
 antialiasing. The default Sampler is a Regular 1 subpixel Sampler, which
 is the original one-ray-per-pixel sampling.
 
-.. |image0| image:: http://forthescience.org/blog/wp-content/uploads/2011/06/no-antialiasing.png
-.. |image1| image:: http://forthescience.org/blog/wp-content/uploads/2011/06/antialiasing_explained.png
-.. |image2| image:: http://forthescience.org/blog/wp-content/uploads/2011/06/antialiasing.png
-.. |image3| image:: http://forthescience.org/blog/wp-content/uploads/2011/06/regular.png
-.. |image4| image:: http://forthescience.org/blog/wp-content/uploads/2011/06/random-sampling.png
-.. |image5| image:: http://forthescience.org/blog/wp-content/uploads/2011/06/jittered.png

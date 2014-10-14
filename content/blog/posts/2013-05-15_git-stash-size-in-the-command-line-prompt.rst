@@ -1,9 +1,7 @@
 Git stash size in the command line prompt
 #########################################
-:date: 2013-05-15 12:42
 :author: Stefano
 :category: git
-:slug: git-stash-size-in-the-command-line-prompt
 
 Too often I get confused with git when it comes to stashes. I tend to
 stash often, as I jump from a task to another or from a branch to
@@ -16,7 +14,7 @@ I concocted this function and bash prompt to present (in proper color no
 less) the current amount of stashed items. This way I always know if I
 have stashes around
 
-::
+.. code-block:: bash
 
     function git_stash_size {
      lines=$(git stash list -n 100 2> /dev/null) || return

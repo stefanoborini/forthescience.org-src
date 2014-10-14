@@ -1,10 +1,8 @@
 Git hangs at clone? It could be a Type of Service issue.
 ########################################################
-:date: 2013-09-22 19:50
 :author: Stefano
 :category: Linux, MacOSX
 :tags: git, ssh
-:slug: git-hangs-at-clone-it-could-be-a-type-of-service-issue
 
 Today I was trying to download some code via git, and I got into a
 strange problem. When I ran git clone, it simply reported cloning into
@@ -13,7 +11,7 @@ not understand what was happening, and it took me a while to figure it
 out but here is the solution, at least to my problem. Add this to your
 .ssh/config
 
-::
+.. code-block:: text
 
     Host *
       IPQoS 0x00
@@ -28,7 +26,7 @@ What was the problem? Here are the symptoms:
    ssh'd to an external machine. For example, if I asked for an ls, it
    kind of got stuck, and I had to press enter every time to get further
    data. It was like acting with a constant "more".
--  using GIT\_TRACE, I found out that ssh negotiation was completely
+-  using ``GIT_TRACE``, I found out that ssh negotiation was completely
    successful and it got stuck at invoking git-upload-pack via ssh.
 
 Google didn't help. I changed versions of ssh and git, checked my router

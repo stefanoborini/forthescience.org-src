@@ -1,9 +1,7 @@
 Calling a C routine from python, the easy way
 #############################################
-:date: 2012-09-05 23:19
 :author: Stefano
 :category: Python
-:slug: calling-a-c-routine-from-python-the-easy-way
 
 I think it may be interesting for others to see how to call easily a C
 routine from python, without implementing a python module. What you need
@@ -21,7 +19,7 @@ not as a general recommendation.
 
 Nevertheless, suppose you want to call the function
 
-::
+.. code-block:: c
 
     double pow(double, double)
 
@@ -30,7 +28,7 @@ in the standard math library.
 The first thing to do is to define the prototype of the function. You
 achieve this via the following:
 
-::
+.. code-block:: python
 
     prototype=ctypes.CFUNCTYPE(ctypes.c_double, ctypes.c_double, ctypes.c_double)
 
@@ -40,7 +38,7 @@ second and third arguments).
 
 Now you have a prototype. This entity is a class
 
-::
+.. code-block:: python
 
     >>> prototype
     <class 'ctypes.CFunctionType'>
@@ -49,17 +47,16 @@ and you can bind this prototype to the actual function in the math
 library with the following. First you create an object representing the
 library
 
-::
+.. code-block:: python
 
     >>> dll=ctypes.cdll.LoadLibrary("libm.dylib") # on Mac. Linux use libm.so
 
 and then you bind to the actual function
 
-::
+.. code-block:: python
 
     >>> pow = prototype(("pow", dll))
     >>> pow(3,4)
     81.0
 
-This just brushes the surface, but I wanted to make a simple
-introductory post.
+This just brushes the surface, but I wanted to make a simple introductory post.

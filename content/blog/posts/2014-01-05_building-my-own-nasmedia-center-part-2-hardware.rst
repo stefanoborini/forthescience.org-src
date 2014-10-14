@@ -1,11 +1,8 @@
 Building my own NAS/Media center - Part 2 - Hardware
 ####################################################
-:date: 2014-01-05 00:08
 :author: Stefano
 :category: Hardware
 :tags: center, hacking, media, nas
-:slug: building-my-own-nasmedia-center-part-2-hardware
-:attachments: blog/wp-content/uploads/2013/06/IMG_3001.jpg, blog/wp-content/uploads/2013/06/IMG_3003.jpg, blog/wp-content/uploads/2013/06/IMG_3005.jpg, blog/wp-content/uploads/2013/06/IMG_3006.jpg, blog/wp-content/uploads/2013/06/IMG_3013.jpg, blog/wp-content/uploads/2013/06/IMG_3023.jpg, blog/wp-content/uploads/2013/06/IMG_3045.jpg, blog/wp-content/uploads/2013/06/IMG_3100.jpg, blog/wp-content/uploads/2013/06/IMG_3329.jpg, blog/wp-content/uploads/2013/06/IMG_3330.jpg, blog/wp-content/uploads/2013/06/IMG_3331.jpg, blog/wp-content/uploads/2013/06/IMG_3338.jpg, blog/wp-content/uploads/2013/06/IMG_3141.jpg
 
 To select the hardware, I mostly followed indications from various
 sources. `This blog had me started on the
@@ -22,16 +19,20 @@ choice I made.
 Motherboard: Zotac Z68-ITX WiFi Supreme
 ---------------------------------------
 
-`|Zotac Z68-ITX
-Supreme| <http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3005.jpg>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3005.jpg
+   :alt: image
+   :width: 400px
+   :align: center
 
 Price: 110.99 EUR on `salland.eu <http://www.salland.eu>`_
 
 This little mini-ITX motherboard has everything I need. Extremely
 compact and yet very powerful.
 
-`|Zotac Z68-ITX Supreme
-Hardware| <http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3013.jpg>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3013.jpg
+   :alt: image
+   :width: 400px
+   :align: center
 
 It supports Intel core i3/5/7 processors, so it leaves my options open
 when it comes to processor choice. It has an on-board nvidia (great for
@@ -42,8 +43,10 @@ details will follow on the subsequent posts.
 
 There are plenty of connection options in the back panel.
 
-`|Zotac Z68-ITX back
-panel| <http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3045.jpg>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3045.jpg
+   :alt: image
+   :width: 400px
+   :align: center
 
 Notice the presence of many different video output ports. This will
 become important later on, during graphics setup. There are also plenty
@@ -52,8 +55,10 @@ of USB ports, both on the panel and on-board, and an eSATA port.
 Processor: Intel Core i3 3.3 GHz tray
 -------------------------------------
 
-`|Intel Core
-I3| <http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3023.jpg>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3023-300x274.jpg
+   :alt: image
+   :width: 400px
+   :align: center
 
 Price: 107.99 EUR sold by salland.eu
 
@@ -72,8 +77,10 @@ case is at a premium.
 Processor cooling: Scythe Shuriken Rev.2 - SCSK-1100
 ----------------------------------------------------
 
-`|Schyte Shuriken Rev.
-B| <http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3003.jpg>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3003.jpg
+   :alt: image
+   :width: 400px
+   :align: center
 
 Price: 28.95 + 19.99 shipping = 48.94 GBP = 57.07 EUR sold by ADMI
 Limited
@@ -84,8 +91,10 @@ the perfect candidate for a HTPC case form factor.
 Thermal paste: Arctic Silver 5 3.5g Thermal Paste
 -------------------------------------------------
 
-`|Arctic
-Silver| <http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3141.jpg>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3141.jpg
+   :alt: image
+   :width: 400px
+   :align: center
 
 Price: 6.05 + 5.02 = 11.07 GBP = 12.91 EUR Sold by ADMI Limited
 
@@ -96,8 +105,10 @@ have my own Artic Silver syringe.
 Case: Techsolo TC-2200 Casing M-ATX HTPC 350 W Aluminium
 --------------------------------------------------------
 
-`|Techsolo
-mediacenter| <http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3001.jpg>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3001.jpg
+   :alt: image
+   :width: 400px
+   :align: center
 
 Price: 80.43 + 14.75 shipping = 95.18 GBP = 110.99 EUR from ALB Computer
 Germany via Amazon.co.uk
@@ -108,8 +119,10 @@ needs. Third, its small form factor. There's not a lot of disk slots
 available (only two, a 3.5 and a 5.25), I am not planning to build a
 disk farm.
 
-`|Techsolo
-TC-2200| <http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3006.jpg>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3006.jpg
+   :alt: image
+   :width: 400px
+   :align: center
 
 The case is also quite stylish and with plenty of features, including a
 remote control (which I am not using at the moment). Overall, I think
@@ -118,8 +131,10 @@ this case as excellent for my needs.
 Memory: Crucial SODIMM 2GBx2,204-pin,DDR3 PC3-10600,Cl=9,1.5v
 -------------------------------------------------------------
 
-`|Crucial
-SO-DIMM| <http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3100.jpg>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3100.jpg
+   :alt: image
+   :width: 400px
+   :align: center
 
 Price: 27.40 + 7.02 = 34.42 GBP = 40.14 EUR by: mopodo-uk
 
@@ -131,8 +146,10 @@ RAM is cheap, but less RAM is cheaper.
 Hard drive - WD Caviar Green 3000 GB, SATA, 64 MB, 5400 RPM
 -----------------------------------------------------------
 
-`|WD Caviar
-Green| <http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3329.jpg>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3329.jpg
+   :alt: image
+   :width: 400px
+   :align: center
 
 Price: 121,99 EUR from salland.eu
 
@@ -143,8 +160,10 @@ anymore.
 Case Fan - Scythe Glide Stream Zwart, 120 mm, 1000 Rpm
 ------------------------------------------------------
 
-`|Scythe Glide
-Stream| <http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3330.jpg>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3330.jpg
+   :alt: image
+   :width: 400px
+   :align: center
 
 Price 13,00 EUR from salland.eu
 
@@ -155,8 +174,10 @@ on the bottom vent of the case.
 Bluetooth dongle - Konig Micro USB
 ----------------------------------
 
-`|Bluetooth
-dongle| <http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3331.jpg>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3331.jpg
+   :alt: image
+   :width: 400px
+   :align: center
 
 Price: 13,00 EUR from salland.eu
 
@@ -167,7 +188,10 @@ media center turns active when I come back home.
 OS Hard drive - Unnamed Fujitsu
 -------------------------------
 
-`|Fujitsu| <http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3338.jpg>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3338.jpg
+   :alt: image
+   :width: 400px
+   :align: center
 
 Price: Unknown. Recovered from my Mac after replacement.
 
@@ -195,16 +219,3 @@ in Dutch.
 
 In the next post, I will start assembling the hardware.
 
-.. |Zotac Z68-ITX Supreme| image:: http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3005.jpg
-.. |Zotac Z68-ITX Supreme Hardware| image:: http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3013.jpg
-.. |Zotac Z68-ITX back panel| image:: http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3045.jpg
-.. |Intel Core I3| image:: http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3023-300x274.jpg
-.. |Schyte Shuriken Rev.  B| image:: http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3003.jpg
-.. |Arctic Silver| image:: http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3141.jpg
-.. |Techsolo mediacenter| image:: http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3001.jpg
-.. |Techsolo TC-2200| image:: http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3006.jpg
-.. |Crucial SO-DIMM| image:: http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3100.jpg
-.. |WD Caviar Green| image:: http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3329.jpg
-.. |Scythe Glide Stream| image:: http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3330.jpg
-.. |Bluetooth dongle| image:: http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3331.jpg
-.. |Fujitsu| image:: http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3338.jpg

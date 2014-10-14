@@ -1,11 +1,8 @@
 Exploring Mandelbrot parameter space – part 1
 #############################################
-:date: 2010-11-01 16:19
 :author: Stefano
 :category: Fractals
 :tags: mandelbrot
-:slug: exploring-mandelbrot-parameter-space-%e2%80%93-part-1
-:attachments: blog/wp-content/uploads/2010/10/freepaper.png, blog/wp-content/uploads/2010/10/graphpaper.png, blog/wp-content/uploads/2010/10/mandelbrots.png, blog/wp-content/uploads/2010/10/z0_plane_1.png, blog/wp-content/uploads/2010/10/z0_plane_zoom.png, blog/wp-content/uploads/2010/10/z0_features.png, blog/wp-content/uploads/2010/10/mandelbrot-shade.png
 
 Some time ago, I presented an `interesting python
 code <http://forthescience.org/blog/2010/07/12/the-mandelbrot-set-in-python/>`_
@@ -40,9 +37,10 @@ This exploration of the bond between a possible value for
 properties. Let's try to see visually what's going on. Imagine there's a
 plane of possible values of *z*\ :sub:`*0*`\ 
 
-[caption id="attachment\_1222" align="aligncenter" width="496"
-caption="The plane of the possible values of
-z0"]`|image0| <http://forthescience.org/blog/wp-content/uploads/2010/10/freepaper.png>`_[/caption]
+.. image:: http://forthescience.org/blog/wp-content/uploads/2010/10/freepaper.png
+   :alt: image
+   :width: 400px
+   :align: center
 
 For each point on this plane, there's an associated Mandelbrot Set
 image. The traditional Mandelbrot is associated to the origin of this
@@ -53,10 +51,10 @@ choose to stick the actual Mandelbrot images on this plane, imagining
 that the lower left corner of each image indicates the *z*\ :sub:`*0*`\ 
 point that image comes from
 
-[caption id="attachment\_1228" align="aligncenter" width="496"
-caption="Mandelbrot sets for particular points of z0"]`|Mandelbrot sets
-for particular points of
-z0| <http://forthescience.org/blog/wp-content/uploads/2010/10/mandelbrots.png>`_[/caption]
+.. image:: http://forthescience.org/blog/wp-content/uploads/2010/10/mandelbrots.png
+   :alt: image
+   :width: 400px
+   :align: center
 
 As I already stated, the lower left corner "points to" the
 *z*\ :sub:`*0*`\  point. You see, along the *x* axis, images for the
@@ -71,18 +69,20 @@ others. In order to achieve this, I need to do exactly what I did above,
 but with smaller images with respect to the size of the "graph paper"
 image. The results are quite interesting
 
-[caption id="attachment\_1229" align="aligncenter" width="508"
-caption="z0 plane. Zoom out"]`|z0 plane. Zoom
-out| <http://forthescience.org/blog/wp-content/uploads/2010/10/z0_plane_1.png>`_[/caption]
+.. image:: http://forthescience.org/blog/wp-content/uploads/2010/10/z0_plane_1.png
+   :alt: image
+   :width: 400px
+   :align: center
 
 The image above shows the *z*\ :sub:`*0*`\  plane. It is built with the
 same concept given for the very simple case above: many Mandelbrot
 images, whose corner refers to the actual point on the plane. To
 demonstrate you this is the case, if I zoom in what I see is this
 
-[caption id="attachment\_1230" align="aligncenter" width="455"
-caption="z0 plane zoom in"]`|z0 plane zoom
-in| <http://forthescience.org/blog/wp-content/uploads/2010/10/z0_plane_zoom.png>`_[/caption]
+.. image:: http://forthescience.org/blog/wp-content/uploads/2010/10/z0_plane_zoom.png
+   :alt: image
+   :width: 400px
+   :align: center
 
 A collection of very tiny, very low resolution Mandelbrots, each of them
 associated to a specific point of the *z*\ :sub:`*0*`\  plane. I had to
@@ -93,9 +93,10 @@ The interesting fact about this plot is that it contains fractal
 features as well! Looking carefully on the left, and playing with the
 zoom, I obtained this image
 
-[caption id="attachment\_1231" align="aligncenter" width="523"
-caption="z0 features"]`|z0
-features| <http://forthescience.org/blog/wp-content/uploads/2010/10/z0_features.png>`_[/caption]
+.. image:: http://forthescience.org/blog/wp-content/uploads/2010/10/z0_features.png
+   :alt: image
+   :width: 400px
+   :align: center
 
 I suggest you click on the image (so to get a bigger version) and
 observe it from afar. The ramifications typical of fractals will be
@@ -110,7 +111,10 @@ of white points it has, and I color the pixel of the *z*\ :sub:`*0*`\
 plane of a different shade, depending on the amount of "whiteness"
 showed by the corresponding Mandelbrot. The result ?
 
-`|image5| <http://forthescience.org/blog/wp-content/uploads/2010/10/mandelbrot-shade.png>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2010/10/mandelbrot-shade-300x300.png
+   :alt: image
+   :width: 400px
+   :align: center
 
 Click to enlarge. The above image was created from the number of totally
 white pixels (scaled from 0 to 255 against the maximum) in a series of
@@ -127,9 +131,3 @@ second core to work, I won't get very far. The next step is therefore to
 get a better plot at a reduced cost, eventually accepting some
 compromises. Stay tuned.
 
-.. |image0| image:: http://forthescience.org/blog/wp-content/uploads/2010/10/freepaper.png
-.. |Mandelbrot sets for particular points of z0| image:: http://forthescience.org/blog/wp-content/uploads/2010/10/mandelbrots.png
-.. |z0 plane. Zoom out| image:: http://forthescience.org/blog/wp-content/uploads/2010/10/z0_plane_1.png
-.. |z0 plane zoom in| image:: http://forthescience.org/blog/wp-content/uploads/2010/10/z0_plane_zoom.png
-.. |z0 features| image:: http://forthescience.org/blog/wp-content/uploads/2010/10/z0_features.png
-.. |image5| image:: http://forthescience.org/blog/wp-content/uploads/2010/10/mandelbrot-shade-300x300.png

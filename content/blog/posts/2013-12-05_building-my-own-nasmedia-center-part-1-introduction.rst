@@ -75,10 +75,9 @@ had
 #. Is an LGA 1155 socket compatible with an LGA 1156. *No, but they are
    for cooler purposes*
 #. How many processors are available today, and which one should I get?
-   *`Too
-   many <http://en.wikipedia.org/wiki/List_of_Intel_microprocessors#64-bit_processors:_Intel_64_.E2.80.93_Sandy_Bridge_.2F_Ivy_Bridge_microarchitecture>`_.
+   `Too many <http://en.wikipedia.org/wiki/List_of_Intel_microprocessors#64-bit_processors:_Intel_64_.E2.80.93_Sandy_Bridge_.2F_Ivy_Bridge_microarchitecture>`_.
    In addition to the plenty of i3/5/7 models, Intel also has restored
-   the Pentium name for recent processors.*
+   the Pentium name for recent processors.
 #. Sandy bridge, Ivy bridge? Ok, bored now.
 
 Overwhelmed with the details, I asked a friend for help and checked some

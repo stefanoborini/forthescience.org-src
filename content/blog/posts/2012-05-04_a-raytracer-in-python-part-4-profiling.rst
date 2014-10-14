@@ -1,9 +1,7 @@
 A raytracer in python – part 4: profiling
 #########################################
-:date: 2012-05-04 00:19
 :author: Stefano
 :category: Python, Raytracing
-:slug: a-raytracer-in-python-%e2%80%93-part-4-profiling
 
 After having finally obtained a raytracer which produces antialiasing,
 it is now time to take a look at performance. We already saw some
@@ -19,7 +17,7 @@ To perform basic profiling, I used the cProfile program provided in the
 standard library. It appears that the longest processing time is in the
 hit() function
 
-::
+.. code-block:: text
 
     $ python -m cProfile -s time test3.py
      Ordered by: internal time
@@ -50,7 +48,7 @@ perform line-by-line profiling. This is not possible with the standard
 python cProfile module, therefore I searched and found an alternative,
 `line\_profiler <http://packages.python.org/line_profiler/>`_:
 
-::
+.. code-block:: console
 
     $ easy_install-2.7 --prefix=$HOME line_profiler
     $ kernprof.py -l test3.py
@@ -61,17 +59,17 @@ Before running the commands above, I added the @profile decorator to the
 method I am interested in. This decorator is added by line\_profiler to
 the \_\_builtin\_\_ module, so no explicit import statement is needed.
 
-::
+.. code-block:: python
 
     class Sphere(object):
-        <...>
-        @profile
+        <..>
+        @profile
         def hit(self, ray):
-             <...>
+             <..>
 
 The results of this profiling are
 
-::
+.. code-block:: text
 
     Line # Hits  Time    Per Hit  % Time Line Contents
     ==============================================================
@@ -104,7 +102,7 @@ The results of this profiling are
 Therefore, it appears that most of the time is spent in this chunk of
 code:
 
-::
+.. code-block:: python
 
     temp = ray.origin - self.center
     a = numpy.dot(ray.direction, ray.direction)
@@ -119,7 +117,7 @@ overhead relevant ? Maybe: `Python has a relevant call
 overhead <http://wiki.python.org/moin/PythonSpeed/PerformanceTips#Data_Aggregation>`_,
 but a very simple program like this
 
-::
+.. code-block:: python
 
     def main():
         def f():
@@ -149,7 +147,7 @@ possible, mostly because I don't know how things will become later on.
 
 The profiling showed two hot spots in World.render(), in the inner loop:
 
-::
+.. code-block:: text
 
     Line #      Hits         Time  Per Hit   % Time  Line Contents
     ==============================================================
@@ -168,7 +166,7 @@ to perform operations in the Sphere.hit slow lines. At this point I'm
 not sure I can trust numpy.array, and I decide to remove it completely
 replacing arrays with tuples. The result is pleasing
 
-::
+.. code-block:: text
 
     $ time python test3.py
     real    0m31.215s
@@ -182,14 +180,14 @@ but also any operation in numpy that may create numpy arrays as a
 consequence, such as calling numpy.dot on two tuples instead of a
 trivial implementation such as
 
-::
+.. code-block:: python
 
     def dot(a,b):
         return a[0]*b[0]+a[1]*b[1]+a[2]*b[2]
 
 in fact, if I use numpy.dot on tuples in Sphere.hit():
 
-::
+.. code-block:: python
 
      a = numpy.dot(ray.direction, ray.direction)
      b = 2.0 * numpy.dot(temp, ray.direction)

@@ -1,10 +1,7 @@
 A raytracer in python – part 6: cameras
 #######################################
-:date: 2013-09-05 14:58
 :author: Stefano
 :category: Python, Raytracing
-:slug: a-raytracer-in-python-%e2%80%93-part-6-cameras
-:attachments: blog/wp-content/uploads/2011/08/lens.png
 
 In the `latest commit for the raytracer, I added
 cameras <https://github.com/stefanoborini/python-raytrace/commit/c5fc3a3c97c46d75d378f6e8c0fa4b53a0efa7b2>`_.
@@ -35,10 +32,10 @@ objects are in focus for a Pinhole camera (left picture) which has no
 depth of field by construction, and become more out of focus as the lens
 size increases (1.0 in the center picture, 5.0 in the right one)
 
-[caption id="attachment\_1811" align="aligncenter" width="600"
-caption="From left to right, PinholeCamera, LensCamera with lens size
-1.0, LensCamera with lens size
-5.0"]`|Focusing| <http://forthescience.org/blog/wp-content/uploads/2011/08/lens.png>`_[/caption]
+.. image:: http://forthescience.org/blog/wp-content/uploads/2011/08/lens.png
+   :alt: image
+   :width: 400px
+   :align: center
 
 Other cameras may technically be possible: the book goes further in
 deploying fisheye and stereoscopic cameras, but I am not interested in
@@ -78,4 +75,3 @@ fully python raytracer with optional C/CUDA high-performance code to
 achieve the same task. For CUDA tinkering, I will switch back to my old
 friend, the mandelbrot set.
 
-.. |Focusing| image:: http://forthescience.org/blog/wp-content/uploads/2011/08/lens.png

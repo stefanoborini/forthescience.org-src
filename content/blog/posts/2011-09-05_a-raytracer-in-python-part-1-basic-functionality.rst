@@ -1,10 +1,7 @@
 A raytracer in python - part 1: basic functionality
 ###################################################
-:date: 2011-09-05 23:53
 :author: Stefano
 :category: Books, Python, Raytracing
-:slug: a-raytracer-in-python-part-1-basic-functionality
-:attachments: blog/wp-content/uploads/2011/05/render.png, blog/wp-content/uploads/2011/05/ray.py_.txt
 
 Some time ago I visited Sydney, and I made a tragic mistake: I entered
 the University bookshop. Why a mistake, you say? I am book maniac. As
@@ -37,7 +34,10 @@ Raytracing is a technique to produce a photorealistic image. It works by
 projecting rays from the observer to the scene, and coloring pixels on a
 viewplane for every ray that intersects an object.
 
-`|image0| <http://en.wikipedia.org/wiki/File:Ray_trace_diagram.svg>`_
+.. image:: http://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Ray_trace_diagram.svg/500px-Ray_trace_diagram.svg.png
+   :alt: image
+   :width: 400px
+   :align: center
 
 This mechanism resembles how vision works, although in the opposite
 direction. Light rays from a lamp hit objects and their reflection
@@ -64,11 +64,10 @@ program,
 does exactly that. You will need to install the Python Imaging Library,
 pygame and numpy. The result is intriguing:
 
-[caption id="attachment\_1682" align="aligncenter" width="320"
-caption="A rendered
-sphere"]`|image1| <http://forthescience.org/blog/wp-content/uploads/2011/05/render.png>`_[/caption]
+.. image:: http://forthescience.org/blog/wp-content/uploads/2011/05/render.png
+   :alt: image
+   :width: 400px
+   :align: center
 
 Ok, I have a very loose definition of "intriguing", but it's a start.
 
-.. |image0| image:: http://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Ray_trace_diagram.svg/500px-Ray_trace_diagram.svg.png
-.. |image1| image:: http://forthescience.org/blog/wp-content/uploads/2011/05/render.png

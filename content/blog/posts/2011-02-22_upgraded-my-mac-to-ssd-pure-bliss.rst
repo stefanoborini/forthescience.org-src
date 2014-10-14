@@ -1,13 +1,14 @@
 Upgraded my mac to SSD == pure bliss
 ####################################
-:date: 2011-02-22 00:55
 :author: Stefano
 :category: Hardware, MacOSX, Software
-:slug: upgraded-my-mac-to-ssd-pure-bliss
-:attachments: blog/wp-content/uploads/2011/02/OWC.jpg
 
-`|image0| <http://forthescience.org/blog/wp-content/uploads/2011/02/OWC.jpg>`_I
-recently bought this 240 Gigabytes of awesomeness, conveniently packed
+.. image:: http://forthescience.org/blog/wp-content/uploads/2011/02/OWC.jpg
+   :alt: image
+   :width: 400px
+   :align: center
+
+I recently bought this 240 Gigabytes of awesomeness, conveniently packed
 into a 2.5" SATA box. It's an `Other World Computing Mercury Extreme
 Solid State Hard
 Drive <http://eshop.macsales.com/shop/internal_storage/Mercury_Extreme_SSD_Sandforce>`_.
@@ -138,4 +139,3 @@ I now have the old hard drive and an external USB-SATA case. I could
 format it and use it as an external disk, or keep it as a safety backup
 system. I decided for the latter.
 
-.. |image0| image:: http://forthescience.org/blog/wp-content/uploads/2011/02/OWC.jpg

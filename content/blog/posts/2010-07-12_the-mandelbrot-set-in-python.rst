@@ -1,21 +1,11 @@
 The Mandelbrot set, in python
 #############################
-:date: 2010-07-12 19:02
 :author: Stefano
 :category: Fractals, Python
-:slug: the-mandelbrot-set-in-python
-:attachments: blog/wp-content/uploads/2010/05/mandelbrot.png, blog/wp-content/uploads/2010/05/mandelbrot-x.gif, blog/wp-content/uploads/2010/05/mandelbrot-y.gif, blog/wp-content/uploads/2010/05/mandelbrot-xy.gif
-
-*Hello StumbleUpon users. I am writing two additional posts on the
-Mandelbrot set, and you may be interested in them. `The first one is
-here <http://forthescience.org/blog/2010/11/01/exploring-mandelbrot-parameter-space-%e2%80%93-part-1/>`_.
-`The second one is
-here <http://forthescience.org/blog/2010/11/15/exploring-mandelbrot-parameter-space-part-2/>`_.
-Thank you for your interest!*
 
 This code is so fascinating
 
-::
+.. code-block:: python
 
     from PIL import Image
 
@@ -48,9 +38,10 @@ This code is so fascinating
 If you execute the python code above, the result is this beautiful and
 mysterious picture:
 
-[caption id="attachment\_642" align="aligncenter" width="300"
-caption="Mandelbrot Set"]`|Mandelbrot
-Set| <http://forthescience.org/blog/wp-content/uploads/2010/05/mandelbrot.png>`_[/caption]
+.. image:: http://forthescience.org/blog/wp-content/uploads/2010/05/mandelbrot.png
+   :alt: image
+   :width: 400px
+   :align: center 
 
 What you see is a `Fractal <http://en.wikipedia.org/wiki/Fractal>`_, a
 highly fractured geometric picture, and more specifically one of the
@@ -98,28 +89,30 @@ how the Mandelbrot Set changes when *z*\ :sub:`*0*`\  goes from -3 to 3
 (step 0.1). The set "blows away" towards the left, when going either
 towards -3 or +3.
 
-.. figure:: http://forthescience.org/blog/wp-content/uploads/2010/05/mandelbrot-x.gif
+.. image:: http://forthescience.org/blog/wp-content/uploads/2010/05/mandelbrot-x.gif
    :align: center
    :alt: mandelbrot-change-x
+   :width: 400px
 
 If you change *z*\ :sub:`*0*`\  along the imaginary axis, going from
 -3.0 i to 3.0 i, what you obtain is instead:
 
-.. figure:: http://forthescience.org/blog/wp-content/uploads/2010/05/mandelbrot-y.gif
+.. image:: http://forthescience.org/blog/wp-content/uploads/2010/05/mandelbrot-y.gif
    :align: center
    :alt: mandelbrot-change-imaginary
+   :width: 400px
 
 It blows away towards the right. So I said, what happens if I increase
 both the real part and the imaginary part together? will they "balance
 out" ? Not really. It burns away
 
-.. figure:: http://forthescience.org/blog/wp-content/uploads/2010/05/mandelbrot-xy.gif
+.. image:: http://forthescience.org/blog/wp-content/uploads/2010/05/mandelbrot-xy.gif
    :align: center
    :alt: mandelbrot-xy
+   :width: 400px
 
 I have absolutely no idea of what all this means from the strict
 mathematical point of view, except the fact that I am exploring the
 space of the values of *z*\ :sub:`*0*`\  and how the Mandelbrot changes
 accordingly. I thought it was just cool to try it out.
 
-.. |Mandelbrot Set| image:: http://forthescience.org/blog/wp-content/uploads/2010/05/mandelbrot.png
