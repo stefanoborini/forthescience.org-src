@@ -1,9 +1,7 @@
 Multithreaded testing
 #####################
-:date: 2008-02-27 21:20
 :author: Stefano
 :category: Python, Testing
-:slug: multithreaded-testing
 
 Suppose you have to perform tests. Lots of tests. Functional tests,
 where each test could take a lot of time.
@@ -20,7 +18,7 @@ You install `testoob <http://testoob.sourceforge.net/>`_. This thing is
 life-changing, believe me.
 So, let's see an example. Suppose you have this test:
 
-::
+.. code-block:: python
 
     import unittest
     import time
@@ -37,7 +35,7 @@ So, let's see an example. Suppose you have this test:
 
 If you run it, the whole testcase will take 8 seconds.
 
-::
+.. code-block:: text
 
     ..
     ----------------------------------------------------------------------
@@ -47,7 +45,7 @@ If you run it, the whole testcase will take 8 seconds.
 
 But if you install testoob, now you have a nice executable
 
-::
+.. code-block:: text
 
     stefano$ testoob test.py 
     ..
@@ -58,7 +56,7 @@ But if you install testoob, now you have a nice executable
 Here is the magic: run it with the option --threads=2 and the result is
 served in just 5 seconds:
 
-::
+.. code-block:: console
 
     stefano$ testoob --threads=2 test.py 
     ..

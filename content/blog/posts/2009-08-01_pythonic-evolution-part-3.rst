@@ -1,10 +1,7 @@
 Pythonic Evolution - Part 3
 ###########################
-:date: 2009-08-01 04:22
 :author: Stefano
 :category: Evolution, Python
-:slug: pythonic-evolution-part-3
-:attachments: blog/wp-content/uploads/2009/08/bacteria.py
 
 You are welcome to take a look at `Part
 1 <http://forthescience.org/blog/2009/05/15/pythonic-evolution-part-1/>`_
@@ -64,14 +61,14 @@ environment becomes more and more selective.
 Enough general chatting. Let's see an actual example. In the program you
 can download, the following conditions are set for the environment
 
-::
+.. code-block:: python
 
     e.setConditions([(0,7),(2,11),(4,15),(5,17)])
 
 As you can see, the environment expects the bacteria to be able to solve
 the equation 2x+7. The line
 
-::
+.. code-block:: python
 
     e.epoch(1.0,0.0, 20)
 
@@ -82,7 +79,7 @@ to solve exactly 2x+7 for all the specified points (x=0,2,4,5).
 
 Suppose we have a bacterium in the pool with the following genetic code:
 
-::
+.. code-block:: text
 
     IncX -3             # a = n | x = -3 | y = 0
     AddYtoA             # a = n | x = -3 | y = 0
@@ -93,7 +90,7 @@ Suppose we have a bacterium in the pool with the following genetic code:
 As you can see, this bacterium will return the input value unchanged.
 This means that the result and relative error for each condition will be
 
-::
+.. code-block:: text
 
     Given  | Expected | Produced | abs(Relative Error)
     0      | 7        | 0        | 7/7 = 1.0
@@ -111,7 +108,7 @@ will be killed in Generation 3, as the tolerance is now 0.8.
 
 Let's see another example
 
-::
+.. code-block:: text
 
     MoveAtoY     # a = n   | x = 0 | y = n
     IncA  3      # a = n+3 | x = 0 | y = n
@@ -121,7 +118,7 @@ Let's see another example
 
 In this case, we get
 
-::
+.. code-block:: text
 
     Given  | Expected | Produced | abs(Relative Error)
     0      | 7        | 3        | 4/7 = 0.57
@@ -136,7 +133,8 @@ In this case, we get
 Much better. Of course, the best condition would be something like this
 (chose a long one, just for illustrative purpose)
 
-::
+.. code-block:: text
+
 
     MoveAtoY    # a = n    | x = 0 | y = n
     IncX 3      # a = n    | x = 3 | y = n
@@ -151,7 +149,7 @@ Much better. Of course, the best condition would be something like this
 This bacterium returns exactly what the environment expects. This as
 well
 
-::
+.. code-block:: text
 
     BranchXNotZero 2   # a = n    | x = 0 | y = 0 | no branch
     LoadY 1            # a = n    | x = 0 | y = 1
@@ -186,7 +184,7 @@ situation. First of all, there's an important codon which is not present
 combinations allows you to potentially obtain the solution. This is one
 I wrote by hand:
 
-::
+.. code-block:: text
 
     MoveAtoX
     MoveAtoY

@@ -7,7 +7,7 @@ sys.path.append(os.path.dirname(__file__))
 from common import *
 
 SITENAME = u'Whatever...'
-SITESUBTITLE= u"Whatever..."
+SITESUBTITLE= u"crosses my mind"
 SITEURL = 'http://forthescience.org/whatever'
 
 PATH = 'content/whatever'

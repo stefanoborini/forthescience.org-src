@@ -37,10 +37,12 @@ DISQUS_SITENAME = 'forthescience'
 
 # Blogroll
 LINKS = (
+         ('My Programming Blog', 'http://forthescience.org/blog'),
+         ('My Whatever Blog', 'http://forthescience.org/whatever'),
+         ('My Gaia Blog', 'http://forthescience.org/gaia'),
          ('GitHub Account', 'http://github.com/stefanoborini/'),
          ('LinkedIn Account', 'http://linkedin.com/in/stefanoborini'),
          ('Reddit Links', 'http://reddit.com/r/esbio'),
-         ('My Whatever Blog', 'http://forthescience.org/whatever'),
-         ('My Gaia Blog', 'http://forthescience.org/gaia'),
+         ('Scientific Papers', "http://www.researcherid.com/rid/A-4542-2009"),
          )
 

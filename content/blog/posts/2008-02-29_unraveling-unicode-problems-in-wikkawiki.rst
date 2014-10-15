@@ -1,9 +1,7 @@
 Unraveling Unicode problems in WikkaWiki
 ########################################
-:date: 2008-02-29 21:41
 :author: Stefano
 :category: Unicode
-:slug: unraveling-unicode-problems-in-wikkawiki
 
 While I was setting up the wiki, I realized some problems with
 non-English letters, such as ö. Therefore I had to find out more details
@@ -89,13 +87,13 @@ with umlaut).
 To solve, I basically changed the default meta tag content in WikkaWiki,
 from
 
-::
+.. code-block:: html
 
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 
 to
 
-::
+.. code-block:: html
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 

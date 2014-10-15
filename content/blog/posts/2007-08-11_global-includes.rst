@@ -1,9 +1,7 @@
 Global includes
 ###############
-:date: 2007-08-11 16:07
 :author: Stefano
 :category: Computer Science
-:slug: global-includes
 
 Sometimes in my programmer career I did this mistake: a big global
 header file that gets included by most, if not all the files in my
@@ -40,7 +38,7 @@ effectively making your future maintainer life more difficult: you lose
 information about what is really used by the code and what is not.
 Compare for example:
 
-::
+.. code-block:: c
 
     globals.h:
 
@@ -56,7 +54,7 @@ Compare for example:
 
 With the more communicative
 
-::
+.. code-block:: c
 
     file.c:
 

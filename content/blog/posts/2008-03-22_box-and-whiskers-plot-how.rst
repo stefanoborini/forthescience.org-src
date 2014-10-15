@@ -1,20 +1,16 @@
 Box and Whiskers plot. How ?
 ############################
-:date: 2008-03-22 19:56
 :author: Stefano
 :category: R, Statistics
-:slug: box-and-whiskers-plot-how
-:attachments: blog/wp-content/uploads/2008/03/box_and_whiskers.jpg
 
 I am trying to produce box and whiskers plots. Actually, not the plot in
 itself, but the values for the boxes, the whiskers and so on. An example
 of box and whiskers is the following
 
-.. figure:: http://forthescience.org/blog/wp-content/uploads/2008/03/box_and_whiskers.jpg
+.. image:: http://forthescience.org/blog/wp-content/uploads/2008/03/box_and_whiskers.jpg
    :align: center
-   :alt: box\_and\_whiskers.jpg
-
-   box\_and\_whiskers.jpg
+   :width: 400px
+   :alt: image
 
 Browsing the net, I found that many sites just explain that a box plot
 is made according to the following recipe:
@@ -46,13 +42,13 @@ be found on `Wikipedia <http://en.wikipedia.org/wiki/Box_plot>`_:
 
 As an example, the following set of 15 values in R
 
-::
+.. code-block:: r
 
     > a=c(2,2,3,3,3,4,4,5,6,6,6,6,8,12,13)
 
 have Q2 = 5, Q1 = 3 and Q3 = 6
 
-::
+.. code-block:: r
 
     > quantile(a)
       0%  25%  50%  75% 100% 
@@ -60,7 +56,7 @@ have Q2 = 5, Q1 = 3 and Q3 = 6
 
 The IQR is therefore 6-3 = 3
 
-::
+.. code-block:: r
 
     > IQR(a)
     [1] 3
@@ -72,7 +68,7 @@ by 2 and 8 (the lowest and highest values in the dataset that are not
 outliers). The result is the plot you see above.
 You can obtain the values for the box and whiskers as
 
-::
+.. code-block:: r
 
     > boxplot.stats(a)
     $stats

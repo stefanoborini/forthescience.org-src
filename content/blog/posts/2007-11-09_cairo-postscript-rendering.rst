@@ -1,10 +1,8 @@
 Cairo PostScript rendering
 ##########################
-:date: 2007-11-09 19:29
 :author: Stefano
 :category: C/C++, Graphics, PostScript
 :slug: cairo-postscript-rendering
-:attachments: blog/wp-content/uploads/2007/11/cairo_rendering.png
 
 I am trying to render vector graphics with alpha blending. Too bad,
 PostScript, even Level 3, does not support alpha blending. This means
@@ -33,7 +31,7 @@ out that even Cairo gives up in rendering PostScript vector graphics
 with alpha blending. For example, this code draws non-blended circles
 (alpha = 1.0), producing a vector based PostScript
 
-::
+.. code-block:: c
 
     int main (int argc, char *argv[]) {
             cairo_surface_t *surface;
@@ -69,11 +67,15 @@ with alpha blending. For example, this code draws non-blended circles
 
 However, if you replace
 
-``cairo_set_source_rgba (cr, 1.0, 0.0, 0.0, 1.0);``
+.. code-block: c
+
+    cairo_set_source_rgba (cr, 1.0, 0.0, 0.0, 1.0);
 
 with
 
-``cairo_set_source_rgba (cr, 1.0, 0.0, 0.0, 0.5);``
+.. code-block: c
+
+    cairo_set_source_rgba (cr, 1.0, 0.0, 0.0, 0.5);
 
 consequently enabling the need for alpha blending, things change. The
 final PostScript file contains a rastered image, not a vector
@@ -85,16 +87,22 @@ The picture show the three different cases. From left to right,
 PostScript backend without alpha blending, PostScript backend with alpha
 blending, and PDF backend with alpha blending.
 
-`|Rendering with different alpha blending levels and backend
-renderers| <http://forthescience.org/blog/wp-content/uploads/2007/11/cairo_rendering.png>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2007/11/cairo_rendering.png
+   :alt: image
+   :width: 400px
+   :align: center
 
 The PDF output was obtained by changing the line
 
-``surface = (cairo_surface_t *)cairo_ps_surface_create (filename, 80.0, 80.0);``
+.. code-block: c
+
+    surface = (cairo_surface_t *)cairo_ps_surface_create (filename, 80.0, 80.0);
 
 to
 
-``surface = (cairo_surface_t *)cairo_pdf_surface_create (filename, 80.0, 80.0);``
+.. code-block: c
+
+    surface = (cairo_surface_t *)cairo_pdf_surface_create (filename, 80.0, 80.0);
 
 and of course changing also the file name accordingly. Please note that
 both PostScript images were converted to PDF using ps2pdf before being
@@ -117,4 +125,3 @@ of a vector format.
 Despite this, I think Cairo is a very nice and powerful library to
 render vector graphics in a programmatic way. Kudos to the implementors!
 
-.. |Rendering with different alpha blending levels and backend renderers| image:: http://forthescience.org/blog/wp-content/uploads/2007/11/cairo_rendering.png

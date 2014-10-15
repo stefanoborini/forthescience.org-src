@@ -1,9 +1,7 @@
 Pythonic Evolution - Part 2
 ###########################
-:date: 2009-05-23 23:16
 :author: Stefano
 :category: Evolution, Python
-:slug: pythonic-evolution-part-2
 
 This is the second part of a post relative to evolution. You can find
 the first part of the post
@@ -156,7 +154,7 @@ mathematical food.
 
 This is the most trivial one
 
-::
+.. code-block:: text
 
     Return
 
@@ -168,7 +166,7 @@ give him 5, it returns 5. You give him 13, it returns 13.
 
 A more interesting case is the following:
 
-::
+.. code-block:: text
 
     IncA 5
     Return

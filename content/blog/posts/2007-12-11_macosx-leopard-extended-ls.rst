@@ -1,9 +1,7 @@
 MacOSX Leopard extended ls
 ##########################
-:date: 2007-12-11 11:33
 :author: Stefano
 :category: MacOSX
-:slug: macosx-leopard-extended-ls
 
 Apparently, something changed in the ``ls`` command with the release of
 Leopard. I don't remember seeing this kind of report on Tiger, although
@@ -11,7 +9,7 @@ it looks like the features already existed since long time. Now, take
 this information with a grain of salt, as I am not a MacOSX expert, just
 a (very busy) occasional tinkerer on this OS.
 
-::
+.. code-block:: text
 
     drwxr-xr-x   5 stefano  stefano     170  9 Ott 10:11 Programs
     drwxr-xr-x+  4 stefano  stefano     136  1 Ago 01:48 Public
@@ -26,7 +24,7 @@ According to the manual page, the plus symbol means that the file has
 extended security information, meaning ACLs. It is possible to print out
 this information with the option ``-e`` to the ``ls`` command.
 
-::
+.. code-block:: console
 
     stefano:~ stefano$ ls -led Public/
     drwxr-xr-x+ 4 stefano  stefano  136  1 Ago 01:48 Public/
@@ -34,7 +32,7 @@ this information with the option ``-e`` to the ``ls`` command.
 
 Of course, you can also change the ACL information using chmod
 
-::
+.. code-block:: console
 
     stefano:~ stefano$ chmod +ai "guest allow write" Public/
     stefano:~ stefano$ ls -le Public/
@@ -45,7 +43,7 @@ Of course, you can also change the ACL information using chmod
 
 And you can remove the ACLs
 
-::
+.. code-block:: console
 
     stefano:~ stefano$ chmod -a# 1 Public
     stefano:~ stefano$ chmod -a# 0 Public
@@ -60,7 +58,7 @@ behavior is due to my setup or an actual bug.
 Then, what about the at symbol? This feature is undocumented, but if you
 add the ``-@`` option to ``ls -l`` you will obtain the meaning:
 
-::
+.. code-block:: console
 
     stefano:~ stefano$ ls -l@ executable\ network.eps
     -rw-r--r--@ 1 stefano  stefano  221814 20 Ott 20:12 executable network.eps
@@ -74,7 +72,7 @@ second entry is the size of the contents of the attribute.
 You can peek into the contents of the attributes with the command
 ``xattr``:
 
-::
+.. code-block:: console
 
     stefano:~ stefano$ xattr -p com.apple.ResourceFork executable\ network.eps >unknown_content
     stefano:~ stefano$ file unknown_content
