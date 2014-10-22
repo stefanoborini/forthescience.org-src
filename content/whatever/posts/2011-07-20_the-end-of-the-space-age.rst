@@ -8,12 +8,13 @@ The end of the space age
 
 Today, an era ends.
 
-[caption id="attachment\_1786" align="aligncenter" width="500"
-caption="Credit:
-Nasa"]`|image0| <http://www.nasa.gov/multimedia/imagegallery/image_feature_1592.html>`_[/caption]
+.. image:: http://forthescience.org/blog/wp-content/uploads/2011/07/shuttle.jpg
+   :alt: image
+   :width: 600px
+   :align: center
 
-Today the last Shuttle, Atlantis, is scheduled to land for the last time
-, closing the era of the Shuttle missions, and basically the Space age.
+Today the last Shuttle, Atlantis, is scheduled to land for the last time,
+closing the era of the Shuttle missions, and basically the Space age.
 
 Why I say so?
 
@@ -40,11 +41,17 @@ weightless darkness that can kill and amaze you.
 
 The country who gave us this:
 
-`|image1| <http://en.wikipedia.org/wiki/File:Apollo_11_first_step.jpg>`_
+.. image:: http://upload.wikimedia.org/wikipedia/commons/1/1e/Apollo_11_first_step.jpg
+   :alt: image
+   :width: 600px
+   :align: center
 
 and this
 
-`|image2| <http://en.wikipedia.org/wiki/File:Space_Shuttle_Columbia_launching.jpg>`_
+.. image:: http://upload.wikimedia.org/wikipedia/commons/4/41/Space_Shuttle_Columbia_launching.jpg
+   :alt: image
+   :width: 600px
+   :align: center
 
 Today `puts in this
 activity <http://en.wikipedia.org/wiki/Budget_of_NASA>`_ less money than
@@ -59,6 +66,3 @@ That's 7 % and 3.9 % respectively of the DoD budget. These are the
 numbers I found. As accurate they may be, still they explain a lot about
 the current status of the country.
 
-.. |image0| image:: http://forthescience.org/blog/wp-content/uploads/2011/07/shuttle.jpg
-.. |image1| image:: http://upload.wikimedia.org/wikipedia/commons/1/1e/Apollo_11_first_step.jpg
-.. |image2| image:: http://upload.wikimedia.org/wikipedia/commons/4/41/Space_Shuttle_Columbia_launching.jpg

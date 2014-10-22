@@ -26,7 +26,7 @@ TRANSLATION_FEED_ATOM = None
 # Social widget
 SOCIAL = ()
 PLUGIN_PATHS = ['../plugins']
-PLUGINS = [] #["googleplus_comments"]
+PLUGINS = ['pelican_youtube'] #["googleplus_comments"]
 
 DEFAULT_PAGINATION = 10
 DISPLAY_CATEGORIES_ON_MENU = False

@@ -27,7 +27,10 @@ works, how it can break, and where it comes from. Too much to resist.
 After you place your order, they send you a sampling container, which is
 a test tube with a buffer solution in the cap.
 
-`|image0| <http://forthescience.org/blog/wp-content/uploads/2012/04/23andme.jpg>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2012/04/23andme.jpg
+   :alt: image
+   :width: 600px
+   :align: center
 
 What I found out is appealing: I learned that genetically I am a very
 healthy person, confirmed some hypotheses about my ancestors, and
@@ -48,4 +51,3 @@ not knowing, regardless how bad it can be. Knowledge may also allow to
 take action whenever possible, but for some conditions there's not much
 to be done.
 
-.. |image0| image:: http://forthescience.org/blog/wp-content/uploads/2012/04/23andme.jpg

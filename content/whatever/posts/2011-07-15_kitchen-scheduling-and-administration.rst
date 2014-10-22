@@ -1,9 +1,7 @@
 Kitchen scheduling and administration
 #####################################
-:date: 2011-07-15 13:49
 :author: Stefano
 :category: Project Management, TV
-:slug: kitchen-scheduling-and-administration
 
 I don't like TV, but occasionally I get to something that pokes my
 brain. I am an interested observer of a TV "reality show" called
@@ -90,8 +88,7 @@ schedule tough, and there are no regular vacations, but if you get
 proficient enough and you have some good professional connections and a
 bit of luck, you can get to work on one of these
 
-`|image0| <http://en.wikipedia.org/wiki/File:MSMajestyOfTheSeasEdit1.JPG>`_
+.. image:: http://upload.wikimedia.org/wikipedia/commons/thumb/9/95/MSMajestyOfTheSeasEdit1.JPG/400px-MSMajestyOfTheSeasEdit1.JPG
 
 It kind of helps... I think.
 
-.. |image0| image:: http://upload.wikimedia.org/wikipedia/commons/thumb/9/95/MSMajestyOfTheSeasEdit1.JPG/400px-MSMajestyOfTheSeasEdit1.JPG

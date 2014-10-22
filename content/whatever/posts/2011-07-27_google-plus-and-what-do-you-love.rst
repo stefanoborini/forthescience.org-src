@@ -1,10 +1,8 @@
 "Google plus" and "What do you love"
 ####################################
-:date: 2011-07-27 20:31
 :author: Stefano
 :category: Opinion
 :tags: google, plus
-:slug: google-plus-and-what-do-you-love
 
 Since its release, I got access to Google+ and started playing with it,
 so I feel obliged to join the crowd and state something about it.
@@ -39,12 +37,12 @@ reasons, all boiling down to two main concerns of privacy and relevance:
    we mean with a label assigned to a social connection, which in most
    cases is nuanced to the level of the single person. Squashing it flat
    reminds me of Orwell's 1984
-   `Newspeak <http://en.wikipedia.org/wiki/Newspeak>`_: *"remove all
+   `Newspeak <http://en.wikipedia.org/wiki/Newspeak>`_: "remove all
    shades of
    `meaning <http://en.wikipedia.org/wiki/Meaning_%28linguistic%29>`_
    from language, leaving simple
    `dichotomies <http://en.wikipedia.org/wiki/Dichotomy>`_ (pleasure and
-   pain, happiness and sadness, goodthink and crimethink)*" (quote from
+   pain, happiness and sadness, goodthink and crimethink)" (quote from
    wikipedia). Human lives generate data, and this is the information
    age. We want to have our life, our data, our experiences and memories
    accessible to humans and computers for many practical and
@@ -72,9 +70,9 @@ posting links, images and Google Maps position were already Wave
 features, also provided by some Wave widget plugins. I would not be
 surprised to see the old Wave widget plugins to become Google+
 applications soon, so you can play chess with a friend on Google+, while
-others watch and comment the moves (**Edit : two weeks after this post
+others watch and comment the moves (Edit: two weeks after this post
 went live, `google announced google+
-games <http://googleblog.blogspot.com/2011/08/games-in-google-fun-that-fits-your.html>`_)**.
+games <http://googleblog.blogspot.com/2011/08/games-in-google-fun-that-fits-your.html>`_).
 Visibility of a post is nothing but the Wave's adding people to, or
 removing from, the post participants list. Google+ also introduces the
 social graph features not present in Wave with a strategy similar to

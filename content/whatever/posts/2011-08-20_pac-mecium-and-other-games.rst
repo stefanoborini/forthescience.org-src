@@ -1,9 +1,7 @@
 Pac-mecium and other games
 ##########################
-:date: 2011-08-20 15:23
 :author: Stefano
 :category: Biology
-:slug: pac-mecium-and-other-games
 
 This is a rather peculiar use of
 `paramecia <http://en.wikipedia.org/wiki/Paramecium>`_: by directing
@@ -13,4 +11,6 @@ field (a property called
 we can use them as player characters in videogames. I don't expect this
 to become common gaming, though.
 
-http://www.youtube.com/watch?v=Pdx7BkYSCq4
+.. youtube:: Pdx7BkYSCq4
+   :width: 600
+   :align: center
