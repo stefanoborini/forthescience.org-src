@@ -3,7 +3,7 @@ Undefined symbols for Fortran module variables in static library on OSX. Problem
 
 If you program in Fortran on the Mac, you might meet this odd problem. You have a module test.f90 containing nothing but public variables
 
-.. code:: fortran
+.. code-block:: fortran
 
     module Test
         implicit none
@@ -12,7 +12,7 @@ If you program in Fortran on the Mac, you might meet this odd problem. You have 
 
 and a program
 
-.. code:: fortran
+.. code-block:: fortran
 
     program main
         use Test
@@ -20,16 +20,20 @@ and a program
 
         value = 5
         print *, value
-    end program<
+    end program
 
-If you try and compile as follows, you have no problems::
+If you try and compile as follows, you have no problems
+
+.. code-block:: console
 
     ifort -c test.f90
     ifort -c main.f90
     ifort main.o test.o
     ./a.out
 
-However, if you package the test.o in a test.a static library::
+However, if you package the test.o in a test.a static library
+
+.. code-block:: console
 
     ar cru test.a test.o
     ranlib test.a

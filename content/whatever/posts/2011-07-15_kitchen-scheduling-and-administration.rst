@@ -89,6 +89,9 @@ proficient enough and you have some good professional connections and a
 bit of luck, you can get to work on one of these
 
 .. image:: http://upload.wikimedia.org/wikipedia/commons/thumb/9/95/MSMajestyOfTheSeasEdit1.JPG/400px-MSMajestyOfTheSeasEdit1.JPG
+   :alt: image
+   :width: 400px
+   :align: center
 
 It kind of helps... I think.
 
