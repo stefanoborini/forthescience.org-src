@@ -1,1 +1,0 @@
-../../blog/pages/about.rst
