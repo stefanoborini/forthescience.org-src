@@ -102,8 +102,7 @@ properties (meaning: it makes easier the creation of a copy of itself).
 Likely candidates are vulcanic activity, electric discharges
 (lightnings), or panspermia. I tend to favor the electric discharge,
 coupled with catalysis by means of metals (found in the rocks). After
-all, the `Miller-Urey
-experiment <http://en.wikipedia.org/wiki/Miller-Urey_experiment>`_
+all, the `Miller-Urey experiment <http://en.wikipedia.org/wiki/Miller-Urey_experiment>`_
 demonstrated that if you mix and boil and discharge electricity long
 enough, you will generate aminoacids out of simple gases like water,
 methane, nitrogen and ammonia, something that it was present for sure
@@ -144,7 +143,7 @@ logical tasks. The codons are:
 -  **MoveAtoY**: copies the content of A into Y.
 -  **AddYtoA**: performs the sum between the content of A and Y, and
    stores the result in A.
--  **BranchXZero**,**BranchXNotZero**: jumps a specified number of
+-  **BranchXZero**, **BranchXNotZero**: jumps a specified number of
    codons forward (or backwards) if the content of the variable X is
    zero or not-zero, respectively.
 -  **Return**: terminates the execution of the genetic code.

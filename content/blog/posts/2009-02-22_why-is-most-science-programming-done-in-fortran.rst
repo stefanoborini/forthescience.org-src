@@ -78,7 +78,7 @@ to python for most comparison:
    if not impossible, to use traditional design patterns.
 -  Fortran does not have exceptions (F2003 will, but not custom ones, as
    far as I know).
--  Fortran has IMPLICIT. (Edit: yes, it has IMPLICIT NONE, but the
+-  Fortran has IMPLICIT. (Edit: yes, it has ``IMPLICIT NONE``, but the
    existence of implicit declaration is unfortunately abused still
    today. It should have been deprecated.)
 -  Fortran (77) does not have aggregated data types and dynamic memory
@@ -90,7 +90,7 @@ to python for most comparison:
    you cannot make more room to an allocated string if needed.
 -  Fortran did not have clear interfacing with C, and every compiler did
    as it pleased. Apparently this is no longer true with the
-   introduction of BIND.
+   introduction of ``BIND``.
 -  No effective tools exist for documenting the code or easily perform
    Test Driven Development.
 -  Libraries out there are targeted at computational tasks. I haven't

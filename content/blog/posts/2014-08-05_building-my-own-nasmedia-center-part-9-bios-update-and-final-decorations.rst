@@ -60,6 +60,10 @@ paper, but I wasn't able to find it. After transferring the outline, I
 shaded the result adding proper hair-like scratches. Here is just a
 sample of the procedure
 
+.. youtube:: b3bzGd8WZdg
+   :width: 600
+   :align: center
+
 I then scratched the moon and added a few stars with the Dremel. I can't
 say I am an artist, but I had a good time doing it, and the result is
 better than I expected.

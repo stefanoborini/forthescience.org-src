@@ -67,13 +67,13 @@ with alpha blending. For example, this code draws non-blended circles
 
 However, if you replace
 
-.. code-block: c
+.. code-block:: c
 
     cairo_set_source_rgba (cr, 1.0, 0.0, 0.0, 1.0);
 
 with
 
-.. code-block: c
+.. code-block:: c
 
     cairo_set_source_rgba (cr, 1.0, 0.0, 0.0, 0.5);
 
@@ -94,13 +94,13 @@ blending, and PDF backend with alpha blending.
 
 The PDF output was obtained by changing the line
 
-.. code-block: c
+.. code-block:: c
 
     surface = (cairo_surface_t *)cairo_ps_surface_create (filename, 80.0, 80.0);
 
 to
 
-.. code-block: c
+.. code-block:: c
 
     surface = (cairo_surface_t *)cairo_pdf_surface_create (filename, 80.0, 80.0);
 

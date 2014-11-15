@@ -1,27 +1,25 @@
 Hard disk going ballistic on OSX ?
 ##################################
-:date: 2009-02-27 14:18
 :author: Stefano
 :category: MacOSX
-:slug: hard-disk-going-ballistic-on-osx
 
 Sometimes it happens to me that my hard drive starts being accessed in a
 very aggressive and noisy way. I found a couple of commands to see who
 is responsible:
 
-::
+.. code-block:: console
 
     sudo fs_usage -f filesys
 
 and also
 
-::
+.. code-block:: console
 
     sudo iotop
 
 In the last one, you could get error messages like
 
-::
+.. code-block:: console
 
     dtrace: error on enabled probe ID ....
 

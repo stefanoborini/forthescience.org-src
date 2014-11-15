@@ -1,16 +1,14 @@
 Using contexts in rdflib
 ########################
-:date: 2009-11-24 06:17
 :author: Stefano
 :category: Python, RDF
-:slug: using-contexts-in-rdflib
 
 I am playing with `rdflib <http://rdflib.net>`_, a fantastic python
 library to handle RDF data. I had trouble understanding how to use
 contexts so to partition my ConjunctiveGraph into independent subgraphs.
 Here is the code
 
-::
+.. code-block:: python
 
     import rdflib
     from rdflib.Graph import Graph
@@ -63,4 +61,4 @@ Here is the code
         print t
 
 Running this script will produce the full graph (printing the triples in
-ConjunctiveGraph) but also the subgraphs as assigned for each context.
+``ConjunctiveGraph``) but also the subgraphs as assigned for each context.

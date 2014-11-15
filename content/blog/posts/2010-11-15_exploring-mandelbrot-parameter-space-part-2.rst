@@ -88,7 +88,7 @@ called *renormalization*. Due to my lack of expertise, I cannot explore
 this any further, but I encourage anyone competent on fractals to add
 comments, fix my mistakes and provide enlightenment on this regard.
 
-.. image:: http://forthescience.org/blog/wp-content/uploads/2010/11/mandelbrot-prickypears-153x300.png
+.. image:: http://forthescience.org/blog/wp-content/uploads/2010/11/mandelbrot-prickypears.png
    :alt: image
    :width: 400px
    :align: center
@@ -113,7 +113,7 @@ circular structures and the main cardioid.
 
 The third interesting feature is the **tree foliage**.
 
-.. image:: http://forthescience.org/blog/wp-content/uploads/2010/11/mandelbrot-treefoliage-698x1024.png
+.. image:: http://forthescience.org/blog/wp-content/uploads/2010/11/mandelbrot-treefoliage.png
    :alt: image
    :width: 400px
    :align: center
@@ -124,7 +124,7 @@ highly featured, strongly self-similar and spiraling behavior of the
 **fuzzy worm**. This area of the plot is incredibly featured and a real
 pleasure to zoom in.
 
-.. image:: http://forthescience.org/blog/wp-content/uploads/2010/11/mandelbrot-fuzzyworm-170x300.png
+.. image:: http://forthescience.org/blog/wp-content/uploads/2010/11/mandelbrot-fuzzyworm.png
    :alt: image
    :width: 400px
    :align: center
@@ -133,7 +133,7 @@ After the fuzzy worm, we don't see any more spectacular features. The
 border becomes first **rocky**, then **smooth** then **rocky** again,
 and it's finally closed with a hole.
 
-.. image:: http://forthescience.org/blog/wp-content/uploads/2010/11/mandelbrot-final-300x138.png
+.. image:: http://forthescience.org/blog/wp-content/uploads/2010/11/mandelbrot-final.png
    :alt: image
    :width: 400px
    :align: center

@@ -55,7 +55,7 @@ of USB ports, both on the panel and on-board, and an eSATA port.
 Processor: Intel Core i3 3.3 GHz tray
 -------------------------------------
 
-.. image:: http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3023-300x274.jpg
+.. image:: http://forthescience.org/blog/wp-content/uploads/2013/06/IMG_3023.jpg
    :alt: image
    :width: 400px
    :align: center

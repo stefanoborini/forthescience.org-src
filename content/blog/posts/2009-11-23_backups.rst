@@ -1,9 +1,7 @@
 Backups!
 ########
-:date: 2009-11-23 03:06
 :author: Stefano
 :category: Backups, Security
-:slug: backups
 
 A friend of mine just reported me a very tragic event. His bag with his
 laptop and his backups hard drive was stolen. I can feel his pain,
@@ -83,7 +81,7 @@ want to feel safer, use the textfile trick, but it should not be needed
 for backup disks. Once you get the encrypted partition, put the contents
 of your computer onto the disk with the following script
 
-::
+.. code-block:: bash
 
     #!/bin/sh
     SOURCE_DIRS="$HOME:/another/dir:/and/so/on"
