@@ -1,10 +1,8 @@
 Eight molecules that changed the rules of the game: Diethyl Ether
 #################################################################
-:date: 2010-02-20 19:45
 :author: Stefano
 :category: Chemistry
 :tags: history, molecule
-:slug: eight-molecules-that-changed-the-rules-of-the-game-diethyl-ether
 
 With this post I want to start a series about single molecules whose
 synthesis, discovery, or explanation had such dramatic effects for
@@ -28,7 +26,10 @@ sight: it is highly flammable, with tendencies of explosiveness, toxic
 in high doses, and with an unpleasant, suffocating smell... but in fact
 it is a really precious substance.
 
-[caption id="" align="aligncenter" width="400" caption="Diethyl Ether"]`|Diethyl Ether| <http://en.wikipedia.org/wiki/File:Diethyl-ether-3D-balls.png>`_[/caption]
+.. image:: http://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Diethyl-ether-3D-balls.png/400px-Diethyl-ether-3D-balls.png
+   :alt: image
+   :align: center
+   :width: 600px
 
 Ether was the breakthrough that started the formal discipline of
 anesthesia. Before 1842, having a surgery or a tooth extraction was
@@ -46,7 +47,10 @@ chemical formula CHCl3 is another one, but it is strongly toxic.
 Improperly used, it is fatal. A better compound was known to be `Nitrous Oxide <http://en.wikipedia.org/wiki/Nitrous_oxide>`_, chemical formula
 N2O, and also known as "laughing gas"
 
-[caption id="" align="aligncenter" width="120" caption="Nitrous oxide"]`|Nitrous oxide| <http://en.wikipedia.org/wiki/File:Nitrous-oxide-3D-vdW.png>`_[/caption]
+.. image:: http://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Nitrous-oxide-3D-vdW.png/120px-Nitrous-oxide-3D-vdW.png
+   :alt: image
+   :align: center
+   :width: 600px
 
 Produced for the first time in 1775 by `Joseph Priestley <http://en.wikipedia.org/wiki/Joseph_Priestley>`_, this
 colorless, harmless and slightly sweet gas did not receive much
@@ -110,8 +114,10 @@ Today, Long (and partially Wilhite and the poor black guy) is recognized as the
 person who started it all, but he did not receive a commemorative monument,
 unlike Morton
 
-[caption id="" align="aligncenter" width="300" caption="Morton monument
-in Boston"]`|Morton monument in Boston| <http://en.wikipedia.org/wiki/File:Ether_monument-Boston.JPG>`_[/caption]
+.. image:: http://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Ether_monument-Boston.JPG/300px-Ether_monument-Boston.JPG
+   :alt: image
+   :align: center
+   :width: 600px
 
 Today, ether is no longer used as anesthetics, except in developing
 countries where cost is a major factor, mainly because it's flammable,
@@ -129,17 +135,3 @@ Additional Links
 -  http://www.anesthesia-nursing.com/ether2.html
 -  `The First Anesthetic: The Story of Crawford Long <http://www.amazon.com/First-Anesthetic-Story-Crawford-Long/dp/0820334367>`_ - Frank Kells Boland
 -  `A manual of etherization <http://books.google.com/books?id=LiEJAAAAIAAJ>`_ - Charles T. Jackson
-
-.. raw:: html
-
-   <div id="_mcePaste" style="overflow: hidden; position: absolute; left: -10000px; top: 848px; width: 1px; height: 1px; text-align: justify;">
-
-http://en.wikipedia.org/wiki/Ernest\_Duchesne
-
-.. raw:: html
-
-   </div>
-
-.. |Diethyl Ether| image:: http://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Diethyl-ether-3D-balls.png/400px-Diethyl-ether-3D-balls.png
-.. |Nitrous oxide| image:: http://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Nitrous-oxide-3D-vdW.png/120px-Nitrous-oxide-3D-vdW.png
-.. |Morton monument in Boston| image:: http://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Ether_monument-Boston.JPG/300px-Ether_monument-Boston.JPG

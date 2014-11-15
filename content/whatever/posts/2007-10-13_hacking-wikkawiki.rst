@@ -1,9 +1,7 @@
 Hacking wikkawiki
 #################
-:date: 2007-10-13 15:51
 :author: Stefano
 :category: Administrative, Computer Science
-:slug: hacking-wikkawiki
 
 Wikkawiki is a quite interesting piece of software. It is very minimal
 but at the same time quite powerful. It is simple to hack, and I'm doing

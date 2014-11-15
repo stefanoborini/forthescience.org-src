@@ -1,9 +1,7 @@
 Welcome to Gaia.ForTheScience.org
 #################################
-:date: 2013-06-02 10:24
 :author: stefano
 :category: Administrative
-:slug: welcome-to-gaia-forthescience-org
 
 Hello
 

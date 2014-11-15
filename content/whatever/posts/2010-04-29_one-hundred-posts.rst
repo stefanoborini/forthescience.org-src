@@ -17,9 +17,10 @@ become an active part of my life and curriculum. This post marks my
 During this time, the blog went from no readers and hits to almost 7000
 visits per month, and the trend is growing
 
-[caption id="attachment\_448" align="aligncenter" width="448"
-caption="ForTheScience visits/month
-trend"]`|image0| <http://forthescience.org/blog/wp-content/uploads/2010/04/fts.png>`_[/caption]
+.. image:: http://forthescience.org/blog/wp-content/uploads/2010/04/fts.png
+   :align: center
+   :width: 300px
+   :alt: image
 
 Similar case with the feeds: there are 23 RSS readers connected to the
 updates. These are small, big numbers: the critical fact is that **I am
@@ -56,4 +57,3 @@ the following points:
 
 Again, thank you all for reading.
 
-.. |image0| image:: http://forthescience.org/blog/wp-content/uploads/2010/04/fts.png

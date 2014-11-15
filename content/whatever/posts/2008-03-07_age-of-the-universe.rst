@@ -1,9 +1,7 @@
 Age of the universe
 ###################
-:date: 2008-03-07 19:36
 :author: Stefano
 :category: Astronomy
-:slug: age-of-the-universe
 
 According to recent results from
 `WMAP <http://en.wikipedia.org/wiki/WMAP>`_, the universe is 13.73 ±

@@ -3,7 +3,6 @@ Dressing code and behavior for the apiary
 :date: 2013-06-22 11:21
 :author: stefano
 :category: Beekeeping
-:slug: dressing-code-and-behavior-for-the-apiary
 
 Proper dress code and behavior in the apiary is a critical component of
 being a beekeeper. Here is a quick list of my experience so far.
@@ -16,7 +15,10 @@ everywhere. Be careful about ticks if you live in a tick-infested area.
 Wear proper shoes that give good grip and offer some protection in the
 unfortunate case a super falls on your foot. This is not proper shoewear
 
-`|IMG\_3455| <http://gaia.forthescience.org/blog/wp-content/uploads/2013/06/IMG_3455.jpg>`_
+.. image:: http://gaia.forthescience.org/blog/wp-content/uploads/2013/06/IMG_3455.jpg
+   :alt: image
+   :align: center
+   :width: 600px
 
 Don't shoo the bees with your hands like a crazy ninja. Bees are
 natively curious. Unless you are actively doing something in the hive,
@@ -77,15 +79,18 @@ The gloves
 
 As an inexperienced beekeeper I bought leather gloves
 
-`|IMG\_3373| <http://gaia.forthescience.org/blog/wp-content/uploads/2013/06/IMG_3373.jpg>`_
+.. image:: http://gaia.forthescience.org/blog/wp-content/uploads/2013/06/IMG_3373.jpg
+   :alt: image
+   :align: center
+   :width: 600px
 
 They are certainly good for heavy protection, but I advise against them.
 Thick plastic gloves are the ones you want, for two reasons: they are
 easier to wash and sterilize, reducing the chance of transmitting
 diseases, and they have better grip and flexibility.
 
-`|IMG\_3454| <http://gaia.forthescience.org/blog/wp-content/uploads/2013/06/IMG_3454.jpg>`_
+.. image:: http://gaia.forthescience.org/blog/wp-content/uploads/2013/06/IMG_3454.jpg
+   :alt: image
+   :align: center
+   :width: 600px
 
-.. |IMG\_3455| image:: http://gaia.forthescience.org/blog/wp-content/uploads/2013/06/IMG_3455.jpg
-.. |IMG\_3373| image:: http://gaia.forthescience.org/blog/wp-content/uploads/2013/06/IMG_3373.jpg
-.. |IMG\_3454| image:: http://gaia.forthescience.org/blog/wp-content/uploads/2013/06/IMG_3454.jpg

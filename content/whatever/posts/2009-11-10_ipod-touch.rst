@@ -1,9 +1,7 @@
 Ipod touch
 ##########
-:date: 2009-11-10 01:02
 :author: Stefano
 :category: iPod touch
-:slug: ipod-touch
 
 I am writing this post from my iPod touch. I am not enthusiast at all of
 the device, and I would gladly return it, but I am in a "no choice"

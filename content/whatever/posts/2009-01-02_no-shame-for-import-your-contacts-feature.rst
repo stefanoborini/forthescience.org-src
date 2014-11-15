@@ -1,9 +1,7 @@
 No shame for "Import your contacts" feature
 ###########################################
-:date: 2009-01-02 15:44
 :author: Stefano
 :category: Security
-:slug: no-shame-for-import-your-contacts-feature
 
 I am negatively astonished (`and I am not
 alone <http://www.codinghorror.com/blog/archives/001128.html>`_) by a

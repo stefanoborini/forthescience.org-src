@@ -1,9 +1,7 @@
 New books in my bookshelf
 #########################
-:date: 2007-09-08 16:11
 :author: Stefano
 :category: Books, Project Management, Refactoring
-:slug: new-books-in-my-bookshelf
 
 I just added two new books in my bookshelf: `Refactoring Databases:
 Evolutionary Database

@@ -1,9 +1,7 @@
 Curiosity. It's just that.
 ##########################
-:date: 2009-10-06 00:44
 :author: Stefano
 :category: Meetings, Opinion
-:slug: curiosity-its-just-that
 
 I am currently at Stansted, waiting for my flight. After two very
 intense days, I must say. The Amazing Meeting was already amazing by

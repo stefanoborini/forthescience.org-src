@@ -1,16 +1,16 @@
 Geologic clock and evolution
 ############################
-:date: 2007-10-20 19:59
 :author: Stefano
 :category: Evolution
-:slug: geologic-clock-and-evolution
 
 Today I was taking a look at `this
 page <http://en.wikipedia.org/wiki/History_of_Earth>`_, and in
 particular to the geological clock image
 
-`|geological clock
-plot| <http://upload.wikimedia.org/wikipedia/commons/f/fe/Geologic_clock.jpg>`_
+.. image:: http://upload.wikimedia.org/wikipedia/commons/f/fe/Geologic_clock.jpg
+   :align: center
+   :width: 400px
+   :alt: image
 
 Of course there's uncertainty on the correctness of the actual moments
 in time, but assuming these values are more or less correct it is quite
@@ -56,4 +56,3 @@ plants, insects, reptiles, mammals, and the man.
 
 Edit: rewrote wrongly written statement.
 
-.. |geological clock plot| image:: http://upload.wikimedia.org/wikipedia/commons/f/fe/Geologic_clock.jpg

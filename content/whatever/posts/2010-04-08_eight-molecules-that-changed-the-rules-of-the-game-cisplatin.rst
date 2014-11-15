@@ -1,14 +1,15 @@
 Eight molecules that changed the rules of the game: Cisplatin
 #############################################################
-:date: 2010-04-08 16:29
 :author: Stefano
 :category: Biology, Chemistry
-:slug: eight-molecules-that-changed-the-rules-of-the-game-cisplatin
 
 **Rule changed: revolutionized the treatment of cancer**
 --------------------------------------------------------
 
-`|Cisplatin| <http://en.wikipedia.org/wiki/File:Cisplatin-3D-vdW.png>`_
+.. image:: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Cisplatin-3D-vdW.png/120px-Cisplatin-3D-vdW.png
+   :alt: image
+   :width: 120px
+   :align: center
 
 Cisplatin, formula [PtCl\ :sub:`2`\ (NH\ :sub:`3`\ )\ :sub:`2`\ ] is a
 very simple compound of the precious metal platinum. It revolutionized
@@ -30,15 +31,17 @@ University, was performing studies on bacterial growth when an electric
 field is applied, just out of curiosity. He was fascinated by the
 striking visual similarity between cell replication
 
-[caption id="" align="aligncenter" width="170" caption="Cell duplication
-(Mitosis) during anaphase"]`|Cell duplication (Mitosis) during
-anaphase| <http://en.wikipedia.org/wiki/File:Anaphase.jpg>`_[/caption]
+.. image:: http://upload.wikimedia.org/wikipedia/commons/f/f5/Anaphase.jpg
+   :alt: image
+   :width: 400px
+   :align: center
 
 and the electric dipole field
 
-[caption id="" align="aligncenter" width="200" caption="Electric
-dipole"]`|Electric
-dipole| <http://en.wikipedia.org/wiki/File:Electric_dipole_field_lines.svg>`_[/caption]
+.. image:: http://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Electric_dipole_field_lines.svg/200px-Electric_dipole_field_lines.svg.png
+   :alt: image
+   :width: 400px
+   :align: center
 
 Rosenberg curiosity was relative to the effect that an electric field
 could have on the cell replication. If a dipole was used in the cell to
@@ -149,6 +152,3 @@ Links
 -  http://www.chem.tamu.edu/rgroup/marcetta/chem489/Presentations/Cisplatin\_Final.pdf
 -  http://www.nature.com/doifinder/10.1038/205698a0
 
-.. |Cisplatin| image:: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Cisplatin-3D-vdW.png/120px-Cisplatin-3D-vdW.png
-.. |Cell duplication (Mitosis) during anaphase| image:: http://upload.wikimedia.org/wikipedia/commons/f/f5/Anaphase.jpg
-.. |Electric dipole| image:: http://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Electric_dipole_field_lines.svg/200px-Electric_dipole_field_lines.svg.png

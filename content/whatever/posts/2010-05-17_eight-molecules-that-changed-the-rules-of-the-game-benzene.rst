@@ -1,16 +1,13 @@
 Eight molecules that changed the rules of the game: Benzene
 ###########################################################
-:date: 2010-05-17 07:00
 :author: Stefano
 :category: Chemistry
 :tags: benzene, molecules
-:slug: eight-molecules-that-changed-the-rules-of-the-game-benzene
-:attachments: blog/wp-content/uploads/2010/05/benzene_single_substition.png, blog/wp-content/uploads/2010/05/benzene_double_substition.png, blog/wp-content/uploads/2010/05/benzene_resonance.png, blog/wp-content/uploads/2010/05/donkey-mule-horse.jpg
 
 **Rule changed: stimulated research to explain electronic resonance.**
 ======================================================================
 
-[caption id="" align="aligncenter" width="250" caption="Benzene"]`|Benzene| <http://en.wikipedia.org/wiki/File:Benzene-aromatic-3D-balls.png>`_[/caption]
+.. |Benzene| image:: http://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Benzene-aromatic-3D-balls.png/200px-Benzene-aromatic-3D-balls.png
 
 Except for its nice regular hexagonal shape, benzene is not a nice
 compound. It is toxic, carcinogen, highly flammable, burns with a very
@@ -70,9 +67,7 @@ reactive, and glad to open to become a single bond while adding
 something else to the remaining opened bond. This reaction is known as
 `addition <http://en.wikipedia.org/wiki/Addition_reaction>`_:
 
-[caption id="" align="aligncenter" width="389" caption="Addition
-reaction"]`|Addition
-reaction| <http://en.wikipedia.org/wiki/File:Chlorine_and_etene_addition.png>`_[/caption]
+.. image:: http://upload.wikimedia.org/wikipedia/commons/a/aa/Chlorine_and_etene_addition.png
 
 Benzene did not behave anything like that. It was assumed there were
 double bonds because the amount of hydrogen was very low, but it was
@@ -93,9 +88,7 @@ proposed in 1865 a hexagonal structure, where carbon atoms were
 connected via alternated double and single bonds, with the remaining
 bonds connecting to hydrogens.
 
-[caption id="" align="aligncenter" width="100" caption="Kekulé
-benzene"]`|Kekulé
-benzene| <http://en.wikipedia.org/wiki/File:Benz1.png>`_[/caption]
+.. image:: http://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Benz1.png/100px-Benz1.png
 
 The circular structure was not, however, whole Kekulé invention.
 `Similar proposals were made <http://www.ch.ic.ac.uk/rzepa/loschmidt/>`_
@@ -120,9 +113,7 @@ produced, but it is highly unstable) in the same year, and
 The proposal made by Kekulé appeared the most likely to be correct. It
 explained the single product when something was added to it
 
-[caption id="attachment\_501" align="aligncenter" width="102"
-caption="Benzene single substitution. Carbon atoms are numbered for
-convenience"]|Benzene single substition|[/caption]
+.. image:: http://forthescience.org/blog/wp-content/uploads/2010/05/benzene_single_substition.png
 
 as you can see, it does not matter where X is added. All carbons are
 equivalent, because if you substitute, say, on carbon 2, you can just
@@ -130,9 +121,7 @@ rotate the molecule and make it overlap exactly with the one shown.
 
 It also explained the three products when two groups were added
 
-[caption id="attachment\_502" align="aligncenter" width="491"
-caption="Benzene double substitution"]|Benzene double
-substition|[/caption]
+.. image:: http://forthescience.org/blog/wp-content/uploads/2010/05/benzene_double_substition.png
 
 these three structures are different, and are therefore three totally
 different products. One objection, however, quickly arised: if you have
@@ -141,9 +130,7 @@ molecule and try to make them overlap by renumbering the atoms, they are
 not the same compound. In the first case they embrace a double bond, and
 in the second case, a single bond
 
-[caption id="attachment\_503" align="aligncenter" width="327"
-caption="Two Kekulé structures. We will find out they are
-equivalent."]|Benzene resonance|[/caption]
+.. image:: http://forthescience.org/blog/wp-content/uploads/2010/05/benzene_resonance.png
 
 According to logic and what was known, these two molecules were
 different, thus not matching the "three products" fact. Kekulé solved
@@ -209,11 +196,7 @@ structures. Thinking in Kekulé terms, we would say the mule spends half
 of its existence as a horse, and the other half as a donkey, quickly
 transforming from one to the other, which is not the case.
 
-[caption id="attachment\_560" align="aligncenter" width="450" caption="A
-donkey (left) and a horse (right) can inbreed to give a mule (center), a
-hybrid similar to the parents, but unique in its own nature. Images
-taken from Wikipedia"]`|Donkey Mule and
-Horse| <http://forthescience.org/blog/wp-content/uploads/2010/05/donkey-mule-horse.jpg>`_[/caption]
+.. image:: http://forthescience.org/blog/wp-content/uploads/2010/05/donkey-mule-horse.jpg
 
 The concept of resonance also explained the perfect hexagonal shape of
 benzene: each bond is not single nor double; it is instead a mixture
@@ -268,10 +251,3 @@ Additional Links
    `horse <http://en.wikipedia.org/wiki/File:Nokota_Horses_cropped.jpg>`_
    and `mule <http://en.wikipedia.org/wiki/File:Juancito.jpg>`_.
 
-.. |Benzene| image:: http://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Benzene-aromatic-3D-balls.png/200px-Benzene-aromatic-3D-balls.png
-.. |Addition reaction| image:: http://upload.wikimedia.org/wikipedia/commons/a/aa/Chlorine_and_etene_addition.png
-.. |Kekulé benzene| image:: http://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Benz1.png/100px-Benz1.png
-.. |Benzene single substition| image:: http://forthescience.org/blog/wp-content/uploads/2010/05/benzene_single_substition.png
-.. |Benzene double substition| image:: http://forthescience.org/blog/wp-content/uploads/2010/05/benzene_double_substition.png
-.. |Benzene resonance| image:: http://forthescience.org/blog/wp-content/uploads/2010/05/benzene_resonance.png
-.. |Donkey Mule and Horse| image:: http://forthescience.org/blog/wp-content/uploads/2010/05/donkey-mule-horse.jpg

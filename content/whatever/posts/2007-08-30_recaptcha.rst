@@ -1,9 +1,7 @@
 reCaptcha
 #########
-:date: 2007-08-30 21:26
 :author: Stefano
 :category: Administrative
-:slug: recaptcha
 
 I added `reCaptcha <http://recaptcha.net>`_ to the comments. reCaptcha
 is a Captcha system, one of those systems that tries to understand if

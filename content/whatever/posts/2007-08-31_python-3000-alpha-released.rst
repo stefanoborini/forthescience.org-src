@@ -1,9 +1,7 @@
 Python 3000 alpha released
 ##########################
-:date: 2007-08-31 19:41
 :author: Stefano
 :category: Python
-:slug: python-3000-alpha-released
 
 Python 3000 alpha has just been
 `released <http://www.python.org/download/releases/3.0/>`_, and I am

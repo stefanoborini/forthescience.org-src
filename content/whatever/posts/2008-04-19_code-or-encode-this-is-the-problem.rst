@@ -1,9 +1,7 @@
 Code or encode? This is the problem.
 ####################################
-:date: 2008-04-19 06:53
 :author: Stefano
 :category: Biology
-:slug: code-or-encode-this-is-the-problem
 
 I am doing proofreading of a textbook and I spotted a quite frequent use
 of the term "protein-encoding genes". I reported it as an error,

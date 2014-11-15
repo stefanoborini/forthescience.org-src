@@ -1,17 +1,7 @@
 New paper published on Journal of Physical Chemistry A
 ######################################################
-:date: 2010-02-24 06:30
 :author: Stefano
 :category: Articles, Computational Chemistry, Personal
-:slug: new-paper-published-on-journal-of-physical-chemistry-a
-
-.. raw:: html
-
-   <div id="articleMain">
-
-.. raw:: html
-
-   </div>
 
 The paper I submitted some time ago at the Journal of Physical Chemistry
 A has been published: Borini S, Limacher PA, Luethi HP, `"Structural

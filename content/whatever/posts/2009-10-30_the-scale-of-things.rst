@@ -1,9 +1,7 @@
 The scale of things
 ###################
-:date: 2009-10-30 09:34
 :author: Stefano
 :category: Astronomy, Biology, Chemistry
-:slug: the-scale-of-things
 
 This is a `very interesting
 application <http://learn.genetics.utah.edu/content/begin/cells/scale/>`_

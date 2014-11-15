@@ -1,12 +1,10 @@
 Norwegian spiral sets the news ablaze
 #####################################
-:date: 2009-12-10 03:40
 :author: Stefano
 :category: Space
-:slug: norwegian-spiral-sets-the-news-ablaze
 
 You have probably read or heard about the `Norwegian
-spiral <http://en.wikipedia.org/wiki/Northern_Norway_spiral_light>`_and
+spiral <http://en.wikipedia.org/wiki/Northern_Norway_spiral_light>`_ and
 you have `probably also seen it
 somehow <http://www.youtube.com/results?search_type=search_videos&search_query=norway+spiral>`_.
 Of course, what's the best answer to an unexplained phenomenon ? UFOs,

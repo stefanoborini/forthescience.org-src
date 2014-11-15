@@ -1,9 +1,7 @@
 Smashing a car at the speed of sound
 ####################################
-:date: 2009-04-21 14:53
 :author: Stefano
 :category: Physics, TV
-:slug: smashing-a-car-at-the-speed-of-sound
 
 Since I moved abroad, I rediscovered good TV. And Mythbuster is
 definitely an interesting show. Adam and Jamie are so fantastic in
@@ -17,6 +15,10 @@ from Adam and Jamie, they push the conditions to the limit so to verify
 what are the real parameters that would be needed to achieve the desired
 effect: they shoot a metal missile at the speed of sound against a car,
 using a two-stages rocket sledge. See it by yourself.
+
+.. youtube:: Mh835unue5w
+   :width: 600
+   :align: center
 
 What amazes me the most is the slow motion capture of the event. The car
 gets literally erased in the process. In one shot toward the end you can

@@ -1,9 +1,7 @@
 Periodic table of videos
 ########################
-:date: 2010-01-10 16:56
 :author: Stefano
 :category: Chemistry, Physics, Websites
-:slug: periodic-table-of-videos
 
 I found this very interesting site about the `periodic table of
 elements <http://www.periodicvideos.com/>`_, from the University of

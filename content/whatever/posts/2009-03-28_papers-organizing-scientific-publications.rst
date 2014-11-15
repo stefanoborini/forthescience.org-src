@@ -1,9 +1,7 @@
 Papers: organizing scientific publications
 ##########################################
-:date: 2009-03-28 19:09
 :author: Stefano
 :category: Software
-:slug: papers-organizing-scientific-publications
 
 Part of the job of being a researcher is organizing knowledge, which
 most of the time comes in the form of scientific papers. Doing a

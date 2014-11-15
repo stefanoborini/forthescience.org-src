@@ -1,10 +1,8 @@
 Unscientist awards, a prize for unscientific spokespeople
 #########################################################
-:date: 2010-04-06 09:18
 :author: Stefano
 :category: Opinion, Websites
 :tags: award, Unscientist
-:slug: unscientist-awards-a-prize-for-unscientific-spokespeople
 
 This is something interesting. What about a `prize for unscientific
 claims <http://www.scientificblogging.com/chatter_box/unscientists_2010_awards>`_:

@@ -1,9 +1,7 @@
 Proofreading!
 #############
-:date: 2008-10-17 21:55
 :author: Stefano
 :category: Authoring
-:slug: proofreading
 
 Proofreading is fun.
 

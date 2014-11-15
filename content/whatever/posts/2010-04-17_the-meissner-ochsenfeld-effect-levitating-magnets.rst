@@ -1,13 +1,15 @@
 The Meissner-Ochsenfeld effect: levitating magnets
 ##################################################
-:date: 2010-04-17 01:00
 :author: Stefano
 :category: Magnetism
-:slug: the-meissner-ochsenfeld-effect-levitating-magnets
 
 Recently, I had the chance to see a presentation of cool scientific
 magic: the `Meissner-Ochsenfeld
 effect <http://en.wikipedia.org/wiki/Meissner-Ochsenfeld_effect>`_.
+
+.. youtube:: gtnsl1JDm-E
+   :align: center
+   :width: 600
 
 What you can see here is a magnet (the yellow-red cylinder) levitating
 above a small dish of superconductive material, and consequently free to

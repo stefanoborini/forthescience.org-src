@@ -1,9 +1,7 @@
 Snow Leopard first impressions
 ##############################
-:date: 2009-08-28 22:50
 :author: Stefano
 :category: MacOSX
-:slug: snow-leopard-first-impressions
 
 I just installed Snow Leopard, MacOSX 10.6, on my laptop.
 

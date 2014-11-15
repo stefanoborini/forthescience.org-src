@@ -1,9 +1,7 @@
 Dumping TikiWiki for WikkaWiki
 ##############################
-:date: 2007-09-09 08:01
 :author: Stefano
 :category: Administrative
-:slug: dumping-tikiwiki-for-wikkawiki
 
 I am planning to dump TikiWiki and replace it with WikkaWiki.
 

@@ -1,10 +1,7 @@
 Nonlinear optics with polymers
 ##############################
-:date: 2009-12-19 10:44
 :author: Stefano
 :category: Computational Chemistry
-:slug: nonlinear-optics-with-polymers
-:attachments: blog/wp-content/uploads/2009/12/molecule.png
 
 Of the many things I posted, I never had the chance to write something
 about my direct scientific activity. Recently I worked on optical
@@ -27,15 +24,10 @@ place, the molecule has many choices to return to electronic ground
 state. One is to re-emit two photons again. Nothing changes, still a
 linear optics effect.
 
-.. raw:: html
-
-   <div class="mceTemp" style="text-align: justify;">
-
-`|flip619| <http://en.wikipedia.org/wiki/File:Green-lased_palm_tree_%28crop%29.jpg>`_ A green laser pointer (from Wikipedia, user flip619)
-
-.. raw:: html
-
-   </div>
+.. image:: http://upload.wikimedia.org/wikipedia/commons/3/31/Green-lased_palm_tree_%28crop%29.jpg
+   :alt: image
+   :width: 600px
+   :align: center
 
 However, the molecule could also release a single photon, whose
 frequency is derived by the total amount of energy provided by the two
@@ -84,16 +76,10 @@ My work was focused on polyenes. It's a nice class of compounds with a
 nice single-double bond alternation. This allows "almost free" flow of
 electrons through this kind of molecular wire.
 
-.. raw:: html
-
-   <div class="mceTemp" style="text-align: justify;">
-
-|Polyene chain|
-    Polyene chain
-
-.. raw:: html
-
-   </div>
+.. image:: http://forthescience.org/blog/wp-content/uploads/2009/12/molecule.png
+   :alt: image
+   :width: 600px
+   :align: center
 
 We know that non-linear optics properties are influenced by
 
@@ -130,5 +116,3 @@ editorial process is performed.
 So I have something to celebrate tonight. I think I'll go out for a nice
 sushi!
 
-.. |flip619| image:: http://upload.wikimedia.org/wikipedia/commons/3/31/Green-lased_palm_tree_%28crop%29.jpg
-.. |Polyene chain| image:: http://forthescience.org/blog/wp-content/uploads/2009/12/molecule.png

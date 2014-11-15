@@ -1,9 +1,7 @@
 Triboluminescence
 #################
-:date: 2008-02-19 20:44
 :author: Stefano
 :category: Chemistry, Physics
-:slug: triboluminescence
 
 A few days ago I received a letter. While opening it, I was able to spot
 a considerably bright blue luminescence coming from the line where the

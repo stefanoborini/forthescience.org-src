@@ -1,9 +1,7 @@
 Translations!
 #############
-:date: 2010-05-04 17:07
 :author: Stefano
 :category: Administrative
-:slug: translations
 
 I decided to add a rather demanding additional requirement to my
 blogging activities: I added multiple language support. From now on,

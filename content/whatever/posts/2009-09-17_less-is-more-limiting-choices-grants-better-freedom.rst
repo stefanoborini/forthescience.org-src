@@ -1,12 +1,14 @@
 Less is more: limiting choices grants better freedom
 ####################################################
-:date: 2009-09-17 03:20
 :author: Stefano
 :category: Psychology
-:slug: less-is-more-limiting-choices-grants-better-freedom
 
 Let me start this post with the following TED talk. It lasts 20 minutes,
 and it's a nice introduction to the argument of this post
+
+.. youtube:: VO6XEQIsCoM
+   :align: center
+   :width: 600
 
 I am currently in the process of choosing a web framework for a project.
 Problem is: there are too many! Every single one does more or less what

@@ -1,10 +1,8 @@
 Large quake occurs near Chile.
 ##############################
-:date: 2010-02-27 17:09
 :author: Stefano
 :category: Earthquakes
 :tags: chile, japan, quake
-:slug: large-quake-occurs-near-chile
 
 A magnitude 8.8 quake occurred in Chile. A tsunami warning has been
 issued. Very good details, and a map of the predicted height of the

@@ -1,10 +1,8 @@
 When science meets art: ferrofluid spiral
 #########################################
-:date: 2010-03-28 16:00
 :author: Stefano
 :category: Art, Physics
 :tags: #science
-:slug: when-science-meets-art-ferrofluid-spiral
 
 It is always a pleasure when scientific findings are used for impressive
 exhibitions of beauty and harmony. `Sachiko
@@ -19,9 +17,10 @@ substances also known as "liquid iron". Many of us probably had the
 chance to play with iron filings and a magnet. The result shows the
 magnetic field pattern between the two poles of the magnet
 
-[caption id="" align="aligncenter" width="400" caption="Iron filings in
-a magnetic field"]`|Iron filings in a magnetic
-field| <http://commons.wikimedia.org/wiki/File:Iron-filings-around-magnet.jpg>`_[/caption]
+.. image:: http://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Iron-filings-around-magnet.jpg/400px-Iron-filings-around-magnet.jpg
+   :alt: image
+   :width: 400px
+   :align: center
 
 `Ferrofluids <http://en.wikipedia.org/wiki/Ferrofluid>`_ are substances
 similar to shaving gel, embedded with particles of a
@@ -35,4 +34,3 @@ iron", which can be shaped by a magnetic field exactly as the iron
 filings we played with as children. Put some Japanese style into it, and
 the result is fascinating both artistically and scientifically.
 
-.. |Iron filings in a magnetic field| image:: http://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Iron-filings-around-magnet.jpg/400px-Iron-filings-around-magnet.jpg

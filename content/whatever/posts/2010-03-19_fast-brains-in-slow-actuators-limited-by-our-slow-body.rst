@@ -1,9 +1,7 @@
 Fast brains in slow actuators: limited by our slow body
 #######################################################
-:date: 2010-03-19 10:53
 :author: Stefano
 :category: Biology
-:slug: fast-brains-in-slow-actuators-limited-by-our-slow-body
 
 Occasionally, I have to write using a pen. I've never had a beautiful
 calligraphy (by the way, a tautology, since calligraphy already comes

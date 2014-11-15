@@ -1,9 +1,7 @@
 Banned Bing
 ###########
-:date: 2009-08-16 04:33
 :author: Stefano
 :category: Administrative
-:slug: banned-bing
 
 I had to ban Microsoft's subnet due to Bing bots constant hammering with
 generic terms as a referral. This skews my statistics, and shifts

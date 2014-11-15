@@ -1,9 +1,7 @@
 Let's burn water
 ################
-:date: 2008-03-20 23:31
 :author: Stefano
 :category: Chemistry
-:slug: lets-burn-water
 
 So, apparently you can burn saltwater
 (`1 <http://www.5min.com/Video/How-Saltwater-Can-Be-turned-Into-Energy-11495570>`_,

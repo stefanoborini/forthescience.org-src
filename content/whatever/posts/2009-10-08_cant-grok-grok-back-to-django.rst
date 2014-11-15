@@ -1,9 +1,7 @@
 Can't grok grok. Back to Django.
 ################################
-:date: 2009-10-08 15:29
 :author: Stefano
 :category: Python, Web frameworks
-:slug: cant-grok-grok-back-to-django
 
 I wanted to use Grok for my future development, so I just spent a week
 trying to do porting of a project from

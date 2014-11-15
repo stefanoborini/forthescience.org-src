@@ -1,9 +1,7 @@
 On the Wikipedia fundraising and future plans
 #############################################
-:date: 2009-11-19 14:16
 :author: Stefano
 :category: Personal, Websites
-:slug: on-the-wikipedia-fundraising-and-future-plans
 
 Wikimedia fundation is organizing another round of fundraising to
 support Wikipedia. I wish to remember that the English version currently

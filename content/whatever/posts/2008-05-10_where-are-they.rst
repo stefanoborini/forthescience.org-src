@@ -8,7 +8,7 @@ Where are they?
 I found a `very interesting
 commentary <http://www.technologyreview.com/Infotech/20569/>`_ by Nick
 Bostrom, about the existence of extraterrestrial life and the so-called
-Fermi Paradox <http://en.wikipedia.org/wiki/Fermi_paradox>`_.
+`Fermi Paradox <http://en.wikipedia.org/wiki/Fermi_paradox>`_.
 The point Nick Bostrom presents is sensible: the current evidence is
 that life is apparently not very frequent in the Universe. Despite all
 efforts we did toward finding life, intelligent or not, we failed.

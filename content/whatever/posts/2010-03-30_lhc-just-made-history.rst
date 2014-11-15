@@ -1,10 +1,8 @@
 LHC just made history
 #####################
-:date: 2010-03-30 11:20
 :author: Stefano
 :category: Large Hadron Collider
 :tags: #LHC
-:slug: lhc-just-made-history
 
 The Large Hadron Collider just achieved the first collisions among
 protons at 7 tera electronvolts (TeV) at center of mass, smashing

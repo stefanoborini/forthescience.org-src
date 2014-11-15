@@ -1,10 +1,7 @@
 My business card, with QR-code. Geeky!
 ######################################
-:date: 2010-02-02 17:51
 :author: Stefano
 :category: Personal, QR-Codes
-:slug: my-business-card-with-qr-code-geeky
-:attachments: blog/wp-content/uploads/2010/02/business_card_personal.png
 
 I ran out of business cards recently, so I had to make new ones. I took
 the chance to indulge a bit over the
@@ -19,11 +16,10 @@ decode QR-codes, and also online services are available for this (to
 charts <http://code.google.com/apis/chart/types.html#qrcodes>`_ can also
 be used to encode.
 
-.. figure:: http://forthescience.org/blog/wp-content/uploads/2010/02/business_card_personal.png
+.. image:: http://forthescience.org/blog/wp-content/uploads/2010/02/business_card_personal.png
    :align: center
    :alt: Stefano Borini business card
-
-   Stefano Borini business card
+   :width: 400px
 
 Ok, it's not particularly stylish (I've never been good in design and
 graphic arts), but it's definitely geeky! Since I am an artistically
@@ -34,5 +30,4 @@ gets automatically imported in your contacts. The QR-Code contains
 nothing more than the text on the card (with some omissions to stay
 small). I'm pretty sure I'm not the first person having this gadget on
 his business card, but I still haven't seen it on someone else's card.
-
 

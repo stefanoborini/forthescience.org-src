@@ -1,9 +1,7 @@
 A comparison of CMS/EPortfolio/Social Network solutions
 #######################################################
-:date: 2009-12-08 16:03
 :author: Stefano
 :category: Content Management
-:slug: a-comparison-of-cmseportfoliosocial-network-solutions
 
 I am currently looking for a good choice of Content Management
 System/EPortfolio/Social Network tool to start the activity on

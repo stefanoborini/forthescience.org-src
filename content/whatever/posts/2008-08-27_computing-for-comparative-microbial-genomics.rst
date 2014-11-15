@@ -1,9 +1,7 @@
 Computing for Comparative Microbial Genomics
 ############################################
-:date: 2008-08-27 19:56
 :author: Stefano
 :category: Authoring, Bioinformatics, Books, Websites
-:slug: computing-for-comparative-microbial-genomics
 
 I am proud to announce that `Springer <http://www.springer.com>`_ has
 finally released on the web (and

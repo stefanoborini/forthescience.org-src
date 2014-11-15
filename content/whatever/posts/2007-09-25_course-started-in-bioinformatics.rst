@@ -1,9 +1,7 @@
 Course started in bioinformatics
 ################################
-:date: 2007-09-25 08:55
 :author: Stefano
 :category: Bioinformatics, Courses
-:slug: course-started-in-bioinformatics
 
 I just started to hold exercises lectures during a `course in
 bioinformatics <http://www.cbs.dtu.dk/dtucourse/programme27444.php>`_. I

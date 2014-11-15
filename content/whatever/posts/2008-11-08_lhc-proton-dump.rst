@@ -1,9 +1,7 @@
 LHC proton dump
 ###############
-:date: 2008-11-08 16:19
 :author: Stefano
 :category: Physics
-:slug: lhc-proton-dump
 
 How to stop a beam of protons traveling at 99.99 % of the speed of light
 and able to melt 500 kg of copper in less than a second ?

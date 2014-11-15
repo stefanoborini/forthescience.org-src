@@ -1,11 +1,13 @@
 When the future is the present
 ##############################
-:date: 2009-10-23 17:04
 :author: Stefano
 :category: Robotics
-:slug: when-the-future-is-the-present
 
 Take a look at this robot
+
+.. youtube:: j8Gr9Sxt8UI
+   :align: center
+   :width: 600
 
 Impressive, isn't it ? Astonishing I would say. It moves like a human.
 We were told how the future would have looked like, and then one day we

@@ -1,9 +1,7 @@
 The Amazing Meeting!
 ####################
-:date: 2009-09-21 23:35
 :author: Stefano
 :category: Meetings
-:slug: the-amazing-meeting
 
 At the beginning of October I will attend `The Amazing Meeting in
 London <http://tamlondon.org>`_. Yes, I was able to grab a ticket.

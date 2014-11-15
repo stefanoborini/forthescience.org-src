@@ -1,9 +1,7 @@
 Harvest - part 1
 ################
-:date: 2013-08-17 13:24
 :author: stefano
 :category: Beekeeping
-:slug: harvest-part-1
 
 The time of harvest is finally here. Here is a quick movie showing one
 among the many full honey frames.

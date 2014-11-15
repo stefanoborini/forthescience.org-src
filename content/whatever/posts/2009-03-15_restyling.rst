@@ -1,9 +1,7 @@
 Restyling!
 ##########
-:date: 2009-03-15 00:16
 :author: Stefano
 :category: Administrative
-:slug: restyling
 
 I decided to restyle the blog a bit. Images and design are from the
 following websites and people, which I gratefully thank

@@ -1,9 +1,7 @@
 Bug fingerprinting and code phylogenies
 #######################################
-:date: 2009-06-24 17:32
 :author: Stefano
 :category: Software Licensing
-:slug: bug-fingerprinting-and-code-phylogenies
 
 I recently read `this post on a GPL
 violation <http://sev-notes.blogspot.com/2009/06/gpl-scummvm-and-violations.html>`_

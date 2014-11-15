@@ -1,9 +1,7 @@
 Successfully obtained "primordial RNA" in lab conditions
 ########################################################
-:date: 2009-11-25 03:39
 :author: Stefano
 :category: Chemistry, Evolution
-:slug: successfully-obtained-primordial-rna-in-lab-conditions
 
 A groundbreaking paper "`Generation of long RNA chains in
 water <http://www.jbc.org/content/early/2009/10/02/jbc.M109.041905>`_"

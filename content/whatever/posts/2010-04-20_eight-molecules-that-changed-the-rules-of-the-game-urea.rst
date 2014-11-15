@@ -1,16 +1,16 @@
 Eight molecules that changed the rules of the game: Urea
 ########################################################
-:date: 2010-04-20 22:49
 :author: Stefano
 :category: Chemistry
 :tags: molecules, urea
-:slug: eight-molecules-that-changed-the-rules-of-the-game-urea
 
 **Rule changed: demonstrated that organic compounds had no mysterious
 "vital energy"**
 
-[caption id="" align="aligncenter" width="300"
-caption="Urea"]`|Urea| <http://en.wikipedia.org/wiki/File:Urea-3D-balls.png>`_[/caption]
+.. image:: http://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Urea-3D-balls.png/300px-Urea-3D-balls.png
+   :align: center
+   :width: 300px
+   :alt: image
 
 The synthesis of urea is a fascinating and critical event. It sent a
 shocking quake through many open questions in chemistry, and answered
@@ -76,11 +76,16 @@ atoms bring different properties. Take ethanol and ether as an example:
 you can drink the first and have a good time, but the second is going to
 be a very, very bad experience. Both have the same molecular formula:
 C2H6O. Synthesis of urea from ammonium cyanate
-`|image1| <http://en.wikipedia.org/wiki/File:Wohler_synthesis.gif>`_ was
+`The Wohler synthesis <http://en.wikipedia.org/wiki/File:Wohler_synthesis.gif>`_ was
 another instance of a transformation involving isomerism. Both had the
 same molecular formula, but different properties. In this sense, Wohler
 actually achieved two feats in one shot: disproved vitalism, and
 provided rock solid evidence for isomerism.
+
+.. image:: http://upload.wikimedia.org/wikipedia/commons/8/8c/Wohler_synthesis.gif
+   :align: center
+   :width: 300px
+   :alt: image
 
 As you can see from these findings, Wöhler was a remarkable and
 proficient chemist. In addition to urea synthesis, he is also known for
@@ -116,7 +121,6 @@ Links
 -  http://www.oralchelation.com/faq/data/data3.htm
 -  http://chestofbooks.com/crafts/scientific-american/sup2/Friedrich-Wohler.html
 -  http://chestofbooks.com/crafts/scientific-american/sup2/Friedrich-Wohler-2.html
--  http://www.newworldencyclopedia.org/entry/Friedrich\_W%C3%B6hler
 -  http://www.3rd1000.com/history/carbon.htm
 -  http://www.3rd1000.com/urea/urea.htm
 -  http://scienceworld.wolfram.com/chemistry/VitalismTheory.html
@@ -127,5 +131,3 @@ Links
 -  http://www.spiritus-temporis.com/friedrich-wohler/
 -  http://www.wisegeek.com/what-is-urea.htm
 
-.. |Urea| image:: http://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Urea-3D-balls.png/300px-Urea-3D-balls.png
-.. |image1| image:: http://upload.wikimedia.org/wikipedia/commons/8/8c/Wohler_synthesis.gif

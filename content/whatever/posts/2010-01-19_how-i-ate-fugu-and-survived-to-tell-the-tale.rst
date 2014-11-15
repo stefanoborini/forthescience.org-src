@@ -1,16 +1,16 @@
 How I ate Fugu and survived to tell the tale
 ############################################
-:date: 2010-01-19 12:24
 :author: Stefano
 :category: Biology, Food, Personal
-:slug: how-i-ate-fugu-and-survived-to-tell-the-tale
-:attachments: blog/wp-content/uploads/2010/01/fugu_dinner.jpg
 
 Some time ago I had Fugu, or `puffer
 fish <http://en.wikipedia.org/wiki/Fugu>`_, a highly poisonous fish with
 no known antidote. Here is a picture to document the fact
 
-`|image0| <http://forthescience.org/blog/wp-content/uploads/2010/01/fugu_dinner.jpg>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2010/01/fugu_dinner.jpg
+   :align: center
+   :width: 600px
+   :alt: image
 
 Well, it could just be me in front of something that looks like fish,
 and I'm not going to eat it anyway, but trust me, I had it. Yes, I
@@ -85,4 +85,3 @@ References
 -  http://www.life.umd.edu/grad/MLfsc/zctsim/ionchannel.html
 -  http://www.chm.bris.ac.uk/motm/ttx/ttx.htm
 
-.. |image0| image:: http://forthescience.org/blog/wp-content/uploads/2010/01/fugu_dinner.jpg

@@ -1,18 +1,16 @@
 Something very humbling is out there
 ####################################
-:date: 2009-12-10 17:23
 :author: Stefano
 :category: Astronomy
-:slug: something-very-humbling-is-out-there
-:attachments: blog/wp-content/uploads/2009/12/hs-2009-31-a-large_web.jpg
 
 On a dark, clear night, if you walk far away from the city lights, you
 will be probably able to see a magnificent strike of light we call "the
 milky way", our galaxy. It looks like this:
 
-[caption id="" align="alignnone" width="466" caption="The Milky Way,
-from Wikipedia"]`|The Milky
-Way| <http://en.wikipedia.org/wiki/File:Perseid_Meteor.jpg>`_[/caption]
+.. image:: http://en.wikipedia.org/wiki/File:Perseid_Meteor.jpg
+   :alt: image
+   :width: 600px
+   :align: center
 
 Our sun is a small, insignificant star, sitting on one of the arms of
 this magnificent spiral of stars and gas clouds. Any star you can see
@@ -37,9 +35,10 @@ If you shift your attention to the left of the picture, you will
 probably notice a small diagonal bit of yellow light, just a little
 below the Milky Way. Zoom in, it's a good friend the Andromeda galaxy:
 
-[caption id="" align="alignnone" width="512" caption="Andromeda galaxy
-by John Lanoue"]`|Andromeda galaxy by John
-Lanoue| <http://en.wikipedia.org/wiki/File:M31_Lanoue.png>`_[/caption]
+.. image:: http://upload.wikimedia.org/wikipedia/commons/7/71/M31_Lanoue.png
+   :width: 600px
+   :alt: image
+   :align: center
 
 The Andromeda galaxy can be seen with the naked eye on a clear night.
 It's quite far: 2.2 millions light years, but still pretty close. Its
@@ -58,11 +57,12 @@ the Hubble Space Telescope. Far high above the turbulent atmosphere, the
 HST has the best view of the sky we can ask for. So one day we point it
 at a patch of sky no larger than a pin, and slowly accumulate the
 photons hitting the detector. One photon after another, an image is
-formed. It is the Hubble Deep Field.
+formed. It is the `Hubble Deep Field <http://en.wikipedia.org/wiki/Hubble_Deep_Field>`_.
 
-[caption id="" align="alignnone" width="500" caption="Hubble Deep
-Field"]`|Hubble Deep
-Field| <http://en.wikipedia.org/wiki/Hubble_Deep_Field>`_[/caption]
+.. image:: http://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/HubbleDeepField.800px.jpg/594px-HubbleDeepField.800px.jpg
+   :width: 600px
+   :alt: image
+   :align: center
 
 Every bit of light in this image is a galaxy. A full galaxy, full of
 stars. And they are far. The more far we look, the more we approach the
@@ -78,8 +78,10 @@ everywhere, with stars, some of them with planets for sure.
 We pushed even more. This image has been taken a few days ago, again
 from Hubble
 
-`|Hubble Space Telescope
-WF3| <http://hubblesite.org/newscenter/archive/releases/2009/31/>`_
+.. image:: http://forthescience.org/blog/wp-content/uploads/2009/12/hs-2009-31-a-large_web.jpg
+   :width: 600px
+   :alt: image
+   :align: center
 
 This image contains galaxies whose light left for its quest of reaching
 us 13 billion years ago. Yes, some of these galaxies were there after
@@ -98,7 +100,3 @@ Collider. From our tiny, insignificant water-covered rocky planet, we
 need to understand, we need to see, and we need to find the truth. And
 it will happen in our lifetime.
 
-.. |The Milky Way| image:: http://upload.wikimedia.org/wikipedia/commons/6/65/Perseid_Meteor.jpg
-.. |Andromeda galaxy by John Lanoue| image:: http://upload.wikimedia.org/wikipedia/commons/7/71/M31_Lanoue.png
-.. |Hubble Deep Field| image:: http://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/HubbleDeepField.800px.jpg/594px-HubbleDeepField.800px.jpg
-.. |Hubble Space Telescope WF3| image:: http://forthescience.org/blog/wp-content/uploads/2009/12/hs-2009-31-a-large_web.jpg

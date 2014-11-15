@@ -1,9 +1,7 @@
 So you want to write a book?
 ############################
-:date: 2008-04-26 11:53
 :author: Stefano
 :category: Authoring
-:slug: so-you-want-to-write-a-book
 
 So you want to start writing a book? cool. Here is a suggestion I give
 you: **renounce**.

@@ -1,9 +1,7 @@
 Eight molecules that changed the rules of the game: Penicillin
 ##############################################################
-:date: 2010-03-11 19:09
 :author: Stefano
 :category: Chemistry
-:slug: eight-molecules-that-changed-the-rules-of-the-game-penicillin
 
 **Rule changed: the very first antibiotic compound**
 ----------------------------------------------------
@@ -11,7 +9,10 @@ Eight molecules that changed the rules of the game: Penicillin
 Penicillin. This is definitely one molecule that conquered the
 territories of the grim reaper.
 
-`|Penicillin| <http://en.wikipedia.org/wiki/File:Penicillin_core.svg>`_
+.. image:: http://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Penicillin_core.svg/200px-Penicillin_core.svg.png
+   :width: 400px
+   :align: center
+   :alt: image
 
 Before Penicillin, a minor wound infection could mean a gangrene
 (followed by amputation), death, or all of them if you were particularly
@@ -48,8 +49,10 @@ the mold was growing the bacteria were unable to survive. The mold
 turned out to be part of the genus
 `Penicillium <http://en.wikipedia.org/wiki/Penicillium>`_
 
-[caption id="" align="aligncenter" width="400"
-caption="Penicillium"]`|Penicillium| <http://en.wikipedia.org/wiki/File:Penicillium_Pengo.jpg>`_[/caption]
+.. image:: http://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Penicillium_Pengo.jpg/400px-Penicillium_Pengo.jpg
+   :width: 400px
+   :align: center
+   :alt: image
 
 After some more experiments, helped by colleagues, Fleming isolated the
 substance related to the antibacterial effect (also using his previous
@@ -110,5 +113,3 @@ Links
 -  http://www.botany.hawaii.edu/faculty/wong/bot135/Lect21b.htm
 -  http://www.youtube.com/watch?v=gTWiaH\_oCCY
 
-.. |Penicillin| image:: http://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Penicillin_core.svg/200px-Penicillin_core.svg.png
-.. |Penicillium| image:: http://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Penicillium_Pengo.jpg/400px-Penicillium_Pengo.jpg

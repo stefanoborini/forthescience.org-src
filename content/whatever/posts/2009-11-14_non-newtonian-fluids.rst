@@ -1,9 +1,7 @@
 Non-newtonian fluids
 ####################
-:date: 2009-11-14 12:51
 :author: Stefano
 :category: Physics
-:slug: non-newtonian-fluids
 
 I must confess: I have a crush on non-newtonian fluids. They are so
 strange and beautiful... They defeat intuition by respecting the laws of
@@ -19,10 +17,10 @@ different types of viscosities, depending on the experimental setup and
 the characteristics of the fluid. For the layperson, viscosity is a
 measure of thickness, what technically is called "dynamic viscosity".
 
-[caption id="" align="alignright" width="182" caption="The pitch drop
-experiment at University of Queensland"]`|The pitch drop experiment at
-University of
-Queensland| <http://en.wikipedia.org/wiki/Pitch_drop_experiment>`_[/caption]
+.. image:: http://upload.wikimedia.org/wikipedia/commons/9/99/University_of_Queensland_Pitch_drop_experiment-white_bg.jpg
+   :align: left
+   :width: 200px
+   :alt: image
 
 Viscosity is not constant in a fluid. It is related to various
 parameters, the most typical is temperature: kitchen oil is rather thick
@@ -63,9 +61,10 @@ Pushing the dilatant property even further would effectively produce a
 to stop a bullet when needed. Military and police forces all around the
 world have of course a great deal of interest in something like this.
 
-[caption id="" align="alignleft" width="230" caption="Silly
-putty"]`|Silly
-putty| <http://upload.wikimedia.org/wikipedia/commons/f/f3/Silly_putty_dripping.jpg>`_[/caption]
+.. image:: http://upload.wikimedia.org/wikipedia/commons/f/f3/Silly_putty_dripping.jpg
+   :alt: image
+   :align: right
+   :width: 200px
 
 Another very funny application of this kind of non-newtonian behavior is
 my preferred toy: `Silly
@@ -115,5 +114,3 @@ fluid. New smart materials are now under development, where `viscosity
 can be altered by exposition to
 light <http://www.youtube.com/watch?v=3Eq4SDuWokk>`_.
 
-.. |The pitch drop experiment at University of Queensland| image:: http://upload.wikimedia.org/wikipedia/commons/6/62/University_of_Queensland_Pitch_drop_experiment-6-2.jpg
-.. |Silly putty| image:: http://upload.wikimedia.org/wikipedia/commons/f/f3/Silly_putty_dripping.jpg

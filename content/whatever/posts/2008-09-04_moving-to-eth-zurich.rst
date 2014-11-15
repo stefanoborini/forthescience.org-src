@@ -1,9 +1,7 @@
 Moving to ETH Zürich
 ####################
-:date: 2008-09-04 13:15
 :author: Stefano
 :category: Personal
-:slug: moving-to-eth-zurich
 
 I am starting a postdoc at ETH Zürich the 1st of October. I will work on
 data management and high throughput calculations in quantum chemistry,
