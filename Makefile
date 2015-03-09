@@ -29,12 +29,13 @@ base:
 	cp extra/CNAME "$(OUTPUTDIR)"
 	cp extra/index.html "$(OUTPUTDIR)"
 	cp extra/gitignore "$(OUTPUTDIR)"/.gitignore
+	cp extra/nojekyll "$(OUTPUTDIR)"/.nojekyll
 
 upload: all
 	cd "$(OUTPUTDIR)" && git add * && git commit -a -m "sync" && git push
 
 clean:
-	cd "$(OUTPUTDIR)" && rm -rf *
+	cd "$(OUTPUTDIR)" && rm -rf blog whatever gaia
 
 serve:
 ifdef PORT
