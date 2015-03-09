@@ -9,7 +9,7 @@ there's a system call, reboot(). The funny thing is in its signature
 
 .. code-block:: c
 
-    int reboot(int magic, int magic2, int cmd, void *arg);</code>
+    int reboot(int magic, int magic2, int cmd, void *arg);
 
 Of course this routine can only be called by uid 0 (root), but you also need to
 pass two "magic numbers" for the call to actually work. Why?
