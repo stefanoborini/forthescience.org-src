@@ -49,9 +49,9 @@ Any of these values will be accepted to initiate a reboot
 
     210 /* For safety, we require "magic" arguments. */
     211 if (magic1 != LINUX_REBOOT_MAGIC1 ||
-    212         (magic2 != LINUX_REBOOT_MAGIC2 &amp;&amp;
-    213          magic2 != LINUX_REBOOT_MAGIC2A &amp;&amp;
-    214          magic2 != LINUX_REBOOT_MAGIC2B &amp;&amp;
+    212         (magic2 != LINUX_REBOOT_MAGIC2 &
+    213          magic2 != LINUX_REBOOT_MAGIC2A &
+    214          magic2 != LINUX_REBOOT_MAGIC2B &
     215          magic2 != LINUX_REBOOT_MAGIC2C))
     216 return -EINVAL;
 
