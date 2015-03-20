@@ -215,31 +215,31 @@ to output.
 Open a new terminal window and start alsamixer. Press F6 and select the broadwell-rt286
 device. on the playback tab (F3), set the following settings:
 
-   Master: 100 (all the way up, arrow keys)
-   Headphones: 00 (press m to flip between mute and on, 00 means on)
-   Speaker: 00
-   Front DAC: 00
-   Front REC: 00
-   ADC 0 Mux: Dmic (arrow keys)
-   ADC 1 Mux: Dmic
-   AMIC: 100
-   DAC0: 100
-   HPO L: 00
-   HPO Mux: front
-   HPO R: 00
-   Media0: 100
-   Media1: 100
-   RECMIX Beep: 00
-   RECMIX line1: 00
-   RECMIX mic1: 00
-   SPK Mux: front
-   SPO: 00
+   - Master: 100 (all the way up, arrow keys)
+   - Headphones: 00 (press m to flip between mute and on, 00 means on)
+   - Speaker: 00
+   - Front DAC: 00
+   - Front REC: 00
+   - ADC 0 Mux: Dmic (arrow keys)
+   - ADC 1 Mux: Dmic
+   - AMIC: 100
+   - DAC0: 100
+   - HPO L: 00
+   - HPO Mux: front
+   - HPO R: 00
+   - Media0: 100
+   - Media1: 100
+   - RECMIX Beep: 00
+   - RECMIX line1: 00
+   - RECMIX mic1: 00
+   - SPK Mux: front
+   - SPO: 00
 
 Switch to the record tab (F4), and set the following settings:
 
-   Mic: 100
-   ADC0: 100 and CAPTURE (use the space bar to set CAPTURE)
-   AMIC: 100
+   - Mic: 100
+   - ADC0: 100 and CAPTURE (use the space bar to set CAPTURE)
+   - AMIC: 100
 
 Congratulations, you should now have sound! Open your favorite youtube clip to check this.
 
