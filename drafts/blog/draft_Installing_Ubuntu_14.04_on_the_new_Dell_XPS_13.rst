@@ -269,16 +269,36 @@ Some other tweaks
 -----------------
 
 I prefer my bluetooth to be off by default. Open a terminal window, and edit 
-/etc/rc.local to add "rfkill block 0" before the last line. Open a terminal and enter
+/etc/rc.local to add "rfkill block bluetooth" before the last line. Open a terminal and enter
 
 .. code-block:: console
 
-   sudo sed -i -e 's/^exit\ 0$/rfkill\ block\ 0\nexit\ 0/' /etc/rc.local
+   sudo sed -i -e 's/^exit\ 0$/rfkill\ block\ bluetooth\nexit\ 0/' /etc/rc.local
 
 We can also improve the behaviour of the touchpad a bit, by enabling the
 "clickpad" setting. Open the dash and start "Startup Applications". Click add,
 set name to "Synaptics clickpad setting", command to "synclient ClickPad=1"
 (without the quotes of course), and click Add.
+
+You should also check if your touchpad is only using the I2C bus, and not ps2 mode.
+Start up a terminal and enter
+
+.. code-block:: console
+
+  xinput
+
+The Virtual core pointer should have only two items:
+
+   - Virtual core XTEST pointer
+   - DLL........ UNKNOWN
+
+if it lists a third item with PS2 touchpad in the name, you should blacklist
+the psmouse module. Open a terminal and enter
+
+.. console-block:: console
+
+   echo -e "\n# remove psmouse because we want the mouse to work over I2C bus\nblacklist psmouse" | sudo tee -a /etc/modprobe.d/blacklist.conf
+   sudo update-initramfs -u
 
 We have an awesome laptop with big battery, so let's make some changes to optimize
 battery lifetime. Open a terminal and enter the following commands
