@@ -152,7 +152,7 @@ Open a terminal and enter the following commands
    git clone git://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git
    ln -s ../../linux-firmware/intel linux/firmware/intel
    cd linux
-   wget http://forthescience.org/content/blog/wp-content/uploads/2015/03/linux-kernel_4.0rc4-config-ubu1404-xps13 -o .config
+   wget http://forthescience.org/blog/wp-content/uploads/2015/03/linux-kernel_4.0rc4-config-ubu1404-xps13 -O .config
    make oldconfig
    make clean
    make -j 4 deb-pkg LOCALVERSION=-xps13
@@ -309,7 +309,7 @@ battery lifetime. Open a terminal and enter the following commands
 .. code-block:: console
 
    cd /etc/pm/power.d/
-   sudo wget http://forthescience.org/content/blog/wp-content/uploads/2015/03/powersaverXPS13Trusty -O powersaverXPS13Trusty
+   sudo wget http://forthescience.org/blog/wp-content/uploads/2015/03/powersaverXPS13Trusty -O powersaverXPS13Trusty
 
 Reboot the machine to make the touchpad change, and enjoy your XPS 13!
 
