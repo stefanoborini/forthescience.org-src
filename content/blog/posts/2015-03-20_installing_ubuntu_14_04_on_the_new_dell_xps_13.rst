@@ -1,5 +1,5 @@
 Installing ubuntu 14.04 on the new Dell XPS 13
-#########################################
+##############################################
 :author: Hans
 :category: linux
 :tags: XPS13, hardware
@@ -59,6 +59,7 @@ not be your first linux installation ever.
 
 After creating the USB drive you need to find a way to get an internet 
 connection on the XPS 13 after installing ubuntu:
+
    - Get a USB wifi/ethernet dongle that you know to be working out of the box on linux
    - Replace the wifi board inside of the XPS (hardcore solution, not advised)
    - download and copy the needed packages onto the USB drive and manually install them after booting. The needed packages are: `bcmwl-kernel-source <https://launchpad.net/ubuntu/trusty/amd64/bcmwl-kernel-source>`_ `dkms <https://launchpad.net/ubuntu/trusty/amd64/dkms>`_ `fakeroot <https://launchpad.net/ubuntu/trusty/amd64/fakeroot>`_ `libfakeroot <https://launchpad.net/ubuntu/trusty/amd64/libfakeroot>`_.
@@ -297,7 +298,7 @@ The Virtual core pointer should have only two items:
 if it lists a third item with PS2 touchpad in the name, you should blacklist
 the psmouse module. Open a terminal and enter
 
-.. console-block:: console
+.. code-block:: console
 
    echo -e "\n# remove psmouse because we want the mouse to work over I2C bus\nblacklist psmouse" | sudo tee -a /etc/modprobe.d/blacklist.conf
    sudo update-initramfs -u
