@@ -8,7 +8,7 @@ to extract the honey. Frames are decapped with a metallic spatula, and
 inserted into a centrifugal radial extractor. This one is for six
 frames, and it's definitely a big one
 
-.. image:: http://gaia.forthescience.org/blog/wp-content/uploads/2013/08/IMG_3644.jpg
+.. image:: http://forthescience.org/gaia/wp-content/uploads/2013/08/IMG_3644.jpg
    :align: center
    :width: 600px
    :alt: image
@@ -16,7 +16,7 @@ frames, and it's definitely a big one
 The capping wax is inserted into a special bag, and will also be
 extracted via centrifugal force
 
-.. image:: http://gaia.forthescience.org/blog/wp-content/uploads/2013/08/IMG_3679.jpg
+.. image:: http://forthescience.org/gaia/wp-content/uploads/2013/08/IMG_3679.jpg
    :align: center
    :width: 600px
    :alt: image
@@ -25,7 +25,7 @@ It takes around 10 minutes of spinning to get the frames clean of honey.
 The difference in weight between an empty and a full frame is
 incredible.
 
-.. figure:: http://gaia.forthescience.org/blog/wp-content/uploads/2013/08/IMG_3678.jpg
+.. figure:: http://forthescience.org/gaia/wp-content/uploads/2013/08/IMG_3678.jpg
    :align: center
    :width: 600px
    :alt: image
@@ -33,7 +33,7 @@ incredible.
 Honey is obtained from the bottom of the extractor and coarse-filtered
 with a simple sieve
 
-.. figure:: http://gaia.forthescience.org/blog/wp-content/uploads/2013/08/IMG_3681.jpg
+.. figure:: http://forthescience.org/gaia/wp-content/uploads/2013/08/IMG_3681.jpg
    :align: center
    :width: 600px
    :alt: image
@@ -41,7 +41,7 @@ with a simple sieve
 The resulting filtered honey is then filtered again using a smaller mesh
 filter bag
 
-.. figure:: http://gaia.forthescience.org/blog/wp-content/uploads/2013/08/IMG_3680.jpg
+.. figure:: http://forthescience.org/gaia/wp-content/uploads/2013/08/IMG_3680.jpg
    :align: center
    :width: 600px
    :alt: image
@@ -52,7 +52,7 @@ emerge to the surface. When this happens, the honey can be extracted
 from the bottom, giving a perfectly clear product that can be bottled
 and sold as is
 
-.. image:: http://gaia.forthescience.org/blog/wp-content/uploads/2013/08/IMG_3687.jpg
+.. image:: http://forthescience.org/gaia/wp-content/uploads/2013/08/IMG_3687.jpg
    :align: center
    :width: 600px
    :alt: image

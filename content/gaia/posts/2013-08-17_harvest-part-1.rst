@@ -13,7 +13,7 @@ among the many full honey frames.
 The frames are left to mature for 10-15 days, then extracted with a
 centrifuge. We have a big one indeed
 
-.. image:: http://gaia.forthescience.org/blog/wp-content/uploads/2013/08/IMG_3644.jpg
+.. image:: http://forthescience.org/gaia/wp-content/uploads/2013/08/IMG_3644.jpg
    :align: center
    :width: 600px
    :alt: image
