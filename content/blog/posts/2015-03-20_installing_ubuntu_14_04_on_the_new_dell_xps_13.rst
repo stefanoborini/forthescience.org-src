@@ -222,7 +222,7 @@ device. on the playback tab (F3), set the following settings:
    - Headphones: 00 (press m to flip between mute and on, 00 means on)
    - Speaker: 00
    - Front DAC: 00
-   - Front REC: 00
+   - Front REC: mm
    - ADC 0 Mux: Dmic (arrow keys)
    - ADC 1 Mux: Dmic
    - AMIC: 100
