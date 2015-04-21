@@ -1,41 +1,26 @@
-Installing ubuntu 14.04 on the new Dell XPS 13
-##############################################
+Installing ubuntu 14.04 on the new Dell XPS 13 (update)
+#######################################################
 :author: Hans
 :category: linux
 :tags: XPS13, hardware
 
-**This post is here for reference material only! Please read the new post for a more updated guide!**
-
 **This is a guest post from my friend Hans**
 
-As my old MSI X340 was in desperate need of replacement, I started looking for
-a new laptop with similar specs (preferably below 1.5kg, 13 inch, FullHD screen
-or better, and long battery life). As you can guess from the title, I ended up
-buying the new 2015 model of the Dell XPS 13. I opted for the non-touch FullHD
-screen with a matte (anti-glare) finish, as it is cheaper and gives you roughly
-20% more battery life. It is also a little bit lighter and doesn't behave like
-a mirror (I like my terminals with a black background). My model features a
-Broadcom wifi chip, branded "Dell Wireless 1560 802.11ac".
+My `previous post <http://forthescience.org/blog/2015/03/20/installing_ubuntu_14_04_on_the_new_dell_xps_13/>`_
+on the XPS 13 explained how to install ubuntu 14.04 with a modified version of 
+the 4.0 rc4 kernel. This post will guide you through the same steps for the now 
+released 4.0 kernel.
+For background info on the XPS 13, and the links to the sources of some of the
+technical stuff in this post, see my `previous post <http://forthescience.org/blog/2015/03/20/installing_ubuntu_14_04_on_the_new_dell_xps_13/>`_
+on the XPS 13. 
 
-You can find the specs and options `on the Dell website <http://www.dell.com/us/p/xps-13-9343-laptop/pd>`_.
+Since my previous post, Dell released the official developers edition of the
+XPS 13, which ships with ubuntu 14.04 (and it is ~70€ cheaper for the same
+hardware!). Dell also released two new BIOS revisions, which solve some of the
+audio issues.
 
-I planned to run Ubuntu linux on the laptop, but did not want to wait for Dell
-to release their "Project Sputnik" version of the new XPS 13. You can find some
-info `on Barton's Blog <http://bartongeorge.net/2015/02/23/update-2-dell-xps-13-laptop-developer-edition-sputnik-gen-4/>`_.
-
-The fun thing about linux nerds is that a lot of them also did not want to wait,
-and `Major Kayden's blog <https://major.io/2015/02/03/linux-support-dell-xps-13-9343-2015-model/>`_
-is currently the unofficial location for discussions about the new XPS 13 and 
-solving the current issues (keyboard and touchpad, and sound).
-
-Most of the technical work to get everything running on the XPS is not my own,
-and I will try to list all sources that helped me getting forward here:
-
-   - `Major Hayden's blogpost, and especially the comments by Rene Treffer. <https://major.io/2015/02/03/linux-support-dell-xps-13-9343-2015-model/>`_
-   - `The kernel git repository by Rene Treffer that includes all the needed patches <https://github.com/rtreffer/linux>`_
-   - `The ubuntu kernel compilation documentation <https://wiki.ubuntu.com/KernelTeam/GitKernelBuild>`_
-   - `The patch for the broadcom wifi driver by Michael Leuchtenburg to make it kernel 4.0 compatible <https://bugs.launchpad.net/ubuntu/+source/bcmwl/+bug/1424676>`_
-   - `The blog post by Shawn Tan to fix bluetooth <http://tech.sybreon.com/2015/03/15/xps13-9343-ubuntu-linux/>`_
+If you followed the steps in my previous post, you should update
+the bios to A03 (or higher), and then skip to the section "Getting stuff working with a newer kernel"
 
 Updating BIOS and creating a restore disk
 -----------------------------------------
@@ -138,23 +123,33 @@ blog for some details).
 Getting stuff working with a newer kernel
 -----------------------------------------
 
-We will need to start with compiling a very recent kernel, with some patches
-to it. We will also need the latest linux-firmware.
-Fortunately, Rene Treffer created a git repo for this which we can clone,
-so we don't have to do the patching! We do need some aditional packages to
-build the kernel. We will also need a .config file, which is a mixture between
-the ubuntu kernel 3.13 default config and the .config provided by Rene. 
-Open a terminal and enter the following commands
+Installing a newer kernel will allow us to switch the touchpad and keyboard
+to I2C mode. This improves usability and battery life on the laptop. 
+My previous guide also switched the sound card to I2C mode, but I can only
+recommend this if you regularly switch back to Windows. The audio board needs
+a reboot followed by a cold boot to properly switch between I2C (Windows) and
+HDA (standard linux) mode. If this is a big problem, you can modify the kernel
+(set the ACPI_CA_SUPPORT_LEVEL to 2 in include/acpi/acconfig.h) before compiling
+it to put the audio board in I2C mode on linux. If you plan to mostly use linux 
+on the laptop, it is better to keep the sound card in HDA mode.
+
+We will start with compiling the new 4.0 kernel, with some patches to it. 
+The patches will fix headphone detection and the microphone. We will also need 
+the latest linux-firmware, some aditional packages to build the kernel, and a 
+.config file. Open a terminal and enter the following commands
 
 .. code-block:: console
 
    sudo apt-get install git build-essential kernel-package fakeroot libncurses5-dev dh-modaliases debhelper devscripts
    cd $HOME
-   git clone https://github.com/rtreffer/linux.git
+   git clone https://github.com/torvalds/linux.git
    git clone git://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git
-   ln -s ../../linux-firmware/intel linux/firmware/intel
+   cp -a linux-firmware/intel linux/firmware/intel
+   wget http://forthescience.org/blog/wp-content/uploads/2015/04/linux-kernel_4.0-xps13-audio_headsetplug.patch -O audio_headsetplug.patch
    cd linux
-   wget http://forthescience.org/blog/wp-content/uploads/2015/03/linux-kernel_4.0rc4-config-ubu1404-xps13 -O .config
+   git checkout v4.0
+   patch -p1 < ../audio_headsetplug.patch
+   wget http://forthescience.org/blog/wp-content/uploads/2015/04/linux-kernel_4.0-config-ubu1404-xps13 -O .config
    make oldconfig
    make clean
    make -j 4 deb-pkg LOCALVERSION=-xps13
@@ -168,9 +163,9 @@ Enter the following commands in the terminal window to install them
 .. code-block:: console
 
    cd $HOME
-   sudo dpkg -i linux-headers-*xps13_*.deb
-   sudo dpkg -i linux-image-*xps13_*.deb
-   sudo dpkg -i linux-firmware-image-*xps13_*.deb
+   sudo dpkg -i linux-headers-4.0.0-xps13_*.deb
+   sudo dpkg -i linux-image-4.0.0-xps13_*.deb
+   sudo dpkg -i linux-firmware-image-4.0.0-xps13_*.deb
    cd /lib
    sudo mv firmware firmware-old
    sudo cp -r $HOME/linux-firmware firmware
@@ -180,14 +175,14 @@ wait... something broke...
 
 .. code-block:: console
 
-   koekie@XPS13:~$ sudo dpkg -i linux-image-4.0.0-rc4-xps13_4.0.0-rc4-xps13-1_amd64.deb 
-   Selecting previously unselected package linux-image-4.0.0-rc4-xps13.
+   koekie@XPS13:~$ sudo dpkg -i linux-image-4.0.0-xps13_4.0.0-xps13-1_amd64.deb 
+   Selecting previously unselected package linux-image-4.0.0-xps13.
    (Reading database ... 215546 files and directories currently installed.)
-   Preparing to unpack linux-image-4.0.0-rc4-xps13_4.0.0-rc4-xps13-1_amd64.deb ...
-   Unpacking linux-image-4.0.0-rc4-xps13 (4.0.0-rc4-xps13-1) ...
-   Setting up linux-image-4.0.0-rc4-xps13 (4.0.0-rc4-xps13-1) ...
-   ERROR (dkms apport): kernel package linux-headers-4.0.0-rc4-xps13 is not supported
-   Error! Bad return status for module build on kernel: 4.0.0-rc4-xps13 (x86_64)
+   Preparing to unpack linux-image-4.0.0-xps13_4.0.0-xps13-1_amd64.deb ...
+   Unpacking linux-image-4.0.0-xps13 (4.0.0-xps13-1) ...
+   Setting up linux-image-4.0.0-xps13 (4.0.0-xps13-1) ...
+   ERROR (dkms apport): kernel package linux-headers-4.0.0-xps13 is not supported
+   Error! Bad return status for module build on kernel: 4.0.0-xps13 (x86_64)
    Consult /var/lib/dkms/bcmwl/6.30.223.248+bdcom/build/make.log for more information.
 
 The wifi driver fails to compile a kernel module for the 4.0 kernel. to
@@ -214,39 +209,14 @@ Start a terminal and type the following commands
 Now you will need to do 2 restarts, and one cold boot (shutdown the machine, and power it back on).
 
 The audio board should now be detected. You can open the sound settings from the small
-speaker in the top-right corner, it should list broadwell-rt286 on the output tab.
-Switch to the input tab to check if that also lists the broadwell-rt286, and then back
-to output.
-Open a new terminal window and start alsamixer. Press F6 and select the broadwell-rt286
-device. on the playback tab (F3), set the following settings:
+speaker in the top-right corner, it should list "Speakers" on the output tab.
+Switch to the input tab to check if that also lists the "Internal Microphone".
+Open a new terminal window and start alsamixer if you don't hear any sounds or 
+don't have a working microphone. Press F6, select the "HDA Intel PCH" device, increase
+the volume sliders and unmute "Master", "Headphone" and "Speaker".
 
-   - Master: 100 (all the way up, arrow keys)
-   - Headphones: 00 (press m to flip between mute and on, 00 means on)
-   - Speaker: 00
-   - Front DAC: 00
-   - Front REC: mm
-   - ADC 0 Mux: Dmic (arrow keys)
-   - ADC 1 Mux: Dmic
-   - AMIC: 100
-   - DAC0: 100
-   - HPO L: 00
-   - HPO Mux: front
-   - HPO R: 00
-   - Media0: 100
-   - Media1: 100
-   - RECMIX Beep: 00
-   - RECMIX line1: 00
-   - RECMIX mic1: 00
-   - SPK Mux: front
-   - SPO: 00
-
-Switch to the record tab (F4), and set the following settings:
-
-   - Mic: 100
-   - ADC0: 100 and CAPTURE (use the space bar to set CAPTURE)
-   - AMIC: 100
-
-Congratulations, you should now have sound! Open your favorite youtube clip to check this.
+If you changed the kernel to put the sound card in I2C mode, then see my 
+`previous post <http://forthescience.org/blog/2015/03/20/installing_ubuntu_14_04_on_the_new_dell_xps_13/>`_ for the settings needed in the alsamixer.
 
 You might have noticed that the bluetooth is in a weird state, it shows as working
 and sometimes manages to detect devices, but it doesn't work properly. Shawn Tan `posted <http://tech.sybreon.com/2015/03/15/xps13-9343-ubuntu-linux/>`_
@@ -295,7 +265,7 @@ Start up a terminal and enter
 The Virtual core pointer should have only two items:
 
    - Virtual core XTEST pointer
-   - DLL........ UNKNOWN
+   - DLL0665:01 06CB:76AD UNKNOWN
 
 if it lists a third item with PS2 touchpad in the name, you should blacklist
 the psmouse module. Open a terminal and enter
@@ -305,6 +275,8 @@ the psmouse module. Open a terminal and enter
    echo -e "\n# remove psmouse because we want the mouse to work over I2C bus\nblacklist psmouse" | sudo tee -a /etc/modprobe.d/blacklist.conf
    sudo update-initramfs -u
 
+Reboot the machine to make the touchpad change.
+
 We have an awesome laptop with big battery, so let's make some changes to optimize
 battery lifetime. Open a terminal and enter the following commands
 
@@ -313,11 +285,9 @@ battery lifetime. Open a terminal and enter the following commands
    cd /etc/pm/power.d/
    sudo wget http://forthescience.org/blog/wp-content/uploads/2015/03/powersaverXPS13Trusty -O powersaverXPS13Trusty
 
-Reboot the machine to make the touchpad change, and enjoy your XPS 13!
+With the powersaving script in place (plug and unplug the adapter to activate it), the 
+FullHD XPS 13 does more than 10h on a single charge with a light workload 
+(firefox, some terminals and a text editor). I'm currently writing this guide at 
+64% battery, with a predicted 7h09 remaining ;-)
 
-Some more tweaks
-----------------
-
-You could try using the `xorg-edgers ppa <https://launchpad.net/~xorg-edgers/+archive/ubuntu/ppa>`_ for the latest graphics drivers for your XPS.
-This could improve the haswell graphics, but please do read the warning notices on the ppa page.
-
+Enjoy your XPS 13!
