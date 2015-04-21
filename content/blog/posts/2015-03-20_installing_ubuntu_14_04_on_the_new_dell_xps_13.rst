@@ -4,6 +4,8 @@ Installing ubuntu 14.04 on the new Dell XPS 13
 :category: linux
 :tags: XPS13, hardware
 
+**This post is here for reference material only! Please read the new post for a more updated guide!**
+
 **This is a guest post from my friend Hans**
 
 As my old MSI X340 was in desperate need of replacement, I started looking for
