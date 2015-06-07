@@ -16,14 +16,14 @@ endif
 all: clean base blog whatever gaia
 
 blog:
-	"$(PELICAN)" "$(BASEDIR)/content/blog" -o "$(BASEDIR)/output/blog" -s "$(BASEDIR)/config/blog.py" $(PELICANOPTS)
+	PYTHONPATH=/Users/sbo/Library/Python/3.4/lib/python/site-packages "$(PELICAN)" "$(BASEDIR)/content/blog" -o "$(BASEDIR)/output/blog" -s "$(BASEDIR)/config/blog.py" $(PELICANOPTS)
 	cp -r extra/redirect/* "$(OUTPUTDIR)"/blog
 
 whatever:
-	"$(PELICAN)" "$(BASEDIR)/content/whatever" -o "$(BASEDIR)/output/whatever" -s "$(BASEDIR)/config/whatever.py" $(PELICANOPTS)
+	PYTHONPATH=/Users/sbo/Library/Python/3.4/lib/python/site-packages "$(PELICAN)" "$(BASEDIR)/content/whatever" -o "$(BASEDIR)/output/whatever" -s "$(BASEDIR)/config/whatever.py" $(PELICANOPTS)
 
 gaia:
-	"$(PELICAN)" "$(BASEDIR)/content/gaia" -o "$(BASEDIR)/output/gaia" -s "$(BASEDIR)/config/gaia.py" $(PELICANOPTS)
+	PYTHONPATH=/Users/sbo/Library/Python/3.4/lib/python/site-packages "$(PELICAN)" "$(BASEDIR)/content/gaia" -o "$(BASEDIR)/output/gaia" -s "$(BASEDIR)/config/gaia.py" $(PELICANOPTS)
 
 base:
 	cp extra/CNAME "$(OUTPUTDIR)"
