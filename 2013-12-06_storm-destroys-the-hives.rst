@@ -6,7 +6,7 @@ Storm destroys the hives
 I just received notification that the hives of our association were
 completely destroyed by the storm that hit Denmark yesterday.
 
-.. image:: http://gaia.forthescience.org/blog/wp-content/uploads/2013/12/image001.jpg
+.. image:: http://forthescience.org/gaia/wp-content/uploads/2013/12/image001.jpg
    :align: center
    :width: 600px
    :alt: image
